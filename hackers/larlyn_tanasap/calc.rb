@@ -176,7 +176,7 @@ def trip_calc
 	trip_time = distance / speed
 	trip_cost = distance / mpg * fuel_cost
 	puts "Your trip will take #{trip_time.round(1)} hours and cost $#{trip_cost.round(2)}."
-	puts mpg
+	# puts mpg
 	mainmenu
 end
 
@@ -200,8 +200,8 @@ def mainmenu
 	puts "Calcumalator"
 	puts "-" * 20
 	puts "Which calcumalator do you want to use?"
-	puts "(ba)sic calcumalator", "(ad)vanced calcumalator" 
-	puts "(m)ortgage calcumalator", "(bmi) calcumalator", "(t)rip calcumalator"
+	puts "\t(ba)sic calcumalator", "\t(ad)vanced calcumalator" 
+	puts "\t(m)ortgage calcumalator", "\t(bmi) calcumalator", "\t(t)rip calcumalator"
 	puts "Type (q) to quit"
 	response = read_choice
 
