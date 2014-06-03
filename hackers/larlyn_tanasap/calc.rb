@@ -10,7 +10,7 @@ def quit
 	Process.exit
 end
 
-# BASIC CALCULATION CHOICE
+# BASIC CALCUMALATION CHOICE
 def basic_choice
 	available_opt2_basic = ["a", "s", "m", "d"]
 
@@ -59,7 +59,7 @@ def basic_choice
 	end
 end
 
-# ADVANCED CALCULATION CHOICE
+# ADVANCED CALCUMALATION CHOICE
 def advanced_choice
 	available_opt2_advanced = ["p", "s"]
 
@@ -92,7 +92,7 @@ def advanced_choice
 	end
 end
 
-# BASIC CALCULATION MECHANISM
+# BASIC CALCUMALATION MECHANISM
 
 	def add(x,y)
 	 	x + y
@@ -109,7 +109,7 @@ end
 	def divide(x,y)
 		x / y
 	end
-# ADVANCED CALCULATION MECHANISM
+# ADVANCED CALCUMALATION MECHANISM
 
 	def power(x,y)
 		x ** y
@@ -118,8 +118,6 @@ end
 	def square(x)
 		Math::sqrt(x)
 	end
-
-
 
 def mortgage_calc
 	# response = read_choice
@@ -166,9 +164,14 @@ def trip_calc
 	speed = gets.to_i
 	puts "What is the fuel efficiency of the car in Miles per Gallon?"
 	mpg = gets.to_i
-	puts "How much is the fuel per gallon?"
+	puts "How much is the fuel per gallon in $0.00?"
 	print "$"
-	(61..speed).each {|x| mpg -= 2 } # for every mile over 60, reduce mpg by 2
+
+	if speed > 60
+		(61..speed).each {|x| mpg -= 2 } 
+		# for every mile over 60, reduce mpg by 2
+	end
+
 	fuel_cost = gets.to_f
 	trip_time = distance / speed
 	trip_cost = distance / mpg * fuel_cost
@@ -177,7 +180,7 @@ def trip_calc
 	mainmenu
 end
 
-# END ALL CALCULATIONS
+# END ALL CALCUMALATIONS
 
 def basic_calc
 	puts "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "
@@ -189,16 +192,16 @@ def advanced_calc
 	advanced_choice
 end
 
-# GETTING USER INPUT FOR CALCULATION
+# GETTING USER INPUT FOR CALCUMALATION
 # response = mainmenu
 def mainmenu
 	available_opt1 = ["ba", "ad", "m", "bmi", "t", "q"]
 	puts "-" * 20
 	puts "Calcumalator"
 	puts "-" * 20
-	puts "Which calculator do you want to use?"
-	puts "(ba)sic calculator", "(ad)vanced calculator"
-	puts "(m)ortgage calculator", "(bmi) calculator", "(t)rip calculator"
+	puts "Which calcumalator do you want to use?"
+	puts "(ba)sic calcumalator", "(ad)vanced calcumalator" 
+	puts "(m)ortgage calcumalator", "(bmi) calcumalator", "(t)rip calcumalator"
 	puts "Type (q) to quit"
 	response = read_choice
 
