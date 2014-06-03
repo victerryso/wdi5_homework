@@ -143,7 +143,7 @@ def bmi_calc
 	puts "What is your height in cms?"
 	h = gets.to_f / 100
 	bmi = (w / (h ** 2))
-	puts "Your height is #{h}cm, and you weight #{w}kgs!" , "Your BMI is #{bmi.round(1)}."
+	puts "Your height is #{h*100}cm, and you weight #{w}kgs!" , "Your BMI is #{bmi.round(1)}."
 	
 	if bmi < 18.5
 		puts "You are underweight. Eat a sandwich."
@@ -200,9 +200,9 @@ def mainmenu
 	puts "Calcumalator"
 	puts "-" * 20
 	puts "Which calcumalator do you want to use?"
-	puts "\t(ba)sic calcumalator", "\t(ad)vanced calcumalator" 
+	puts "\n\t(ba)sic calcumalator", "\t(ad)vanced calcumalator" 
 	puts "\t(m)ortgage calcumalator", "\t(bmi) calcumalator", "\t(t)rip calcumalator"
-	puts "Type (q) to quit"
+	puts "\nType (q) to quit"
 	response = read_choice
 
 	until available_opt1.include? response
