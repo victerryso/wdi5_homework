@@ -17,7 +17,7 @@ end
 # BASIC CALCUMALATION CHOICE
 def basic_choice
 	available_opt2_basic = ["a", "s", "m", "d"]
-
+	puts "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "
 	response = read_choice
 
 	if response == "q"
@@ -66,7 +66,7 @@ end
 # ADVANCED CALCUMALATION CHOICE
 def advanced_choice
 	available_opt2_advanced = ["p", "s"]
-
+	puts "(p)ower, (s)qrt: "
 	response = read_choice
 
 	if response == "q"
@@ -102,7 +102,7 @@ def mortgage_calc
 	print "$"
 	p = input_to_f
 	puts "What is the annual interest rate? Input the percentage. "
-	i = gets.to_f / 100 / 12.0 # to get monthly rate
+	i = input_to_f / 100 / 12.0 # to get monthly rate
 	puts "How many payments are you making? "
 	n = input_to_f
 	m = ( (i * ( ( 1 + i ) ** n ) ) / ( ( ( 1 + i ) ** n ) - 1 )) * p
@@ -114,9 +114,9 @@ end
 
 def bmi_calc
 	puts "What is your weight in kgs?"
-	w = gets.to_f
+	w = input_to_f
 	puts "What is your height in cms?"
-	h = gets.to_f / 100
+	h = input_to_f / 100
 	bmi = (w / (h ** 2))
 	puts "Your height is #{h*100}cm, and you weight #{w}kgs!" , "Your BMI is #{bmi.round(1)}."
 	
@@ -135,7 +135,7 @@ end
 
 def trip_calc
 	puts "How for are you going in miles?"
-	distance = gets.to_f
+	distance = input_to_f
 	puts "How fast are you going to go in Miles Per Hour?"
 	speed = input_to_f
 	puts "What is the fuel efficiency of the car in Miles per Gallon?"
@@ -148,25 +148,13 @@ def trip_calc
 		# for every mile over 60, reduce mpg by 2
 	end
 
-	fuel_cost = gets.to_f
+	fuel_cost = input_to_f
 	trip_time = distance / speed
 	trip_cost = distance / mpg * fuel_cost
 	puts "Your trip will take #{trip_time.round(1)} hours and cost $#{trip_cost.round(2)}."
 	puts "Your Miles per gallon is #{mpg} when you are going at #{speed} miles per hour." # tests if mpg is changed
 	puts
 	mainmenu
-end
-
-# END ALL CALCUMALATIONS
-
-def basic_calc
-	puts "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "
-	basic_choice	
-end
-
-def advanced_calc
-	puts "(p)ower, (s)qrt: "
-	advanced_choice
 end
 
 # GETTING USER INPUT FOR CALCUMALATION
