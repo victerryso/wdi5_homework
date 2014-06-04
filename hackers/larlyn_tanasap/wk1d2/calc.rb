@@ -15,7 +15,7 @@ end
 
 
 # BASIC CALCUMALATION CHOICE
-def basic_choice
+def basic_calc
 	available_opt2_basic = ["a", "s", "m", "d"]
 	puts "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "
 	response = read_choice
@@ -64,7 +64,7 @@ def basic_choice
 end
 
 # ADVANCED CALCUMALATION CHOICE
-def advanced_choice
+def advanced_calc
 	available_opt2_advanced = ["p", "s"]
 	puts "(p)ower, (s)qrt: "
 	response = read_choice
