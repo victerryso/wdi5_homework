@@ -9,7 +9,7 @@ def quit
 	Process.exit
 end
 
-def ask(msg)
+def asknum(msg)
 	puts msg
 	gets.to_f
 end
@@ -63,7 +63,7 @@ def advanced_calc
 
 	if response == "q"
 		quit
-	end 
+	end
 
 	until available_opt2_advanced.include? response
 		puts "Please type in valid response."
@@ -102,10 +102,10 @@ end
 def bmi_calc
 	w = ask("What is your weight in kgs?")
 	h = ask("What is your height in cms?") / 100
-	bmi = (w / (h ** 2))
-	puts "Your height is #{ h * 100 }cm, and you weight #{ w }kgs!" 
-	puts "Your BMI is #{ bmi.round(1)}."
-	
+	bmi = ( w / ( h ** 2 ))
+	puts "Your height is #{ h * 100 }cm, and you weight #{ w }kgs!"
+	puts "Your BMI is #{ bmi.round(1) }."
+
 	if bmi.between?(0, 18.5)
 		puts "You are underweight. Eat a sandwich."
 	elsif bmi.between?(18.5, 24.9)
@@ -137,8 +137,9 @@ def trip_calc
 end
 
 def mainmenu
-	available_opt1 = ["ba", "ad", "m", "bmi", "t", "q"] # makes a list of available options 
-	puts "-" * 20 , "Calcumalator", "-" * 20
+	available_opt1 = ["ba", "ad", "m", "bmi", "t", "q"]
+	# makes a list of available options
+
 	puts "\nWhich calcumalator do you want to use?"
 	puts "\n\t(ba)sic calcumalator", "\t(ad)vanced calcumalator"
 	puts "\t(m)ortgage calcumalator", "\t(bmi) calcumalator", "\t(t)rip calcumalator"
@@ -160,11 +161,12 @@ def mainmenu
 		when "bmi"
 			bmi_calc
 		when "t"
-			trip_calc	
+			trip_calc
 		when "q"
 			quit
 	end
 end
 
+puts "-" * 20 , "Calcumalator", "-" * 20
 mainmenu
 
