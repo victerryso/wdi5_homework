@@ -1,3 +1,5 @@
+
+
 =begin
 TODO LIST
 	-round floats
@@ -11,7 +13,6 @@ Dodgy choices
 $LOAD_PATH << '.'
 
 require 'moduleprime'
-
 #helpers
 def quit_message
 	puts
@@ -20,14 +21,14 @@ end
 
 def user_input
 		n1 = input_return("What is your first number?")
-		n2 = input_return("What is your second number?")	
+		n2 = input_return("What is your second number?")
 		return [n1, n2]
 end
 
 def another_round
 	print "y for another?"
 	input = gets.chomp.downcase
-	if input == 'y' 
+	if input == 'y'
 		true
 	else
 		false
@@ -43,7 +44,9 @@ def input_return(message)
 		begin
 			input = gets.chomp.downcase
 			unless input == 'q'
-				number = Float(gets.chomp)
+				number = Float(input)
+			else
+				number = 'q'
 			end
 		rescue
 			#(\/) (°,,,°) (\/)
@@ -75,7 +78,7 @@ def start
 				prime_calc
 			when 'q'
 				puts 'Seeya!'
-			else 
+			else
 				puts "Not valid"
 		end
 		break if response == 'q'
@@ -86,7 +89,7 @@ end
 def basic_calc
 	loop do
 		quit_message
-		print "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "	
+		print "(a)dd, (s)ubtract, (m)ultiply, (d)ivide: "
 		response = gets.chomp.downcase
 
 		case response
@@ -105,8 +108,8 @@ def basic_calc
 			when 'c'
 				advanced_calc
 			when 'q'
-			else 
-			puts "Not valid"	
+			else
+			puts "Not valid"
 		end
 
 		break if response == 'q'
@@ -124,7 +127,7 @@ def advanced_calc
 				print "What is the number?"
 				puts "The square root is #{sqrt(gets.to_i)}"
 			when 'q'
-			else 
+			else
 				puts "Not valid"
 		end
 
@@ -136,25 +139,32 @@ def mortgage_calc
 	running = true
 	while running
 		#trying to do by hash and array to get 'q'
-		# inputs_array = [ p, i, n]
-		# inputs = {
-		# 	"What is the principal?" : 0,
-		# 	"What is the interest as a %?" : 0,
-		# 	"What is the period?" : 0
-		# }
-		# for key in inputs.keys
-		# 	unless inputs == 'q'
-		# 		inputs[key]=input_return(key)
-		# 	else
-		# 		running = false
-		# 		break
-		# end
+		inputs = {
+			:p => ["What is the principal?", 0],
+			:i => ["What is the interest as a %?", 0],
+			:n => ["What is the period?", 0]
+		}
 
-		p = input_return("What is the principal?")
-		i = input_return("What is the interest as a %?")/100/12
-		n = input_return("What is the period?")
-		m = p*((i*(1+i)**n)/((1+i)**n-1))
-		puts "The monthly repayment is #{m.round(2)}"
+		inputs.keys.each do |key|
+			inputs[key][1] = input_return(inputs[key][0])
+			if inputs[key][1] == 'q'
+				running = false
+				break
+			end
+		end
+
+		p = inputs[:p][1]
+		i = inputs[:i][1]
+		n = inputs[:n][1]
+		#old version
+
+		# p = input_return("What is the principal?")
+		# i = input_return("What is the interest as a %?")/100/12
+		# n = input_return("What is the period?")
+		if p && i && n != 0
+			m = p*((i*(1+i)**n)/((1+i)**n-1))
+			puts "The monthly repayment is #{m.round(2)}"
+		end
 		running = another_round
 	end
 end
