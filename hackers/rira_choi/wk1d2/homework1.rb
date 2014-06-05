@@ -1,6 +1,6 @@
 def read_choice
 	puts " "
-	puts "Type (Basic) or (Advanced), " 
+	puts "Type (Basic) or (Advanced), "
 	puts "Type (M)ortgage or (B)MI, "
 	puts "Type (T)rip Caulator, "
 	puts "Type (q)uit to exit please. "
@@ -15,36 +15,36 @@ def read_choice
 				x = gets.chomp.to_i
 			print "(y)--Type number to add: "
 				y = gets.chomp.to_i
-			puts "Your result is #{ x + y }! " 
+			puts "Your result is #{ x + y }! "
 
 		elsif choice == 's'
 			print "(x)--Type numbers to subtract: "
 				x = gets.chomp.to_i
 			print "(y)--Type number to subtract: "
 				y = gets.chomp.to_i
-			puts "Your result is #{ x - y }! " 
+			puts "Your result is #{ x - y }! "
 
 		elsif choice == 'm'
 			print "(x)--Type numbers to multiply: "
 				x = gets.chomp.to_i
 			print "(y)--Type number to multiply: "
 				y = gets.chomp.to_i
-			puts "Your result is #{ x * y }! " 
+			puts "Your result is #{ x * y }! "
 
 		elsif choice == 'd'
 			print "(x)--Type numbers to divide: "
 				x = gets.chomp.to_f
 			print "(y)--Type number to divide: "
 				y = gets.chomp.to_f
-			puts "Your result is #{ x / y }! " 
-		elsif 
+			puts "Your result is #{ x / y }! "
+		elsif
 			choice == 'q'
 
 		else
 			print "Wrong! Type again please!"
 		end
 
-	elsif 
+	elsif
 		choice.capitalize == 'Advanced'
 		advanced_calc
 		choice = gets.chomp.downcase
@@ -59,15 +59,15 @@ def read_choice
 			print "Type a number to get suare root: "
 			x = gets.chomp.to_f.round(2)
 			puts " Your result is #{Math.sqrt(x)}!"
-	
-		elsif 
+
+		elsif
 			choice == 'q'
 
 		else
-			puts " " 
+			puts " "
 		end
 
-	elsif 
+	elsif
 		if choice.capitalize == 'M'
 
 			puts "Type your interest rate: "
@@ -80,7 +80,7 @@ def read_choice
 			#a = interest_rate(1 + i) ** number_of_payment
 			#b = (1 + interest_rate) ** number_of_payment -1
 			#c = a / b
-			#mortgage = principal_of_the_loan * c 
+			#mortgage = principal_of_the_loan * c
 
 			m = p * i * (1 + i) ** n / ((1 + i) ** n - 1) #Check
 
@@ -113,14 +113,14 @@ def read_choice
 			else
 				puts " "
 			end
-					
-					
+
+
 		else
 			puts " "
 
 		end
-	
-	elsif 
+
+	elsif
 		choice.capitalize == 'T'
 
 		puts "How far will you drive?: "
@@ -129,27 +129,27 @@ def read_choice
 		mpg= gets.chomp.to_f # Miles per gallon
 		puts "How much does gas cost per gallon?: "
 		dpg = gets.chomp.to_f # Dallors per gallon
-		puts "How fast will you drive?: " 
+		puts "How fast will you drive?: "
 		s = gets.chomp.to_f # Speed
 
-		if s > 60 
+		if s > 60
 			o = s - 60 # over speed
 			o = o * 2
-			mpg = mpg - o  
+			mpg = mpg - o
 		end
 
-		x_hours = d / s  
+		x_hours = d / s
 		y_dollars = (d / mpg) * dpg
-		
+
 
 		puts "Your trip will take #{x_hours} hours and cost $#{y_dollars}."
-		
+
 
   	else
-  		" "
+  		"Error!"
   	end
-	
-	return choice #check	
+
+	choice #check
 end
 
 
