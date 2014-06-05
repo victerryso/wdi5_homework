@@ -6,8 +6,8 @@ lines = {
 }
 
 def train_journey(stop_on,stop_off,line_on,line_off,lines)
-   get_on = lines[line_on].index stop_on # gets index of first stop
-   get_off = lines[line_off].index stop_off # gets index of first stop
+   get_on = lines[line_on].index stop_on # gets index of stop getting on
+   get_off = lines[line_off].index stop_off # gets index stop getting off
    if line_on == line_off # if the trip is on the same line
       stops = lines[line_on][get_on..get_off]
    else
@@ -21,6 +21,7 @@ def train_journey(stop_on,stop_off,line_on,line_off,lines)
       stops = lines[line_on][get_on...union_on] << half2 #appends the second half of the trip in an array
    end
    puts "You want to get on at #{stop_on} on the #{ line_on } line and get off at #{stop_off} on the #{ line_off } line."
+   # flattens because the array is appended as an array and gives incorrect length
    puts "You will get off #{ stops.flatten.length - 1 } stops later."
    puts "The stops you will pass are #{ stops.join ", " }."
 end
