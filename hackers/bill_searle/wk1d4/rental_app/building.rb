@@ -11,6 +11,6 @@ class Building
   end
 
   def to_s
-    "The #{@style} building at #{@address} has #{@apartments.length} and #{@num_floors}."
+    "Style: #{@style}  Address: #{@address}  Floors :#{@num_floors} Apts: #{@apartments.length}."
   end
 end

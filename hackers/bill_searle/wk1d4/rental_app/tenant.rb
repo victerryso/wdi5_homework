@@ -8,6 +8,6 @@ class Tenant
   end
 
     def to_s
-      "#{@name} is a #{@age} year old #{gender}"
+      "#{@name} / #{@age} / #{gender}"
     end
 end

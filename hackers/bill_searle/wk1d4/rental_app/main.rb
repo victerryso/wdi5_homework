@@ -9,19 +9,19 @@ require_relative 'tenant'
 
 # Storage arrays
 $all_tenants = []
-all_buildings = []
-all_apartments = []
+$all_buildings = []
+$all_apartments = []
 
 # Seed data
 # Building
-all_buildings << b1 = Building.new('240 Frost Street', :Modern, false, true, 5)
-all_buildings << b2 = Building.new('18 Old Street', :Gothic, false, false, 2)
+$all_buildings << b1 = Building.new('240 Frost Street', :Modern, false, true, 5)
+$all_buildings << b2 = Building.new('18 Old Street', :Gothic, false, false, 2)
 
 # Apartment
-all_apartments << a1 = Apartment.new(1500, 2, 1)
-all_apartments << a2 = Apartment.new(800, 1, 1)
-all_apartments << a3 = Apartment.new(5000, 3, 2)
-all_apartments << a4 = Apartment.new(3500, 2, 2)
+$all_apartments << a1 = Apartment.new(1500, 2, 1)
+$all_apartments << a2 = Apartment.new(800, 1, 1)
+$all_apartments << a3 = Apartment.new(5000, 3, 2)
+$all_apartments << a4 = Apartment.new(3500, 2, 2)
 
 # Tenant
 $all_tenants << t1 = Tenant.new('Bill', 27, :male)
@@ -54,31 +54,112 @@ def start_menu
   end
 end
 
+# Method for adding a new tenant
 def add_tenant
 repeat_add = 'y'
   while repeat_add == 'y'
-    puts "Add a new tenant below,"
+    puts
+    puts "New Tenant:"
     print "Name: "
     new_tenant_name = gets.chomp
     print "Age: "
     new_tenant_age = gets.chomp.to_i
-    print "Gender: "
-    new_tenant_gender = gets.chomp.to_sym
+    # add gender as a symbol. how to make this loop back?
+    print "Gender - 'm' or 'f': "
+    new_tenant_gender = gets.chomp
+      if new_tenant_gender != 'm' || new_tenant_gender != 'f'
+        puts "Please select 'm' or 'f': "
+      else
+        new_tenant_gender.to_sym
+      end
 
     new_tenant_object = Tenant.new(new_tenant_name, new_tenant_age, new_tenant_gender)
 
     $all_tenants << new_tenant_object
-    puts $all_tenants
-
+    puts "-" * 30
+    puts "Saved new tenant: #{new_tenant_object}"
+# repeat this method or return to start_menu
     puts "Would you like to add another tenant, 'y' or 'n'? "
     repeat_add = gets.chomp.downcase
     if repeat_add == 'n'
+      puts
       start_menu
     end
   end
 end
 
-hello
+# Method for adding a new building
+def add_building
+repeat_add = 'y'
+  while repeat_add == 'y'
+    puts
+    puts "New Building:"
+    print "Address: "
+    new_building_name = gets.chomp
+
+    print "Style - 'modern', 'gothic', 'farmhouse', 'ranch': "
+    new_building_style = gets.chomp.to_sym
+    # set boolean
+    print "Doorman - 'y' or 'n': "
+    new_building_doorman = gets.chomp
+      if new_building_doorman == 'y'
+        new_building_doorman = true
+      else
+        new_building_doorman = false
+      end
+    # set boolean
+    print "Elevator - 'y' or 'n: "
+    new_building_elevator = gets.chomp
+      if new_building_elevator == 'y'
+        new_building_elevator = true
+      else
+        new_building_elevator = false
+      end
+
+    print "Floors: "
+    new_building_floors = gets.chomp.to_i
+# create object from user input and pass to the storage array
+    new_building_object = Building.new(new_building_name, new_building_style, new_building_doorman, new_building_elevator, new_building_floors)
+    $all_buildings << new_building_object
+    puts "-" * 30
+    puts "Saved new building: #{new_building_object}"
+# repeat this method or return to start_menu
+    puts "Would you like to add another building, 'y' or 'n'? "
+    repeat_add = gets.chomp.downcase
+    if repeat_add == 'n'
+      puts
+      start_menu
+    end
+  end
+end
+
+def add_apartment
+  repeat_add = 'y'
+  while repeat_add == 'y'
+    puts
+    puts "New Apartment:"
+    print "Square ft: "
+    new_apartment_sqft = gets.chomp.to_i
+    print "No. of Bedrooms: "
+    new_apartment_rooms = gets.chomp.to_i
+    print "No. of Bathrooms: "
+    new_apartment_baths =  gets.chomp.to_i
+
+    new_apartment_object = Apartment.new(new_apartment_sqft, new_apartment_rooms, new_apartment_baths)
+    $all_apartments << new_apartment_object
+    puts "-" * 30
+    puts "Saved new apartment: #{new_apartment_object}"
+# repeat this method or return to start_menu
+    puts "Would you like to add another apartment, 'y' or 'n'? "
+    repeat_add = gets.chomp.downcase
+    if repeat_add == 'n'
+      puts
+      start_menu
+    end
+  end
+end
+
+
 
 # calls the program
 start_menu

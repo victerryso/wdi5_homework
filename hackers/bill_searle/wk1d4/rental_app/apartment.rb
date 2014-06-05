@@ -10,7 +10,7 @@ class Apartment
   end
 
     def to_s
-      "The apartment is #{@sqft} square feet and has #{@occupants.length} occupants"
+      "Sq.ft: #{@sqft} No.beds: #{num_bedrooms} No.baths: #{num_bathrooms} and #{@occupants.length} occupants"
     end
 
     def occupied?
