@@ -5,7 +5,6 @@ require_relative 'apartment'
 require_relative 'building'
 require_relative 'tenant'
 
-# binding.pry
 
 # Storage arrays
 $all_tenants = []
@@ -16,6 +15,8 @@ $all_apartments = []
 # Building
 $all_buildings << b1 = Building.new('240 Frost Street', :Modern, false, true, 5)
 $all_buildings << b2 = Building.new('18 Old Street', :Gothic, false, false, 2)
+$all_buildings << b3 = Building.new('62 A Place', :Modern, true, true, 3)
+$all_buildings << b4 = Building.new('28 Another Place ', :Ranch, false, false, 6)
 
 # Apartment
 $all_apartments << a1 = Apartment.new(1500, 2, 1)
@@ -29,12 +30,18 @@ $all_tenants << t2 = Tenant.new('Rose', 24, :female)
 $all_tenants << t3 = Tenant.new('Amy', 25, :female)
 $all_tenants << t4 = Tenant.new('Tom', 35, :male)
 
+# binding.pry
+
 # def the start menu
 def start_menu
   puts "Please select from the follow options:"
   puts "Add a  (t)enant,"
   puts "Add a  (b)uilding,"
   puts "Add an (a)partment"
+  puts "OR"
+  puts "View all (bu)ildings,"
+  puts "View all (ap)artments,"
+  puts "View all (te)nants"
   puts "(Q)uit"
 
   menu_choice = gets.chomp.downcase
@@ -45,6 +52,12 @@ def start_menu
     add_building
   elsif menu_choice == 'a'
     add_apartment
+  elsif menu_choice == 'bu'
+    view_all_buildings
+  elsif menu_choice == 'ap'
+    view_all_apartments
+  elsif menu_choice == 'te'
+    view_all_tenants
   elsif menu_choice == 'q'
     puts "SEE YA!"
     Kernel.exit
@@ -74,8 +87,8 @@ repeat_add = 'y'
       end
 
     new_tenant_object = Tenant.new(new_tenant_name, new_tenant_age, new_tenant_gender)
-
     $all_tenants << new_tenant_object
+
     puts "-" * 30
     puts "Saved new tenant: #{new_tenant_object}"
 # repeat this method or return to start_menu
@@ -96,7 +109,6 @@ repeat_add = 'y'
     puts "New Building:"
     print "Address: "
     new_building_name = gets.chomp
-
     print "Style - 'modern', 'gothic', 'farmhouse', 'ranch': "
     new_building_style = gets.chomp.to_sym
     # set boolean
@@ -115,12 +127,12 @@ repeat_add = 'y'
       else
         new_building_elevator = false
       end
-
     print "Floors: "
     new_building_floors = gets.chomp.to_i
 # create object from user input and pass to the storage array
     new_building_object = Building.new(new_building_name, new_building_style, new_building_doorman, new_building_elevator, new_building_floors)
     $all_buildings << new_building_object
+
     puts "-" * 30
     puts "Saved new building: #{new_building_object}"
 # repeat this method or return to start_menu
@@ -147,6 +159,7 @@ def add_apartment
 
     new_apartment_object = Apartment.new(new_apartment_sqft, new_apartment_rooms, new_apartment_baths)
     $all_apartments << new_apartment_object
+
     puts "-" * 30
     puts "Saved new apartment: #{new_apartment_object}"
 # repeat this method or return to start_menu
@@ -159,10 +172,55 @@ def add_apartment
   end
 end
 
+###############################################
+# PRINT ALL ARRAYS
+###############################################
 
+def view_all_buildings
+  puts
+  puts "Current buildings:"
+  puts $all_buildings
+  # add options to sort by x
+  puts "Return to the main menu (mm) or enter sort menu (sm)? "
+  choice = gets.chomp
+    if choice == 'mm'
+      start_menu
+    else
+      buildings_sort_menu
+  end
+end
+def view_all_apartments
+  puts
+  puts "Current Apartments: "
+  puts $all_apartments
 
+  start_menu
+end
+
+def view_all_tenants
+  puts
+  puts "Current Tenants:"
+  puts $all_tenants
+
+  start_menu
+end
+
+###############################################
+# BUILDING SORT MENU
+###############################################
+
+def buildings_sort_menu
+  sort = $all_buildings[2]
+  puts sort
+end
 # calls the program
+
 start_menu
+
+#called start_menu a million times :/
+#how to add a specific tenant to a specific appartment?
+#how to add a specific apartment to a building?
+#should have used a hash for storage and even each a key
 
 
 
