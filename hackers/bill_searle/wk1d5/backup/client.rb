@@ -9,6 +9,6 @@ class Client
   end
 
   def to_s
-    "Name: #{@name}, No.Children: #{num_children}, Age: #{age}, Pets: #{pets.to_s}"
+    "Name: #{@name}, No.Children: #{num_children}, Age: #{age}, Pets: #{pets}"
   end
 end
