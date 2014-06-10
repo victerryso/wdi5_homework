@@ -8,12 +8,14 @@
   - The 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.
   - All 3 subway lines intersect at Union Square, but there are NO other intersection points.
     - For example, this means the 28th stop on the N line is different than the 28th street stop on the 6 line, so you'll have to differentiate this when you name your stops in the arrays.
+
 - The program takes the line and stop that a user is getting on at and the line 
+- The program takes the line and stop that a user is getting on at and the line
 and stop that user is getting off at and prints the total number of stops for the trip.
 
 ---
 
-###Hints: 
+###Hints:
 - Get the program to work for a single line before trying to tackle multiple lines.
 - Consider diagraming the lines by sketching out the subway lines and their stops and intersection.
 - Make subway lines keys in a hash, while the values are an array of all the stops on each line.
