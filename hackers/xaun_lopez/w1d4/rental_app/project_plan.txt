@@ -1,0 +1,44 @@
+Buildings
+
+address - string
+style - string | symbol
+has_doorman - boolean
+elevator - boolean
+apartments - array
+
+
+Apartment
+
+price - decimanl / float
+sqft - integer
+num_beds - integer
+num_bathrooms - int
+renters - array
+
+
+Tenant
+
+name - string
+age - integer
+gender - symbol
+
+
+h/w for tonight = build a menu system.
+
+  1. add a building - done
+    - feature to list - done
+
+  2. add an apartment - done
+    - feature to list - done
+    - feature to list all apartments - done
+    - feature to list all available
+
+  3. add a tenant - done
+    - feature to list - done
+    - feature to move tenants
+    - feature to add tenants into an apartment
+    - feature to completely remove tenants
+
+
+
+
