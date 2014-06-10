@@ -39,37 +39,37 @@ def basic_choice
 	end
 
 	case response
-	when "a"
-		puts "ADD: Enter first integer"
-		num1 = input_to_i
-		puts "Enter second integer"
-		num2 = input_to_i
-		puts "ANSWER: #{num1} + #{num2} = #{add(num1,num2)}."
-		repeat
-	when "s"
-		puts "SUBTRACT: Enter first integer"
-		num1 = input_to_i
-		puts "Enter second integer"
-		num2 = input_to_i
-		puts "ANSWER: #{num1} - #{num2} = #{subtract(num1,num2)}."
-		repeat
-	when "m"
-		puts "MULTIPLY: Enter first integer"
-		num1 = input_to_i
-		puts "Enter second integer to multiplnum2"
-		num2 = input_to_i
-		puts "ANSWER: #{num1} * #{num2} = #{multiplnum2(num1,num2)}."
-		repeat
-	when "d"
-		puts "DIVIDE: Enter first integer"
-		num1 = input_to_i
-		puts "Enter second integer to divide"
-		num2 = input_to_i
-		puts "ANSWER: #{num1} / #{num2} = #{divide(num1,num2)}."
-		repeat
-	else
-		puts "Please enter a valid letter."
-	end
+		when "a"
+			puts "ADD: Enter first integer"
+			num1 = input_to_i
+			puts "Enter second integer"
+			num2 = input_to_i
+			puts "ANSWER: #{num1} + #{num2} = #{add(num1,num2)}."
+			repeat
+		when "s"
+			puts "SUBTRACT: Enter first integer"
+			num1 = input_to_i
+			puts "Enter second integer"
+			num2 = input_to_i
+			puts "ANSWER: #{num1} - #{num2} = #{subtract(num1,num2)}."
+			repeat
+		when "m"
+			puts "MULTIPLY: Enter first integer"
+			num1 = input_to_i
+			puts "Enter second integer to multiplnum2"
+			num2 = input_to_i
+			puts "ANSWER: #{num1} * #{num2} = #{multiplnum2(num1,num2)}."
+			repeat
+		when "d"
+			puts "DIVIDE: Enter first integer"
+			num1 = input_to_i
+			puts "Enter second integer to divide"
+			num2 = input_to_i
+			puts "ANSWER: #{num1} / #{num2} = #{divide(num1,num2)}."
+			repeat
+		else
+			puts "Please enter a valid letter."
+		end
 end
 
 # ADVANCED CALCULATION CHOICE
