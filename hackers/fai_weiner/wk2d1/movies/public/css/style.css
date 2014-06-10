@@ -1,8 +1,8 @@
 body {
-  background-color: #66a2a2;
+  background-color: black;
   font-family: arial;
   max-width: 400px;
-  border: solid black 2px;
+  border: solid white 1px;
   border-radius: 20px;
   margin: 10px auto;
   padding: 10px;
@@ -11,6 +11,7 @@ body {
 
 h1 {
   color: blue;
+  text-transform: uppercase;
 }
 
 nav {
