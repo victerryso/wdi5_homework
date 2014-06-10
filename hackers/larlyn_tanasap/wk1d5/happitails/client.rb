@@ -1,6 +1,6 @@
 class Client
    attr_accessor :name, :kids, :age, :client_pets, :username
-   def initialize(username ,name, kids, age)
+   def initialize(username, name, kids, age)
       @username = username
       @name = name
       @kids = kids
@@ -19,6 +19,4 @@ class Client
 
 end
 
-
-# add a password
 

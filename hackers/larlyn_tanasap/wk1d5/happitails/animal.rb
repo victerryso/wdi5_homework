@@ -1,6 +1,6 @@
 class Animal
    attr_accessor :species, :name, :age, :gender, :toys
-   def initialize(species,name,age,gender)
+   def initialize(species, name, age, gender)
       @species = species
       @name = name
       @age = age
@@ -11,7 +11,9 @@ class Animal
    def to_s
       puts "#{name} is a #{ age } year old #{ gender.to_s } #{ species.to_s }."
       unless toys.empty?
-         puts "\t#{name} has the toys: #{ toys.join ", "}."
+         puts "\t#{name} has these toys: #{ toys.join ", "}."
       end
+      puts
    end
+
 end
