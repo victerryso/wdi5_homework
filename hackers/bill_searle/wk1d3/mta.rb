@@ -5,42 +5,42 @@
 require 'pry'
 require 'pry-debugger'
 # define the lines in a hash with stations in an array.
-stations = {
-  :n => ['times square', '34th', '28th', '23rd', 'unionsquare', '8th'],
-  :l => ['8th', '6th', 'unionsquare', '3rd','1st'],
-  :six => ['grand central', '33rd', '28th', '23rd', 'unionsquare','astor place']
+lines = {
+  'n' => ['times square', '34th', '28th', '23rd', 'unionsquare', '8th'],
+  'l' => ['8th', '6th', 'unionsquare', '3rd','1st'],
+  '6' => ['grand central', '33rd', '28th', '23rd', 'unionsquare','astor place']
 }
 
-# get user input for starting point and end point.
-# starting point
-print "Which line are you starting on, 'n', 'l' or 'six'? "
+puts "The N line stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th on N."
+puts "The L line stops: 8th on L, 6th, Union Square, 3rd, and 1st."
+puts "The 6 line stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place."
+
+print "Which line are you starting at? "
 start_line = gets.chomp.downcase
-# stops prints out the choice of stops per line
-stops = stations[ start_line.to_sym ]
-stops.each do |stop|
-puts "Please select which station: #{stop}"
-end
+print "Which stop will you get on? "
 start_station = gets.chomp.downcase
-
-puts "You are starting from #{start_line} #{start_station}."
-
-# end point
-print "Which line are you ending on, 'n', 'l' or 'six'? "
+print "Which line are you getting off? "
 end_line = gets.chomp.downcase
-# stops prints out the choice of stops per line
-stops = stations[ end_line.to_sym ]
-stops.each do |stop|
-puts "Please select which station: #{stop}"
+print "Which stop are getting off at? "
+end_station = gets.chomp.downcase
+
+
+start_station = lines[start_line].index start_station # get the index number of the start stop
+end_station = lines[end_line].index end_station # get the index number of the last stop
+
+if start_line == end_line && start_station < end_station
+  trip = lines[start_line][start_station..end_station] # find the range between the index's on the specified line
+  puts "You are getting on at line #{start_line.upcase} stop #{start_station} and getting off at line #{end_line.upcase} stop #{end_station}."
+  puts "You will pass though #{trip.join(', ')} stations and the total stops is: #{trip.length}."
+
+  else start_line == end_line
+  trip = lines[start_line][end_station..start_station] # find the range between the index's on the specified line
+  puts "You are getting on at line #{start_line.upcase} stop #{start_station} and getting off at line #{end_line.upcase} stop #{end_station}."
+  puts "You will pass though #{trip.join(', ')} stations and the total stops is: #{trip.length}."
+
 end
-end_station = gets.chomp.downcase.to_s
 
-puts "You are ending at #{start_line} #{start_station}."
-
-# binding.pry
-
-trip_1 = stations.value[0].index start_station
-p trip_1
-
+# trip_2 = []
 
 
 
@@ -81,7 +81,7 @@ p trip_1
 
  # look up the length of the start_line
 
-station_count = ""
+# station_count = ""
 
 # puts "Starting at #{start_line} #{start_station} and ending at #{end_line} #{end_station}."
 
