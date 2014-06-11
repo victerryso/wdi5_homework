@@ -1,0 +1,10 @@
+<form action="/fetch" method="get">
+  <input type="text" name="Title" placeholder="Title">
+  <button>Get movie poster</button>
+</form>
+
+<% if @title != nil %>
+<p>
+  <%= @movie["Title"] %> poster: <img src="<%= @poster %>"/>.
+</p>
+<% end %>
