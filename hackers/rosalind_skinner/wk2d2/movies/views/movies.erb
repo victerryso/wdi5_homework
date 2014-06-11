@@ -1,0 +1,10 @@
+<form action= "/" method = "get">
+  <input name = "title" placeholder = "Movie Title">
+
+  <button>Find Movie!</button>
+</form>
+
+<% if @title %>
+<h2><%= @movie['Title'] %>, <em>(<%= @movie['Year'] %>)</em></h2>
+<img src="<%= @movie['Poster'] %>" alt="<%=@title%>">
+<% end %>
