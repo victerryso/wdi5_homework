@@ -1,0 +1,22 @@
+Prompt for:
+
+1. add a building - list
+2. add apartment - list
+3. add a tenant - list
+
+Ive inherited thi apartment in the upper east side
+
+Ive been evicted show me the apartments in harlem
+
+What do you want to do?
+1. Find an aparment
+2. List the apartments that fullfil critera - unoccupied
+   a. list sorted by critera - price, rooms
+3. Lease an apartment
+4. List occupied apartments
+5. Move a tenant in
+6. Move a tenant out
+
+
+
+a [ a.length ] << "new thing"

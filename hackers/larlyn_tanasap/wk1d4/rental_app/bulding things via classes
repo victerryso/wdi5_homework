@@ -1,0 +1,26 @@
+bulding things via classes
+
+
+building class
+
+
+Building
+   address - "string"
+   style - :symbol / symbol
+   has_doorman  - boolean
+   elevator - boolean
+   apartments - []
+
+
+
+apartments
+   price - float/decimal
+   sqft - int
+   num_beds - int
+   num_bathrooms - int
+   renters - []
+
+renters
+   name - "string"
+   age - int
+   gender - :symbol
