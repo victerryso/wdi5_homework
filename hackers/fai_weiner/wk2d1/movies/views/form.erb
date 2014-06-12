@@ -5,6 +5,6 @@
 
 <% if @title != nil %>
 <p>
-  <%= @movie["Title"] %> poster: <img src="<%= @poster %>"/>.
+  <strong><%= @movie["Title"] %> (<%= @movie["Year"]%>)</strong> <img src="<%= @poster %>"/>.
 </p>
 <% end %>
