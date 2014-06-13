@@ -1,0 +1,19 @@
+<section class="search">
+  <form action= "/" method = "get">
+    <input name = "title" placeholder = "Movie Title">
+
+    <button>Find Movie!</button>
+  </form>
+</section>
+
+<% if @movie %>
+<section class="results">
+<h2><%= @movie['Title']%></h2>
+  <img src="<%= @movie['Poster']%>">
+  <div class="text">
+    <p><strong>Year: </strong><%= @movie['Year']%></p>
+    <p><strong>Actors: </strong><%= @movie['Actors']%></p>
+    <p><strong>Plot: </strong><%= @movie['Plot']%></p>
+  </div>
+</section>
+<% end %>
