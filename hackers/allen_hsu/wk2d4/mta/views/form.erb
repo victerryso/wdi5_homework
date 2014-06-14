@@ -16,10 +16,16 @@
     <button>Submit!</button>
   </form>
 </div>
-<% if @stops %>
+<% if @stops %>e
   <div id="journey">
     <% @stops.each do |stop| %>
-      <div><p><%=stop %></p></div>
+      <div class="line <%=find_line(stop, $Lines) unless stop == @stops[-1] %>">
+        <div class="station_name">
+          <div class="station_text">
+            <%=stop.to_s.gsub("_"," ") %>
+          </div>
+        </div>
+      </div>
     <% end %>
   </div>
 <% end %>
