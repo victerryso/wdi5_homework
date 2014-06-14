@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MTA Trip Planner</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <h1> MTA Trip Planner</h1>
+    <form action="/" method="get">
+        <label for="stop_on">Where are you getting on?</label>
+        <select id="stop_on" name="stop_on">
+        <option value="<%= "" %>"><%= "" %></option>
+          <% @lines.each_value do |single_line| %>
+              <% single_line.uniq.each do |stop| %>
+              <option value="<%= stop %>"><%= stop %></option>
+              <% end %>
+          <% end %>
+        </select>
+        <label for="stop_off">Where are you getting off?</label>
+        <select id="stop_off" name="stop_off">
+
+          <option value="<%= "" %>"><%= "" %></option>
+          <% @lines.each_value do |single_line| %>
+              <% single_line.uniq.each do |stop| %>
+              <option value="<%= stop %>"><%= stop %></option>
+              <% end %>
+          <% end %>
+        </select>
+
+        <button type="submit">Plan my trip!</button>
+    </form>
+    <p>
+      <%= yield %>
+    </p>
+</body>
+</html>

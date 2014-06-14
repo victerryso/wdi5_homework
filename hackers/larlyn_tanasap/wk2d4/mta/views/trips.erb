@@ -1,0 +1,13 @@
+<% if params[:stop_on] == "" || params[:stop_off] == "" %>
+  Please choose a starting and ending station.
+<% elsif params[:stop_on].nil? && params[:stop_off].nil? %>
+  Plan your journey with us today!
+<% elsif params[:stop_on] == params[:stop_off] %>
+  Please choose different stations.
+<% end %>
+
+<% unless @stops_passed.nil? || @stops_passed.empty? %>
+  <% @stops_passed.each do |stop| %>
+    <%= stop %>
+  <% end %>
+<% end %>
