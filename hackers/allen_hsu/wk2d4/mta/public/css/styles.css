@@ -1,0 +1,93 @@
+body {
+  color: white;
+  background: black;
+  font-family: arial;
+}
+
+#container {
+  font-size: 1.5em;
+}
+
+#input {
+  width:15%;
+  background: grey;
+  padding: 20px;
+  vertical-align: top;
+  height:100%;
+  margin-right: 10px;
+  position: fixed;
+  display: inline-block;
+}
+
+label {
+  font-size: 2em;
+}
+select {
+  font-size: .8em;
+  width: 100%;
+}
+
+img {
+  border: 1px solid grey;
+  z-index: 0;
+}
+h1 {
+  max-width: 500px;
+  font-size: 4em;
+  padding: 0;
+  line-height: 0;
+}
+
+nav {
+  padding-bottom: 30px;
+}
+
+nav a {
+  color: white;
+  font-size: 1em;
+}
+
+input, button {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+}
+
+#journey {
+  width: 7em;
+  margin-left: 17em;
+  height: 5em;
+  background: grey;
+  height: 100%;
+  text-align: center;
+  border-radius: 7em;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+
+#journey div {
+  display: flex;
+  width: 5em;
+  height: 5em;
+  border-radius: 10em;
+  background: white;
+  text-align: center;
+  color: black;
+  margin: 1.5em auto 1.5em auto;
+  flex: 1;
+  flex-direction: column;
+}
+
+#journey div p {
+  vertical-align: middle;
+  line-height: 5em;
+  flex:1;
+
+}
+#journey div div {
+}

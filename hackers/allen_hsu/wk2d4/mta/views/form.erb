@@ -1,0 +1,26 @@
+  <form action="/" method="get">
+    <label for="startstation">Start Station
+      <select name="start-station" id="start-station" >
+        <% $Lines.values.flatten.uniq.each do |station| %>
+          <option value="<%= station %>" <%= "selected" if station == @start %>><%= station %></option>
+        <% end %>
+      </select>
+    </label>
+    <label for="stopstation">Stop Station
+      <select name="stop-station" id="stop-station">
+        <% $Lines.values.flatten.uniq.each do |station| %>
+          <option value="<%= station %>" <%= "selected" if station == @stop %>><%= station %></option>
+        <% end %>
+      </select>
+    </label>
+    <button>Submit!</button>
+  </form>
+</div>
+<% if @stops %>
+  <div id="journey">
+    <% @stops.each do |stop| %>
+      <div><p><%=stop %></p></div>
+    <% end %>
+  </div>
+<% end %>
+
