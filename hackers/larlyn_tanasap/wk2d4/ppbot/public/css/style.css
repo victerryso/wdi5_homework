@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+body {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div#container {
+  max-width: 960px;
+  margin: auto;
+}
+
+div#container h1 {
+  font-size: 4em;
+  line-height: 1em;
+  margin: 2em auto;
+}
+
+div#container a {
+  font-size: 2.5em;
+  text-decoration: none;
+  padding: .5em 1em;
+  color: #fff;
+  margin: 0 .3em;
+  font-weight: bold;
+  border-radius: 2em;
+  box-shadow: 5px 5px 0px #888888;
+}
+
+div#container a:hover {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: 0 0 0 0 #fff;
+}
+
+div#container a:active {
+  color: #444;
+}
+
+div#container .yes {
+  background: rgba(20,230,50,1)
+}
+
+div#container .no {
+  background: rgba(230,0,0,1)
+}
+
+div#container .done {
+  background: rgba(0,0,255,1)
+}
+
+div p {
+  padding: 1em;
+  font-size: 2em;
+}

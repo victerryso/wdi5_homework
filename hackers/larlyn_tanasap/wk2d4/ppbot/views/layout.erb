@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pair programming bot</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <%= yield %>
+    <% t = Time.new %>
+    <p>It's currently <%= t.hour %>:<%= t.min %></p>
+  </div>
+</body>
+</html>
