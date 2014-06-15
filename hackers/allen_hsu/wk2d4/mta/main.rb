@@ -28,12 +28,11 @@ end
 #stops list returns [stops] or [stops, common]
 def stops_list_1st(hash, start_station, end_station)
   stops =[]
-  common = find_common(hash[start_station[:line]], hash[end_station[:line]])
+  common = find_common(hash,start_station,end_station)
   start_index = hash[start_station[:line]].index(start_station[:station])
   start_common_index = hash[start_station[:line]].index(common[-1])
   end_index = hash[end_station[:line]].index(end_station[:station])
   end_common_index = hash[end_station[:line]].index(common[-1])
-  binding.pry
   #check for station on the same line - replaces comparing :line attribute
   if hash.select{|key, stations|stations.include?(start_station[:station])&&stations.include?(end_station[:station])}
     end_index = hash[start_station[:line]].index(end_station[:station])
@@ -50,13 +49,45 @@ def stops_list_multi(hash, start_station, end_station)
   visited_common_stations = {
     1 => start_station
   }
-  dead_ends = {}
-  while !visited_common_stations.values.select{|line_station|line_station.values.include?(end_station[:Line])}
+  dead_ends = []
+  running = true
+  while running
+    last_visited = visited_common_stations[visited_common_stations.keys.max]
+    tracker = 0
+    hash.each do |line, stations|
+      if line != last_visited[:line]
+        temp = find_common(hash, last_visited, {:line => line})
+        temp_to_array_hash = temp.inject([]) {|array, station| array << {:line =>line, :station =>station}}
+        temp_to_array_hash -= visited_common_stations.values + dead_ends
+        unless temp_to_array_hash.empty?
+          visited_common_stations[visited_common_stations.keys.max+1] = temp_to_array_hash[0]
+          tracker += 1
+          break
+        else
+          next
+        end
+      else
+        next
+      end
+    end
+    if tracker == 0
+      dead_ends << visited_common_stations.delete(visited_common_stations.keys.max)
+    end
+    last_visited = visited_common_stations[visited_common_stations.keys.max]
+    (running = false) if (last_visited[:line] == end_station[:line])
   end
+  stops = []
+  visited_common_stations[visited_common_stations.keys.max+1] = end_station
+
+  (1...visited_common_stations.keys.length).to_a.each do |key|
+    stops += stops_list_1st(hash, visited_common_stations[key], visited_common_stations[key+1])
+
+  end
+  stops
 end
 
-def find_common(first_line, second_line)
-  first_line&second_line
+def find_common(hash, first, second)
+  hash[first[:line]]&hash[second[:line]]
 end
 
 def find_line(station, hash)

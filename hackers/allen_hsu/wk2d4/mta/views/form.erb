@@ -19,11 +19,11 @@
 <% if @stops %>e
   <div id="journey">
     <% @stops.each do |stop| %>
-      <div class="line <%=find_line(stop, $Lines) unless stop == @stops[-1] %>">
+      <div class="line <%=find_line(stop, $Lines) unless stop == @stops[0] %>">
         <div class="station_name">
-          <div class="station_text">
+          <p class="station_text">
             <%=stop.to_s.gsub("_"," ") %>
-          </div>
+          </p>
         </div>
       </div>
     <% end %>
