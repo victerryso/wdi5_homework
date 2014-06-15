@@ -25,36 +25,30 @@ params.inspect
   @intersect1 = $lines[@start_line].index 'us'
   @intersect2 = $lines[@end_line].index 'us'
 
-
-  if @start_line == @end_line && @start_station < @end_station
+  case
+  when
+     @start_line == @end_line && @start_station < @end_station
      @trip = $lines[@start_line][@start_station..@end_station] # find the range between the index's on the specified line
-     @trip_stations = @trip
      @trip_length = @trip.length
-     # @trip_length = @trip.length
-     # @trip_join = @trip.join(' ')
-  else
+     @trip_stations = @trip.join(', ')
+  when
      @start_line == @end_line
      @trip = $lines[@start_line][@end_station..@start_station] # find the range between the index's on the specified line
-     # @trip_length = @trip.length
-     # @trip_join = @trip.join(' ')
+     @trip_length = @trip.length
+     @trip_stations = @trip.join(', ')
+  when
+    @start_line != @end_line && @start_station < @intersect1
+    @trip1 = $lines[@start_line][@start_station..@intersect1]
+    @trip2 = $lines[@end_line][@intersect2..@end_station]
+    @trip_length = @trip1.length + @trip2.length
+    @trip_stations = @trip1.join(', ') + @trip2.join(', ')
+  when
+    @start_line != @end_line
+    @trip1 = $lines[@start_line][@intersect1..@start_station]
+    @trip2 = $lines[@end_line][@end_station..@intersect2]
+    @trip_length = @trip1.length + @trip2.length
+    @trip_stations = @trip1.zip(@trip2).flatten.compact.join(', ')
   end
-
-# below section 'works' the same as above but counts to union square and from union square.
-# then adds the two trip lengths together in to @trip.
-# trip_length and trip_join were a test because it was erroring in results.rb
-
-  # if @start_line != @end_line && @start_station < @intersect1
-  #   @trip1 = $lines[@start_line][@start_station..@intersect1]
-  #   @trip2 = $lines[@end_line][@intersect2..@end_station]
-  #   @trip = @trip1.length + @trip2.length
-  #   # @trip_length = @trip.length
-  #   # @trip_join = @trip.join(', ')
-  # else
-  #   @start_line != @end_line
-  #   @trip1 = $lines[@start_line][@intersect1..@start_station]
-  #   @trip2 = $lines[@end_line][@end_station..@intersect2]
-  #   @trip = @trip1.length + @trip2.length
-  # end
   binding.pry
   erb :results
 end
