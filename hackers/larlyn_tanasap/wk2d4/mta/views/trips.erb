@@ -1,13 +1,33 @@
+ <h2>
 <% if params[:stop_on] == "" || params[:stop_off] == "" %>
   Please choose a starting and ending station.
 <% elsif params[:stop_on].nil? && params[:stop_off].nil? %>
-  Plan your journey with us today!
+ Plan your journey with us today!
 <% elsif params[:stop_on] == params[:stop_off] %>
   Please choose different stations.
 <% end %>
+</h2>
 
 <% unless @stops_passed.nil? || @stops_passed.empty? %>
+  <p>
+  From <span class="stopinfo"><%= params[:stop_on] %></span> on the <span class="stopinfo"><%= @line_on %> line</span>  to <span class="stopinfo"><%= params[:stop_off] %></span>  on the <span class="stopinfo"><%= @line_off %> line</span>.
+  </p><p>
+  You will get on at <%= @stops_passed.first %> and get off <%= @stops_passed.length - 1 %> stops later.
+  </p>
   <% @stops_passed.each do |stop| %>
+    <% unless stop == @stops_passed.last %>
+      <div class="tripline"></div>
+    <% end %>
+    <div class="station">
+    </div>
+    <div class="stationtext">
     <%= stop %>
+    <br>
+    <em><%= "Switch here!" if stop == @intersect %></em>
+    </div>
+    <br>
   <% end %>
+
+  <h2>Thankyou for using MTA Trip Planner!</h2>
+  <!-- <div class="arrow">^</div> -->
 <% end %>
