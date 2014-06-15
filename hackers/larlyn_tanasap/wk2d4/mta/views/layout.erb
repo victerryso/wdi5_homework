@@ -11,44 +11,43 @@
 <body>
     <div id="station_input">
 
-    <h1> MTA Trip Planner</h1>
+      <h1><a href="/">MTA Trip Planner</a></h1>
 
-    <form action="/" method="get">
+      <form action="/" method="get">
 
-      <fieldset>
-        <label for="stop_on">I'm starting my trip at:
-          <select id="stop_on" name="stop_on">
+        <fieldset>
+          <label for="stop_on">I'm starting my trip at:
+            <select id="stop_on" name="stop_on">
 
-            <option value="<%= "" %>"><%= "" %></option>
-            <% $all_stops.uniq.each do |stop| %>
-                <option value="<%= stop %>"><%= stop %></option>
-            <% end %>
+              <option value="<%= "" %>"><%= "" %></option>
+              <% $all_stops.uniq.each do |stop| %>
+                  <option value="<%= stop %>"><%= stop %></option>
+              <% end %>
 
-          </select>
-        </label>
-        <br>
-        <label for="stop_off">I'm getting off at:
-          <select id="stop_off" name="stop_off">
+            </select>
+          </label>
+          <br>
+          <label for="stop_off">I'm getting off at:
+            <select id="stop_off" name="stop_off">
 
-            <option value="<%= "" %>"><%= "" %></option>
-            <% $all_stops.uniq.each do |stop| %>
-                <option value="<%= stop %>"><%= stop %></option>
-            <% end %>
+              <option value="<%= "" %>"><%= "" %></option>
+              <% $all_stops.uniq.each do |stop| %>
+                  <option value="<%= stop %>"><%= stop %></option>
+              <% end %>
 
-          </select>
-        </label>
-        </fieldset>
+            </select>
+          </label>
+          </fieldset>
 
-      <button type="submit">Plan my trip!</button>
+        <button type="submit">Plan my trip!</button>
 
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <div id="results">
-      <div id="tripplan">
-        <%= yield %>
-      </div>
-  </div>
-
+    <div id="results">
+        <div id="tripplan">
+          <%= yield %>
+        </div>
+    </div>
 </body>
 </html>

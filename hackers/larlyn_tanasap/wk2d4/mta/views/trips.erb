@@ -12,7 +12,7 @@
   <p>
   From <span class="stopinfo"><%= params[:stop_on] %></span> on the <span class="stopinfo"><%= @line_on %> line</span>  to <span class="stopinfo"><%= params[:stop_off] %></span>  on the <span class="stopinfo"><%= @line_off %> line</span>.
   </p><p>
-  You will get on at <%= @stops_passed.first %> and get off <%= @stops_passed.length - 1 %> stops later.
+  You will get off <%= @stops_passed.length - 1 %> stop<%= "s" if @stops_passed.length > 2 %> after <span class="stopinfo"><%= @stops_passed.first %></span>.
   </p>
   <% @stops_passed.each do |stop| %>
     <% unless stop == @stops_passed.last %>
@@ -23,7 +23,7 @@
     <div class="stationtext">
     <%= stop %>
     <br>
-    <em><%= "Switch here!" if stop == @intersect %></em>
+    <em><%= "Switch here to the #{@line_off} Line!" if stop == @intersect %></em>
     </div>
     <br>
   <% end %>
