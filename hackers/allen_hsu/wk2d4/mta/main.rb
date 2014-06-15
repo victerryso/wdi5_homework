@@ -50,8 +50,7 @@ def stops_list_multi(hash, start_station, end_station)
     1 => start_station
   }
   dead_ends = []
-  running = true
-  while running
+  while visited_common_stations[visited_common_stations.keys.max][:line] != end_station[:line]
     last_visited = visited_common_stations[visited_common_stations.keys.max]
     tracker = 0
     hash.each do |line, stations|
@@ -73,15 +72,13 @@ def stops_list_multi(hash, start_station, end_station)
     if tracker == 0
       dead_ends << visited_common_stations.delete(visited_common_stations.keys.max)
     end
-    last_visited = visited_common_stations[visited_common_stations.keys.max]
-    (running = false) if (last_visited[:line] == end_station[:line])
   end
+
   stops = []
   visited_common_stations[visited_common_stations.keys.max+1] = end_station
-
   (1...visited_common_stations.keys.length).to_a.each do |key|
-    stops += stops_list_1st(hash, visited_common_stations[key], visited_common_stations[key+1])
-
+    section = stops_list_1st(hash, visited_common_stations[key], visited_common_stations[key+1])
+    stops += section if section.flatten.any?
   end
   stops
 end
@@ -111,7 +108,8 @@ get '/' do
       :line => find_line(@stop,$Lines),
       :station => @stop
     }
-    @stops = stops_list_multi($Lines, start_station, stop_station).flatten.uniq
+    @stops = stops_list_multi($Lines, start_station, stop_station)
+    binding.pry
   end
   erb :form
 end

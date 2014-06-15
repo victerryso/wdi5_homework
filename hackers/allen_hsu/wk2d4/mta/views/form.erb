@@ -16,17 +16,22 @@
     <button>Submit!</button>
   </form>
 </div>
-<% if @stops %>e
-  <div id="journey">
-    <% @stops.each do |stop| %>
-      <div class="line <%=find_line(stop, $Lines) unless stop == @stops[0] %>">
-        <div class="station_name">
-          <p class="station_text">
-            <%=stop.to_s.gsub("_"," ") %>
-          </p>
-        </div>
+<div id="plotter">
+  <% if @stops %>
+    <% @stops.each_with_index do |leg, index| %>
+      <div style="margin-left: <%=index*5 %>em" class="journey">
+      <p id="line-name"><%= find_line(leg[0], $Lines) %></p>
+        <% leg.each do |stop| %>
+          <div class="line <%= find_line(stop, $Lines) unless (stop == leg[-1])%>">
+            <div class="station_name">
+              <p class="station_text">
+                <%=stop.to_s.gsub("_"," ") %>
+              </p>
+            </div>
+          </div>
+        <% end %>
       </div>
     <% end %>
-  </div>
-<% end %>
+  <% end %>
+</div>
 
