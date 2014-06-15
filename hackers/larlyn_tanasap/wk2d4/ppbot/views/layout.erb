@@ -9,7 +9,7 @@
   <div id="container">
     <%= yield %>
     <% t = Time.new %>
-    <p>It's currently <%= t.hour %>:<%= t.min %></p>
+    <p>It's currently <%= t.hour %>:<%= "0" if t.min < 10 %><%= t.min %></p>
   </div>
 </body>
 </html>
