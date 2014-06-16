@@ -37,7 +37,7 @@ end_station = gets.chomp.downcase.to_s
 puts "You are ending at #{start_line} #{start_station}."
 
 # binding.pry
-
+puts
 trip_1 = stations.value[0].index start_station
 p trip_1
 

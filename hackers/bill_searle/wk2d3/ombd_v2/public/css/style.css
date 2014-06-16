@@ -1,0 +1,35 @@
+body{
+  background-color: #fafafa;
+  font-family: helvetica;
+  text-align: center;
+}
+h1{
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+h3{
+  font-size: 25px;
+  padding-top: 15px;
+  font-weight: 100;
+}
+button{
+  height: 30px;
+  width: 100px;
+  background-color: ;
+  border-radius: 5px
+}
+button:hover{
+cursor: pointer;
+}
+input{
+  height: 30px;
+  width: 150px;
+  background-color: ;
+  border-radius: 5px
+}
+img{
+  padding: 30px;
+  border-radius: 15px;
+}
