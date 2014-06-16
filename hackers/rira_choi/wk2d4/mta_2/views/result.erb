@@ -1,0 +1,16 @@
+<form action="/" method="get">
+<p>There are '<span>total <%= @total_stops.to_s %> stops</span>' on this route!</p>
+<div class ="result">
+
+  <div id="print">
+    <p> Your first trip on <strong><%= @start_line.split(//).first %></strong> line: <br/>
+        <span><em>  <%= @start_names %></em></span></p>
+    <p> Change at Union Square and, </p>
+    <p> Your second trip on <strong><%= @ending_line.split(//).first %></strong> line: <br/>
+        <span><em>  <%= @end_names%></em></span>
+  </div>
+  <img src = "http://i.imgur.com/9Yka0wL.png?1"/ id="smile"></a>
+</div>
+<p>Please, <a id= "click" href="/info" title="Map link">Click here</a>,  to check the map! </p>
+</p>
+</form>
