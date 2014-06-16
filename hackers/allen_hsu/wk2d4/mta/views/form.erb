@@ -1,0 +1,37 @@
+  <form action="/" method="get">
+    <label for="startstation">Start Station
+      <select name="start-station" id="start-station" >
+        <% $Lines.values.flatten.uniq.each do |station| %>
+          <option value="<%= station %>" <%= "selected" if station == @start %>><%= station %></option>
+        <% end %>
+      </select>
+    </label>
+    <label for="stopstation">Stop Station
+      <select name="stop-station" id="stop-station">
+        <% $Lines.values.flatten.uniq.each do |station| %>
+          <option value="<%= station %>" <%= "selected" if station == @stop %>><%= station %></option>
+        <% end %>
+      </select>
+    </label>
+    <button>Submit!</button>
+  </form>
+</div>
+<div id="plotter">
+  <% if @stops %>
+    <% @stops.each_with_index do |leg, index| %>
+      <div style="margin-left: <%=index*5 %>em" class="journey">
+      <p id="line-name"><%= find_line(leg[0], $Lines) %></p>
+        <% leg.each do |stop| %>
+          <div class="line <%= find_line(stop, $Lines) unless (stop == leg[-1])%>">
+            <div class="station_name">
+              <p class="station_text">
+                <%=stop.to_s.gsub("_"," ") %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+

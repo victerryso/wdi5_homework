@@ -49,7 +49,7 @@ def stops_on_journey (start_index, stop_index, line_and_station, hash)
   end
   stops
 end
-
+#stops list returns [stops] or [stops, common]
 def stops_list(hash, start_station, end_station)
   stops =[]
   common = hash[start_station[:line]] & hash[end_station[:line]]
@@ -88,6 +88,7 @@ def menu(hash)
 
       puts `clear`
       puts "Station Listing at #{journey[point][:line]} Line"
+      #check if starting is available and remove from list
       if !journey['starting'][:line].nil?
         journey[point][:station] = options_select(temp = hash[journey[point][:line]].dup.delete_if{|x| x == journey['starting'][:station]})
       else
