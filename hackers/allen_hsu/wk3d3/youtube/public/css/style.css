@@ -1,0 +1,22 @@
+body {
+  background-color: #d5d5d5;
+  color: black;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 960px;
+  margin:auto;
+}
+
+nav li {
+  display: inline;
+}
+
+.butterfly img {
+  max-width:10em;
+}
+
+.full {
+  max-width: 960px;
+}

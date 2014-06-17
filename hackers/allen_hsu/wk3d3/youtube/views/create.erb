@@ -1,0 +1,19 @@
+<form action="/videos" method="post" >
+  <label for="title">Title<input type="text" name="title" id="title" value="<%= @title %>"></label>
+  <label for="url">Url<input type="text" name="url" id="url" value="<%= @url %>"></label>
+  <label for="genre">Genre
+    <select name="genre" id="genre">
+      <% %w(HandshakeFails ShaqtinAFool).each do |genre| %>
+      <option><%= genre %></option>
+    <% end %>
+  </label>
+  <label for="description"><textarea name="description"></textarea></label>
+  <input type="submit">
+</form>
+
+<form action="/videos/search" method="get">
+  <label for="search_term">Search for video
+    <input type="text" name="search_term">
+    <input type="submit">
+  </label>
+</form>

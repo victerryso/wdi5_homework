@@ -1,0 +1,16 @@
+<form action="/videos/genre" method="get">
+  <select name="genre" id="genre">
+    <% %w(HandshakeFails ShaqtinAFool).each do |genre| %>
+        <option><%= genre %></option>
+      <% end %>
+  </select>
+  <input type="submit">
+</form>
+
+<% @videos.each do |video| %>
+  <div class= "video">
+    <h3><a href="/videos/<%= video['id']%>"><%= video["title"] %></a></h3>
+    <iframe width="560" height="315" src="<%= video['url'] %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+<% end %>
+<!-- .match(/(?<=v\=).*/).to_s 'https://www.youtube.com/embed/' + -->
