@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  color: #57575C;
+}
+
+.container {
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  position:relative;
+
+}
+
+header{
+  background:#FFF;
+  border-bottom:1px solid #ccc;
+}
+
+.results {
+  width:100%;
+  margin: 0 auto;
+  padding: 25px 50px;
+  box-sizing:border-box;
+  display:inline-block;
+  text-align: center
+}
+
+.text {
+  display: inline-block;
+  width:150px;
+  height:150px;
+  vertical-align: top;
+  padding: 10px;
+  padding-left: 50px;
+  background-color: #EF504F;
+  background:-webkit-linear-gradient( 90deg, #EF504F, #F06A6A );
+  border-radius: 0 100% 100% 100%;
+  border:1px solid #EF504F;
+  box-sizing:border-box;
+  color:#FFF;
+}
+.bottom {
+  position: absolute;
+  right:0;
+  bottom:0;
+  width:100px;
+  height:100px;
+  border-radius: 100% 100% 0 100%;
+  padding:10px;
+  padding-top:40px;
+  text-align: center;
+}
+
+.text h2 {
+  padding-top: 30px;
+}
+
+header h1 {
+  font-family: inherit;
+  font-weight:300;
+  font-size: 40px;
+  color:#57575C;
+  width:auto;
+  padding-left:50px;
+}
+
+h2 {
+  font-family: inherit;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: inherit;
+  font-weight: 300;
+}
+
+strong {
+  font-weight:400;
+}
+nav {
+  text-align: right;
+}
+
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color:#EF504F;
+}
+
+
+.results p {
+  line-height: 1em;
+}
+
+/*Search Input*/
+form {
+  margin:0 auto;
+  text-align:center;
+}
+
+button {
+  background-color: #EF504F;
+  background:-webkit-linear-gradient( 90deg, #EF504F, #F06A6A );
+  border:1px solid #EF504F;
+  padding:10px;
+  font-family: inherit;
+  font-weight:100;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 5px;
+  display:block;
+  margin: 0 auto;
+  width:380px;
+}
+
+
+button:hover{
+  background:-webkit-linear-gradient( 90deg, #F06A6A ,#EF504F);
+}
+
+label {
+  display:inline-block;
+  margin:40px;
+  margin-top: 0;
+}
+
+select {
+  background-color: #FFF;
+  border:1px solid #ccc;
+}
