@@ -31,15 +31,16 @@ def train_journey(stop_on,stop_off,line_on,line_off)
 end
 
 def find_line(stop_given)
-  $lines.select {|line, stop| stop.include? stop_given }.keys.join
+  $lines.select {|line, stop| stop.include? stop_given }.keys
 end
 
 get '/' do
   if params[:stop_on] != "" && params[:stop_off] != "" && params[:stop_on] != params[:stop_off]
     @line_on = find_line( params[:stop_on] )
     @line_off = find_line( params[:stop_off] )
-
-    train_journey(params[:stop_on], params[:stop_off], @line_on, @line_off)
+    @line_on = @line_off if @line_on.length > 1
+    @line_off = @line_on if @line_off.length > 1
+    train_journey(params[:stop_on], params[:stop_off], @line_on.join, @line_off.join)
   end
   erb :trips
 end

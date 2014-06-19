@@ -14,11 +14,6 @@ html {
   background: #111;
   margin: 0;
   overflow: auto;
-  -ms-overflow-style: none;
-}
-
-html::-webkit-scrollbar {
-  width: 0 !important
 }
 
 body {
@@ -31,7 +26,6 @@ body {
   font-size: 1.4em;
   font-weight: 300;
   overflow: auto;
-  /*letter-spacing: 0.0525em;*/
 }
 
 a {
