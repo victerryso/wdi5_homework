@@ -1,0 +1,21 @@
+
+<% if (@search != nil && @results.length == 1) %>
+    <div id="box">
+      <h1>Movie posters</h1>
+        <p>
+
+        <% @results['Search'].uniq.each do |movie| %>
+        <a href="/movie?id=<%= movie["imdbID"] %>" title="<%= movie['Title'] %>"><%= "#{ movie['Title'] } (#{movie['Year']})" %></a>
+        <br>
+        <% end %>
+
+        </p>
+    </div>
+<% elsif (@search != nil) %>
+    <h1>Movie posters</h1>
+    <h2>Find a movie, get the info.</h2>
+  <p>We didn't find a move by that name! Please try again.</p>
+<% else %>
+<h1>Movie posters</h1>
+  <h2>Find a movie, get the info.</h2>
+<% end %>
