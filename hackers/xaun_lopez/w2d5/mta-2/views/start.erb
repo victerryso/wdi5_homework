@@ -32,7 +32,6 @@
             <% stations.each do |station| %>
 
               <% params[:stop_station] ? stop_station = params[:stop_station].split(' : ')[0] : stop_station = station %>
-
               <option value="<%= station %> : <%= line.capitalize %>" <%= "selected" if station == stop_station %>><%= station %></option>
             <% end %>
           </optgroup>
@@ -45,8 +44,22 @@
   </form>
 
   <div id="trip">
-    <p>
-      Your trip is <%= @trip %> stations away.
-    </p>
+      <% if @trip == 0 %>
+        <p>
+          Um.. You want to travel to where you already are?
+        </p>
+      <% end %>
+      <% if @trip.to_i < 0 || @trip.to_i > 0 %>
+        <p>
+          Your trip is <%= @trip %> stations away.
+        </p>
+      <%end %>
   </div>
 </div>
+
+
+
+
+
+
+
