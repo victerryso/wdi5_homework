@@ -1,0 +1,12 @@
+body {
+  background: url("http://i.imgur.com/cSGLl7z.jpg");
+}
+
+nav li {
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

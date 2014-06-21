@@ -1,0 +1,50 @@
+[1] pry(main)> require "httparty"
+=> true
+
+[2] pry(main)> @title = "Manhattan" # params[:title]
+=> "Manhattan"
+
+[3] pry(main)> url = "http://omdbapi.net/?t=#{ @title }"
+=> "http://omdbapi.net/?t=Manhattan"
+
+[4] pry(main)> response = HTTParty.get(url)
+=> "{\"Title\":\"Manhattan\",\"Year\":\"1979\",\"Rated\":\"R\",\"Released\":\"25 Apr 1979\",\"Runtime\":\"96 min\",\"Genre\":\"Comedy, Drama, Romance\",\"Director\":\"Woody Allen\",\"Writer\":\"Woody Allen, Marshall Brickman\",\"Actors\":\"Woody Allen, Diane Keaton, Michael Murphy, Mariel Hemingway\",\"Plot\":\"The life of a divorced television writer dating a teenage girl is further complicated when he falls in love with his best friend's mistress.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Nominated for 2 Oscars. Another 19 wins & 14 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMjI4MDIyNjcxMl5BMl5BanBnXkFtZTcwNjA4OTYwNA@@._V1_SX300.jpg\",\"Metascore\":\"82\",\"imdbRating\":\"8.0\",\"imdbVotes\":\"84,753\",\"imdbID\":\"tt0079522\",\"Type\":\"movie\",\"Response\":\"True\"}"
+
+[5] pry(main)> @movie = JSON.parse response
+=> {"Title"=>"Manhattan",
+ "Year"=>"1979",
+ "Rated"=>"R",
+ "Released"=>"25 Apr 1979",
+ "Runtime"=>"96 min",
+ "Genre"=>"Comedy, Drama, Romance",
+ "Director"=>"Woody Allen",
+ "Writer"=>"Woody Allen, Marshall Brickman",
+ "Actors"=>"Woody Allen, Diane Keaton, Michael Murphy, Mariel Hemingway",
+ "Plot"=>
+  "The life of a divorced television writer dating a teenage girl is further complicated when he falls in love with his best friend's mistress.",
+ "Language"=>"English",
+ "Country"=>"USA",
+ "Awards"=>"Nominated for 2 Oscars. Another 19 wins & 14 nominations.",
+ "Poster"=>
+  "http://ia.media-imdb.com/images/M/MV5BMjI4MDIyNjcxMl5BMl5BanBnXkFtZTcwNjA4OTYwNA@@._V1_SX300.jpg",
+ "Metascore"=>"82",
+ "imdbRating"=>"8.0",
+ "imdbVotes"=>"84,753",
+ "imdbID"=>"tt0079522",
+ "Type"=>"movie",
+ "Response"=>"True"}
+
+[6] pry(main)> @movie["Actors"]
+=> "Woody Allen, Diane Keaton, Michael Murphy, Mariel Hemingway"
+
+[7] pry(main)> @movie["Poster"]
+=> "http://ia.media-imdb.com/images/M/MV5BMjI4MDIyNjcxMl5BMl5BanBnXkFtZTcwNjA4OTYwNA@@._V1_SX300.jpg"
+
+[8] pry(main)> @movie["Title"]
+=> "Manhattan"
+
+Homework
+  - Making ruby working
+  - With space in title
+  - Posters <img>
+  - Read Sinatra(Readme)

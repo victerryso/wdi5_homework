@@ -1,0 +1,200 @@
+D, [2014-06-19T11:00:37.713357 #10024] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T11:00:37.715805 #10024] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("imdb") VALUES (?)  [["imdb", "favicon.ico"]]
+D, [2014-06-19T11:00:37.724992 #10024] DEBUG -- :   [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T11:00:41.792682 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:00:41.793724 #10024] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("imdb") VALUES (?)[0m  [["imdb", "favicon.ico"]]
+D, [2014-06-19T11:00:41.804198 #10024] DEBUG -- :   [1m[35m (10.2ms)[0m  commit transaction
+D, [2014-06-19T11:00:43.124628 #10024] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T11:00:43.129282 #10024] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)  [["actors", "Tom Hanks, Tim Allen, Don Rickles, Jim Varney"], ["imdb", "tt0114709"], ["poster", "http://ia.media-imdb.com/images/M/MV5BMTgwMjI4MzU5N15BMl5BanBnXkFtZTcwMTMyNTk3OA@@._V1_SX300.jpg"], ["title", "Toy Story"], ["year", 1995]]
+D, [2014-06-19T11:00:43.130573 #10024] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T11:00:43.645681 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:00:43.646959 #10024] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("imdb") VALUES (?)[0m  [["imdb", "favicon.ico"]]
+D, [2014-06-19T11:00:43.656328 #10024] DEBUG -- :   [1m[35m (9.0ms)[0m  commit transaction
+D, [2014-06-19T11:01:06.586515 #10024] DEBUG -- :   [1m[36mMovie Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:01:06.587345 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:01:07.847045 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:01:07.847828 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:01:09.538320 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0114709' LIMIT 1[0m
+D, [2014-06-19T11:01:09.539209 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'
+D, [2014-06-19T11:01:10.011776 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:01:10.012238 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:02:17.427279 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:02:17.791347 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:15.331842 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:03:15.465749 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:23.515305 #10024] DEBUG -- :   [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:03:23.641564 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:25.072041 #10024] DEBUG -- :   [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:03:25.200129 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:25.298570 #10024] DEBUG -- :   [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:03:25.439333 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:25.470985 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:03:25.526727 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:03:37.922882 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'[0m
+D, [2014-06-19T11:03:40.286001 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:06.258219 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'[0m
+D, [2014-06-19T11:04:06.327089 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:36.266038 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0114709' LIMIT 1[0m
+D, [2014-06-19T11:04:36.267379 #10024] DEBUG -- :   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0114709'
+D, [2014-06-19T11:04:36.707383 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:36.708107 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:37.815357 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:37.816021 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:38.369995 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:38.371089 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:39.288987 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:39.290032 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:40.506904 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt1623789' LIMIT 1[0m
+D, [2014-06-19T11:04:41.497804 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:04:41.498766 #10024] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Jack Angel, Ned Beatty, Charlie Bright, Blake Clark"], ["imdb", "tt1623789"], ["poster", "N/A"], ["title", "Toy Story 3: The Video Game"], ["year", 2010]]
+D, [2014-06-19T11:04:41.507576 #10024] DEBUG -- :   [1m[35m (8.5ms)[0m  commit transaction
+D, [2014-06-19T11:04:41.646219 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:41.647349 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:44.503418 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:44.504534 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:46.033561 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt1623789' LIMIT 1[0m
+D, [2014-06-19T11:04:46.034459 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt1623789'
+D, [2014-06-19T11:04:46.115390 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:46.116220 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:48.556346 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:48.557359 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:51.364945 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt1623789' LIMIT 1[0m
+D, [2014-06-19T11:04:51.366116 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt1623789'
+D, [2014-06-19T11:04:51.444574 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:51.445853 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:56.916008 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:56.917096 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:57.870552 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0220070' LIMIT 1[0m
+D, [2014-06-19T11:04:58.494553 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:04:58.495814 #10024] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Corey Burton, Tom Hanks, John Lasseter, Tim Allen"], ["imdb", "tt0220070"], ["poster", "N/A"], ["title", "The Story Behind 'Toy Story'"], ["year", 2000]]
+D, [2014-06-19T11:04:58.505330 #10024] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2014-06-19T11:04:58.563674 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:58.565442 #10024] DEBUG -- :   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:04:59.862035 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:04:59.863823 #10024] DEBUG -- :   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:05:00.244603 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0220070' LIMIT 1[0m
+D, [2014-06-19T11:05:00.245169 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0220070'
+D, [2014-06-19T11:05:00.433048 #10024] DEBUG -- :   [1m[36mMovie Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:05:00.435054 #10024] DEBUG -- :   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:05:41.721548 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0220070' LIMIT 1[0m
+D, [2014-06-19T11:05:41.854811 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:06:10.908874 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0220070' LIMIT 1[0m
+D, [2014-06-19T11:06:11.474672 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:06:13.049767 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:06:14.636234 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0114709' LIMIT 1
+D, [2014-06-19T11:06:14.724441 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:06:16.196174 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:06:19.763719 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:06:20.614327 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:06:20.615584 #10024] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Annie Potts, Wil Shriner"], ["imdb", "tt0245255"], ["poster", "N/A"], ["title", "The Making of 'Toy Story'"], ["year", 1995]]
+D, [2014-06-19T11:06:20.625109 #10024] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2014-06-19T11:06:20.682047 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:06:38.199042 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:06:39.187472 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:06:39.314054 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:07:22.738949 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:23.222626 #10024] DEBUG -- :   [1m[35mMovie Exists (0.1ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:07:27.890043 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:27.890555 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:28.418459 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:28.418957 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:07:28.873530 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:28.874094 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:29.335648 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:29.336611 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:07:29.341152 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:29.341621 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:29.446683 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:29.447158 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:29.587647 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:29.588182 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:07:29.925097 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:29.925589 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:29.993892 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:29.994561 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:30.030115 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:30.030869 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:30.150239 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:30.150765 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:07:30.554315 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:30.554781 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:30.589347 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:30.589933 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:30.613749 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:30.614386 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:30.796263 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:30.797287 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:07:52.826800 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:07:52.827258 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0245255'
+D, [2014-06-19T11:07:53.305271 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:07:53.305955 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:08:31.385178 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:08:31.515987 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:08:36.600221 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:08:37.419634 #10024] DEBUG -- :   [1m[35mMovie Exists (0.1ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:08:43.950455 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0245255' LIMIT 1[0m
+D, [2014-06-19T11:08:44.003048 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:08:50.385277 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:08:51.419907 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:08:52.426785 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:08:53.338616 #10024] DEBUG -- :   [1m[35mMovie Exists (0.3ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:08:54.519401 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:08:58.660130 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:09:00.219851 #10024] DEBUG -- :   [1m[36mMovie Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0076759' LIMIT 1[0m
+D, [2014-06-19T11:09:00.964186 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:09:00.965615 #10024] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing"], ["imdb", "tt0076759"], ["poster", "http://ia.media-imdb.com/images/M/MV5BMTU4NTczODkwM15BMl5BanBnXkFtZTcwMzEyMTIyMw@@._V1_SX300.jpg"], ["title", "Star Wars: Episode IV - A New Hope"], ["year", 1977]]
+D, [2014-06-19T11:09:00.974943 #10024] DEBUG -- :   [1m[35m (9.0ms)[0m  commit transaction
+D, [2014-06-19T11:09:01.280479 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:09:06.450316 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:09:08.049283 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0076759' LIMIT 1[0m
+D, [2014-06-19T11:09:08.101526 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:09:21.035385 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0076759' LIMIT 1[0m
+D, [2014-06-19T11:09:21.036783 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0076759'
+D, [2014-06-19T11:09:21.518168 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:09:21.520431 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:10:14.195445 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:10:14.198306 #10024] DEBUG -- :   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:10:15.719563 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0080684' LIMIT 1[0m
+D, [2014-06-19T11:10:16.734943 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:10:16.736105 #10024] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams"], ["imdb", "tt0080684"], ["poster", "http://ia.media-imdb.com/images/M/MV5BMjE2MzQwMTgxN15BMl5BanBnXkFtZTcwMDQzNjk2OQ@@._V1_SX300.jpg"], ["title", "Star Wars: Episode V - The Empire Strikes Back"], ["year", 1980]]
+D, [2014-06-19T11:10:16.745592 #10024] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2014-06-19T11:10:16.866365 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:10:16.868144 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:10:24.034926 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:10:25.646054 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0080684' LIMIT 1
+D, [2014-06-19T11:10:25.700381 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:10:26.576025 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:10:27.423118 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0086190' LIMIT 1[0m
+D, [2014-06-19T11:10:27.907409 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:10:27.908697 #10024] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams"], ["imdb", "tt0086190"], ["poster", "http://ia.media-imdb.com/images/M/MV5BMjE5MTM3ODU5MV5BMl5BanBnXkFtZTcwOTYzNjk2OQ@@._V1_SX300.jpg"], ["title", "Star Wars: Episode VI - Return of the Jedi"], ["year", 1983]]
+D, [2014-06-19T11:10:27.917958 #10024] DEBUG -- :   [1m[35m (8.9ms)[0m  commit transaction
+D, [2014-06-19T11:10:28.199281 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:10:29.527786 #10024] DEBUG -- :   [1m[35mMovie Exists (0.2ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:10:29.905533 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0086190' LIMIT 1[0m
+D, [2014-06-19T11:10:29.978062 #10024] DEBUG -- :   [1m[35mMovie Exists (0.4ms)[0m  SELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1
+D, [2014-06-19T11:11:56.852619 #10024] DEBUG -- :   [1m[36mMovie Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:11:56.853949 #10024] DEBUG -- :   [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:11:58.172970 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0120915' LIMIT 1[0m
+D, [2014-06-19T11:11:59.129412 #10024] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T11:11:59.130701 #10024] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("actors", "imdb", "poster", "title", "year") VALUES (?, ?, ?, ?, ?)[0m  [["actors", "Liam Neeson, Ewan McGregor, Natalie Portman, Jake Lloyd"], ["imdb", "tt0120915"], ["poster", "http://ia.media-imdb.com/images/M/MV5BMTQ4NjEwNDA2Nl5BMl5BanBnXkFtZTcwNDUyNDQzNw@@._V1_SX300.jpg"], ["title", "Star Wars: Episode I - The Phantom Menace"], ["year", 1999]]
+D, [2014-06-19T11:11:59.140184 #10024] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2014-06-19T11:11:59.425640 #10024] DEBUG -- :   [1m[36mMovie Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:11:59.426658 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:12:03.625614 #10024] DEBUG -- :   [1m[36mMovie Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:12:03.627192 #10024] DEBUG -- :   [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:12:05.695722 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0120915' LIMIT 1[0m
+D, [2014-06-19T11:12:05.696495 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0120915'
+D, [2014-06-19T11:12:05.805376 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:12:05.806343 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:14:33.511470 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:14:33.511965 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:14:34.456264 #10024] DEBUG -- :   [1m[36mMovie Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0076759' LIMIT 1[0m
+D, [2014-06-19T11:14:34.457106 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0076759'
+D, [2014-06-19T11:14:34.566956 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:14:34.567686 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'
+D, [2014-06-19T11:14:40.758944 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'tt0076759' LIMIT 1[0m
+D, [2014-06-19T11:14:40.759684 #10024] DEBUG -- :   [1m[35mMovie Load (0.1ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0076759'  ORDER BY "movies"."id" ASC LIMIT 1
+D, [2014-06-19T11:14:40.953693 #10024] DEBUG -- :   [1m[36mMovie Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico' LIMIT 1[0m
+D, [2014-06-19T11:14:40.954557 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'  ORDER BY "movies"."id" ASC LIMIT 1
+D, [2014-06-19T11:14:59.119235 #10024] DEBUG -- :   [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."imdb" = 'tt0076759'  ORDER BY "movies"."id" ASC LIMIT 1[0m
+D, [2014-06-19T11:14:59.297164 #10024] DEBUG -- :   [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."imdb" = 'favicon.ico'  ORDER BY "movies"."id" ASC LIMIT 1

@@ -1,0 +1,8 @@
+<ul>
+ <% @video.each do |vid| %>
+
+   <li><a href="/<%= vid['id'] %>"><%= vid['title'] %></a></li>
+
+<% end %>
+
+</ul>
