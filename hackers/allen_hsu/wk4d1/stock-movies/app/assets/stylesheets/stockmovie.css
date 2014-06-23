@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+}
+
+#container {
+  max-width: 960px;
+  color: black;
+  background: white;
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 900px;
+}

@@ -1,0 +1,71 @@
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #d5d5d5;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 15em;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+#posting {
+  padding: 15px;
+  flex: 8;
+}
+
+#posting input {
+  margin: 0 auto;
+  width: 95%;
+  display: block;
+}
+#posting textarea {
+  margin: 0 auto;
+  width: 95%  ;
+  display: block;
+}
+#posting label {
+  margin-left: 20px;
+}
+#content-section {
+  margin: 0 auto;
+  display: flex;
+}
+#posts {
+  width: 70%;
+  display: inline-block;
+  background-color: #9EDAE6;
+  padding: 15px;
+  color: ;
+}
+.post {
+  border-bottom:1px solid black;
+}
+.editdelete {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+#archive {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  flex: 1;
+}
+#archive a, .editdelete {
+  text-align: right;
+  padding-right: 10px;
+  text-decoration: none;
+  color:white;
+}
+
+#archive a {
+  display: block;
+  background: #a5a5a5;
+}
+#archive a:hover, .editdelete:hover {
+  color: red;
+}

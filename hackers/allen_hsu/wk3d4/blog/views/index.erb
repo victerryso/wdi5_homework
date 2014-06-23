@@ -1,0 +1,34 @@
+<div id="posting">
+  <form action="/blog/new-post" method="post">
+    <label for="heading">Heading
+      <input type="text" name="heading" id="heading">
+    </label>
+    <label for="Blog">Blog Here!
+      <textarea name="new_post" id="" cols="30" rows="10" placeholder="Blog in here">
+      </textarea>
+    </label>
+    <input type="submit">
+  </form>
+</div>
+
+<div id="content-section">
+  <div id="posts">
+    <% @old_posts.each do |post|%>
+      <div class="post">
+        <h2><%= post.heading %></h2>
+        <h4>Posted <%= post.posted %></h4>
+        <p><%= post.content %></p>
+        <a href="/blog/<%= post.id %>" class="editdelete">Edit</a>
+        <a href="/blog/<%= post.id %>/delete" class="editdelete">Delete</a>
+        <div class="comments">
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div id="archive">
+    <% @old_posts.each do |post| %>
+      <a href="/blog/<%= post.id %>/view"><%= post.heading %></a>
+    <% end %>
+  </div>
+</div>

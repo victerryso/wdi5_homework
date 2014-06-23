@@ -1,0 +1,18 @@
+<%= @query %>
+<% if !@posters.nil? %>
+  <% @posters.each do |title, poster|%>
+  <div id="posters">
+    <div class="poster">
+      <a href="/movie/<%= title.gsub(" ","+") %>">
+        <img src="<%= poster %>" alt="<%= title %>">
+      </a>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+
+<% if @quote != 0 %>
+  <div id="quote">
+    <%= @quote %>
+  </div>
+<% end %>
