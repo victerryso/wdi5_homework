@@ -1,0 +1,17 @@
+<form action = "/" method = "get"> <!-- Through the "get" method in main.rb. The action button leads to localhost:4567/search -->
+  <input name = "search" placeholder = "Movie"> <!-- params[:search] is the same search. Placeholder is visible while no text is inside -->
+  <button> Search </button> <!-- The button puts things into action -->
+</form>
+
+<% if @search %> <!-- If @search has a value -->
+  <% if @data["Error"] != "Movie not found!" %>
+    <% @data["Search"].each do |x| %> <!-- Displaying all the titles in the search -->
+      <a href="/<%= x['imdbID'] %>"> <%= x["Title"] %> </a><br> <!-- Displaying the title via the link to the imdbID -->
+    <% end %>
+  <% else %>
+    <%= "Movie not found!" %>
+  <% end %>
+<% end %>
+
+<!--<% @search %> Just some ruby code -->
+<!--<%= @search %> The "=" is like print -->

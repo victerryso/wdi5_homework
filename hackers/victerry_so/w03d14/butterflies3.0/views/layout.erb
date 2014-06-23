@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Butterflies</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="/butterflies">Bfly List</a></li>
+        <li><a href="/butterflies/new">New Bfly</a></li>
+        <li>Families:</li>
+        <% @families.each do |family| %>
+          <li><a href="/butterflies/family/<%= family.family %>"><%= family.family %></a></li>
+        <% end %>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li><a href="/plants">Plant List</a></li>
+        <li><a href="/plants/new">New Plant</a></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </div>
+</body>
+</html>

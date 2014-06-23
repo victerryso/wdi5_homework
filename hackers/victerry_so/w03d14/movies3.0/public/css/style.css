@@ -1,0 +1,14 @@
+body {
+  background: url("http://i.imgur.com/cSGLl7z.jpg");
+  background-size: cover;
+  font-family: Verdana;
+}
+
+img {
+  border: 10px solid black;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

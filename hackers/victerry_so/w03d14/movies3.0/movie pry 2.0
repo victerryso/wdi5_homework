@@ -1,0 +1,130 @@
+[5] pry(main)> require "httparty"
+=> true
+
+[6] pry(main)> @title = "jaws"
+=> "jaws"
+
+[7] pry(main)> url = "http://omdbapi.net/?s=#{ @title }"
+=> "http://omdbapi.net/?s=jaws"
+
+[9] pry(main)> response = HTTParty.get(url)
+=> "{\"Search\":[{\"Title\":\"Jaws\",\"Year\":\"1975\",\"imdbID\":\"tt0073195\",\"Type\":\"movie\"},{\"Title\":\"Jaws 2\",\"Year\":\"1978\",\"imdbID\":\"tt0077766\",\"Type\":\"movie\"},{\"Title\":\"Jaws: The Revenge\",\"Year\":\"1987\",\"imdbID\":\"tt0093300\",\"Type\":\"movie\"},{\"Title\":\"Jaws 3-D\",\"Year\":\"1983\",\"imdbID\":\"tt0085750\",\"Type\":\"movie\"},{\"Title\":\"Jaws Special\",\"Year\":\"2005\",\"imdbID\":\"tt0469002\",\"Type\":\"episode\"},{\"Title\":\"Jaws Special\",\"Year\":\"2005\",\"imdbID\":\"tt0469002\",\"Type\":\"episode\"},{\"Title\":\"The Making of Steven Spielberg's 'Jaws'\",\"Year\":\"1995\",\"imdbID\":\"tt0251821\",\"Type\":\"movie\"},{\"Title\":\"Jaws Wired Shut\",\"Year\":\"2002\",\"imdbID\":\"tt0701141\",\"Type\":\"episode\"},{\"Title\":\"Mako: The Jaws of Death\",\"Year\":\"1976\",\"imdbID\":\"tt0074845\",\"Type\":\"movie\"},{\"Title\":\"Cruel Jaws\",\"Year\":\"1995\",\"imdbID\":\"tt0112747\",\"Type\":\"movie\"}]}"
+
+[10] pry(main)> @movie = JSON.parse response
+=> {"Search"=>
+  [{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie"},
+   {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie"},
+   {"Title"=>"Jaws: The Revenge",
+    "Year"=>"1987",
+    "imdbID"=>"tt0093300",
+    "Type"=>"movie"},
+   {"Title"=>"Jaws 3-D",
+    "Year"=>"1983",
+    "imdbID"=>"tt0085750",
+    "Type"=>"movie"},
+   {"Title"=>"Jaws Special",
+    "Year"=>"2005",
+    "imdbID"=>"tt0469002",
+    "Type"=>"episode"},
+   {"Title"=>"Jaws Special",
+    "Year"=>"2005",
+    "imdbID"=>"tt0469002",
+    "Type"=>"episode"},
+   {"Title"=>"The Making of Steven Spielberg's 'Jaws'",
+    "Year"=>"1995",
+    "imdbID"=>"tt0251821",
+    "Type"=>"movie"},
+   {"Title"=>"Jaws Wired Shut",
+    "Year"=>"2002",
+    "imdbID"=>"tt0701141",
+    "Type"=>"episode"},
+   {"Title"=>"Mako: The Jaws of Death",
+    "Year"=>"1976",
+    "imdbID"=>"tt0074845",
+    "Type"=>"movie"},
+   {"Title"=>"Cruel Jaws",
+    "Year"=>"1995",
+    "imdbID"=>"tt0112747",
+    "Type"=>"movie"}]}
+
+[12] pry(main)> @movie["Search"]
+=> [{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie"},
+ {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie"},
+ {"Title"=>"Jaws: The Revenge",
+  "Year"=>"1987",
+  "imdbID"=>"tt0093300",
+  "Type"=>"movie"},
+ {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie"},
+ {"Title"=>"Jaws Special",
+  "Year"=>"2005",
+  "imdbID"=>"tt0469002",
+  "Type"=>"episode"},
+ {"Title"=>"Jaws Special",
+  "Year"=>"2005",
+  "imdbID"=>"tt0469002",
+  "Type"=>"episode"},
+ {"Title"=>"The Making of Steven Spielberg's 'Jaws'",
+  "Year"=>"1995",
+  "imdbID"=>"tt0251821",
+  "Type"=>"movie"},
+ {"Title"=>"Jaws Wired Shut",
+  "Year"=>"2002",
+  "imdbID"=>"tt0701141",
+  "Type"=>"episode"},
+ {"Title"=>"Mako: The Jaws of Death",
+  "Year"=>"1976",
+  "imdbID"=>"tt0074845",
+  "Type"=>"movie"},
+ {"Title"=>"Cruel Jaws",
+  "Year"=>"1995",
+  "imdbID"=>"tt0112747",
+  "Type"=>"movie"}]
+
+[15] pry(main)> @movie["Search"][0]
+=> {"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie"}
+
+[16] pry(main)> @movie["Search"][0]["Title"]
+=> "Jaws"
+
+[20] pry(main)> @movie["Search"].each {|x| p x["Title"]}
+"Jaws"
+"Jaws 2"
+"Jaws: The Revenge"
+"Jaws 3-D"
+"Jaws Special"
+"Jaws Special"
+"The Making of Steven Spielberg's 'Jaws'"
+"Jaws Wired Shut"
+"Mako: The Jaws of Death"
+"Cruel Jaws"
+=> [{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie"},
+ {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie"},
+ {"Title"=>"Jaws: The Revenge",
+  "Year"=>"1987",
+  "imdbID"=>"tt0093300",
+  "Type"=>"movie"},
+ {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie"},
+ {"Title"=>"Jaws Special",
+  "Year"=>"2005",
+  "imdbID"=>"tt0469002",
+  "Type"=>"episode"},
+ {"Title"=>"Jaws Special",
+  "Year"=>"2005",
+  "imdbID"=>"tt0469002",
+  "Type"=>"episode"},
+ {"Title"=>"The Making of Steven Spielberg's 'Jaws'",
+  "Year"=>"1995",
+  "imdbID"=>"tt0251821",
+  "Type"=>"movie"},
+ {"Title"=>"Jaws Wired Shut",
+  "Year"=>"2002",
+  "imdbID"=>"tt0701141",
+  "Type"=>"episode"},
+ {"Title"=>"Mako: The Jaws of Death",
+  "Year"=>"1976",
+  "imdbID"=>"tt0074845",
+  "Type"=>"movie"},
+ {"Title"=>"Cruel Jaws",
+  "Year"=>"1995",
+  "imdbID"=>"tt0112747",
+  "Type"=>"movie"}]
