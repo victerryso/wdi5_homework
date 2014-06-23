@@ -1,0 +1,29 @@
+# movies I hw
+
+require 'httparty'
+
+@title = "jaws" #params[:title]
+  => "jaws"
+
+url = "http://www.omdbapi.com/?t=#{ @title }"
+
+response = HTTParty.get( url )
+
+@movies = JSON.parse response
+
+@movies.class
+  => Hash
+
+@movies['Title']
+  => "Jaws"
+
+@movies['Actors']
+
+  # BONUS HW
+    # with spaces in the titles.
+    # posters <img>
+
+  # README Sinatra
+
+  # Rubymonk
+

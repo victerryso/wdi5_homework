@@ -1,0 +1,22 @@
+<div class="inputs"
+  <form action="/memetube/<%= @video['id'] %>" method="post">
+    <label for="title">Title: </label>
+    <input type="text" id="title" name="title" value="<%= @video['title'] %>">
+
+    <label for="description">Description: </label>
+    <input type="text" id="description" name="description" value="<%= @video['description'] %>">
+
+    <label for="url">URL: </label>
+    <input type="url" id="url" name="url" value="<%= @video['url'] %>">
+
+    <label for="rating">Rating: </label>
+    <select name="rating" id="rating">
+      <% %w{1star 2star 3star 4star 5star}.each do |rating| %>
+        <option><%= "selected" if rating == @video['rating'] %>
+          <%= rating %>
+        </option>
+      <% end %>
+    </select>
+
+    <button type="submit">Add!</button>
+  </form>

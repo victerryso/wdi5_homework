@@ -1,0 +1,123 @@
+html {
+  background-image: url(http://i.imgur.com/dLLObOC.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin-top: 80px;
+  text-align: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: black;
+  line-height: 80px;
+  width: 100%;
+  /*margin-bottom: 50px;*/
+  letter-spacing: 28px;
+  font-size: 2.5em;
+}
+
+#startstation {
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+}
+
+#stopstation {
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+}
+
+#outer_container {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid #7A7A6E;
+  box-shadow: -6px 6px 20px black;
+  padding: 0 15px 15px 15px;
+}
+
+#container {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+#trip {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  border-radius: 3px;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  height: 30px;
+}
+
+select {
+  width: 140px;
+  font-size: 1em;
+  background-color: white;
+  background-color: white;
+  /*box-shadow: -1px 1px 3px black;*/
+  border: 1px solid black;
+  border-radius: 3px;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  height: 30px;
+}
+
+label {
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+button {
+  width: 283px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #BF2E23;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+button:hover, select:hover {
+  box-shadow: -1px 1px 3px black;
+  /*box-shadow: -3px 3px 7px #BCBCB6;*/
+}
+
+@media (max-width: 692px) {
+  button {
+    max-width: 140px;
+  }
+  body {
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 759px) {
+  h1 {
+    font-size: 22px;
+  }
+}

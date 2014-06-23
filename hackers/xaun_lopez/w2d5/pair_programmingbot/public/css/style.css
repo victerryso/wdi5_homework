@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+  color: white;
+  line-height:
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  margin-top: 210px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#yes, #no, #done {
+  font-size: 17.5px;
+  font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+  line-height: 20px;
+  margin: 0 15px;
+}
+
+#yes {
+  display: inline-block;
+  background-color: #62c462;
+  padding: 11px 19px;
+  border-radius: 5px;
+}
+
+#no {
+  display: inline-block;
+  background-color: #da4f49;
+  padding: 11px 19px;
+  border-radius: 5px;
+}
+
+#done {
+  display: inline-block;
+  background-color: #006dcc;
+  padding: 11px 19px;
+  border-radius: 5px;
+}
+
+#inspiration {
+  margin-top: 190px;
+}
+
+#inspiration a {
+  color: #080;
+}
+
+span:hover {
+  color: #0088cc;
+  text-decoration: underline;
+}
+
+.beck_text p {
+  font-size: 25px;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.beck_citation {
+  color: grey;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+}
+
+.beck_citation a {
+
+  color: #080;
+}
+.beck_citation a:hover {
+  color: #0088cc;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
