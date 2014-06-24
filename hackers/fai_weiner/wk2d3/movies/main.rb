@@ -7,7 +7,7 @@ require 'json'
 
 @counts = 0
 
-get '/fetch' do
+get '/' do
   @title = params[:Title]
 
   if @title != nil 
@@ -17,7 +17,7 @@ get '/fetch' do
     @titles_list = JSON.parse(search)
     @titles_list["Search"].each do |movie| 
       @id = movie['imdbID']
-      url = "http://omdbapi.com/?i=#{ @id} "
+      url = "http://omdbapi.com/?i=#{ @id }"
       details = HTTParty.get(url)
       @movie_details_full = {}
       @movie_details_full = JSON.parse(details)
