@@ -1,0 +1,9 @@
+#stock_result p{
+  color: #94D4FF;
+  text-align: center;
+}
+
+#stock_result span{
+  color: white;
+  font-size: 20px;
+}

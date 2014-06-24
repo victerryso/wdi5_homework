@@ -1,0 +1,38 @@
+ <% @categories.each do |category| %>
+<!-- __________________________________category 1_______________________________
+ -->
+  <h2>Asking</h2>
+  <% video = Video.where(:category_id => 1).limit(3)%>
+  <% :videos %>
+  <a href="videos/category/1" title="Asking">More....</a>
+<!-- __________________________________category 2_______________________________
+ -->
+  <h2>Laughing</h2>
+  <% video = Video.where(:category_id => 2).limit(3)%>
+  <% :videos %>
+
+  <a href="videos/category/2" title="Asking">More....</a>
+
+<!-- __________________________________category 3_______________________________
+ -->
+<h2>Listening</h2>
+  <% Video.where(:category_id => 3).limit(3)%>
+  <% :videos %>
+
+<a href="videos/category/3" title="Asking">More....</a>
+<!-- __________________________________category 4_______________________________
+ -->
+<h2>Studying</h2>
+  <% Video.where(:category_id => 4).limit(3)%>
+  <% :videos %>
+
+<a href="videos/category/4" title="Asking">More....</a>
+<!-- __________________________________category 5_______________________________
+ -->
+<h2>Watching</h2>
+  <% Video.where(:category_id => 5).limit(3)%>
+  <% :videos %>
+
+<a href="videos/category/5" title="Asking">More....</a>
+
+<% end %>

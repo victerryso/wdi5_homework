@@ -1,0 +1,88 @@
+
+#search input{
+  border: 0px;
+  width : 250px;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  font-size: 12px;
+}
+
+form{
+  color: white;
+  margin-left: 30%;
+  display: block;
+}
+
+button{
+  background: red;
+  color: white;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.movie_list a {
+  color: #AEE7E7;
+  margin-left: 30%;
+  font-family:'Comfortaa';
+  font-size: 20px;
+  text-decoration: none;
+}
+
+div a:hover {
+  color: white;
+}
+
+div a:visited{
+  color: #3395B5;
+}
+
+h2{
+  color: #94D4FF;
+  text-align: center;
+}
+
+.movie_list p{
+  font-family: cursive;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+.movie_list h3{
+  margin-top: 0;
+}
+
+.img, .info{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  color: white;
+  max-width: 600px;
+}
+
+.img{
+  margin-left: 20%;
+  margin-bottom: 20px;
+  width: 35%;
+}
+
+.info p{
+  font-family: serif;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+
+.info span{
+  font-size: 15px;
+  color: #D8F0FF;
+}
+
+.show_plot {
+  display: none;
+
+}
+
+.plot:checked + .show_plot{
+  display: block;
+  max-width: 350px;
+}

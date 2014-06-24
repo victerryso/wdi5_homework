@@ -15,22 +15,6 @@ get '/result_1' do
   url = "http://omdbapi.com/?s=#{ @title }"
   response = HTTParty.get(url)
   @movie = JSON.parse response # JSON method: making them for ruby to read(hash, array..)
-
-  # # Tested movie hash for length of 1 i.e. single movie and go fetch data if single movie and display result
-  # if @movie["Search"].length == 1 then
-  #    @id = @movie["Search"]["imdbID"]
-  #    url = "http://omdbapi.com/?t=#{ @title }"
-  #    response = HTTParty.get(url)
-  #    @smovie = JSON.parse response # JSON method
-  #    @title = @movie['Title']
-  #    @id = @movie['imdbID']
-  #    @year = @movie['Year']
-  #    @director = @movie['Director']
-  #    @poster = @movie['Poster']
-  #    @award = @movie['Awards']
-  #    @plot = @smovie['Plot']
-  #    erb :result
-  # else
     erb :result_1
   # end
 end

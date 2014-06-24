@@ -1,0 +1,8 @@
+<div class="display_all">
+  <% @videos.each do |video| %>
+  <p>Category:  <em><%= video.category.name %></em> | Genre: <em><%= video.genre %></em><br/>
+    <h3 ><a href="/videos/<%= video.id %>"> <%= video.title %></a></h3>
+  </p>
+
+  <% end %>
+</div >
