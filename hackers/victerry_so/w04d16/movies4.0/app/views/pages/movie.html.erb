@@ -1,0 +1,13 @@
+<h2>Movie</h2>
+
+<form action="/movie/" method="get">
+  <label for="movie">Movie: </label>
+  <input type="text" id="movie" name="movie">
+  <button>Movie Go</button>
+</form>
+
+<% unless @movie.nil? %>
+  <%= @title %> (<%= @year %>)<br>
+  Cast: <%= @actors %><br>
+  <img src="<%= @poster %>"%>
+<% end %>

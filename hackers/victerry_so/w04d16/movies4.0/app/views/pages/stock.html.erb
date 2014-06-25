@@ -1,0 +1,11 @@
+<h2>Stock</h2>
+
+<form action="/stock/" method="get">
+  <label for="stock">Stock: </label>
+  <input type="text" id="stock" name="stock">
+  <button>Stock Go</button>
+</form>
+
+<% unless @symbol.nil? %>
+  <%= @symbol %>: <%= @price %>
+<% end %>
