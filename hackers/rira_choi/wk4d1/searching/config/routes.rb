@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/faq' => 'pages#faq'
 
   get '/movie/search' => 'movie#search'
-  get '/movie/result_list' => 'movie#result_list'
+  get '/movie/result_li st' => 'movie#result_list'
   get '/movie/result' => 'movie#result'
   get '/movie/quick_result' =>'movie#quick_result'
 

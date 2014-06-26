@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorldMountain</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <h1>World Mountain</h1>
+  <nav>
+    <ul>
+      <li><%= link_to("HOME", '/')%></li>
+      <li><%= link_to('DISPLAY', mountains_path)%></li>
+      <li><%= link_to("NEW", mountains_new_path)%></li>
+    </ul>
+  </nav>
+<div id='container'>
+  <%= yield %>
+</div>
+</body>
+</html>
