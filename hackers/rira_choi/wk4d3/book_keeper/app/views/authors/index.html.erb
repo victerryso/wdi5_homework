@@ -1,0 +1,11 @@
+<img src="http://i.imgur.com/7ePYlXl.png?1" id='list_icon'/>
+
+<div class='book_list'>
+  <h2 id='best'>Best Authors of the 19th Century</h2>
+  <% @authors.each do |author| %>
+  <div class='book_each'>
+  <%= image_tag(author.image, :class => 'list_img') %>
+  <p><%= link_to(author.name, author)%> (<em><%= author.nationality %></em>)</p>
+</div>
+<% end %>
+</div>
