@@ -1,0 +1,8 @@
+<% @works.each do |work| %>
+  <div class='box'>
+    <%= image_tag(work.image, :class => 'thumb') %>
+    <%= link_to(work.title, work) %>
+    <%= link_to('Edit', edit_work_path(work)) %>
+    <%= link_to('Delete', work, :data => {:confirm => 'Are you sure?', :method => :delete }) %>
+  </div>
+<% end %>
