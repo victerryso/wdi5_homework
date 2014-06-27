@@ -1,0 +1,12 @@
+<h1>Authors</h1>
+
+<% @authors.each do |author| %>
+  <div>
+    <p><%= link_to(author.name, author) %></p>
+    <p><%= image_tag(author.image, :class => 'thumbnail') %></p>
+  </div>
+  <div>
+    <span class="button"><%= link_to('Edit', edit_author_path(author)) %></span>
+    <span class="button"><%= link_to('Delete', :method => :delete ) %></span>
+  </div>
+<% end %>
