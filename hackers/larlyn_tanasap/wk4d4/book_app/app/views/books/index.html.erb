@@ -1,0 +1,9 @@
+<h2>Books</h2>
+
+<% @books.each do |book| %>
+  <li>
+    <%= link_to(book.title, book) %>
+    <%= link_to('Edit', edit_book_path(book) ) %>
+    <%= link_to( 'Remove', book, :method => :delete, :data => {:confirm => "Are you sure you want to remove #{ book.title }?"} ) %>
+  </li>
+<% end %>

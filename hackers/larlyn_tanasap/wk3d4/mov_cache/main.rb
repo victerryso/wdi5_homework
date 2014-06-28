@@ -14,6 +14,7 @@ get '/' do
   unless @search == nil
     @search.gsub!(/ /, "+")
     url = "http://omdbapi.com/?s=#{ @search }"
+    url = URI.encode(url)
     response = HTTParty.get( url )
     @results = JSON.parse(response)
       if @results['Search'] != nil && @results['Search'].length == 1
