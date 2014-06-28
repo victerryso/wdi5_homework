@@ -1,0 +1,25 @@
+<a href="/movies">Movie</a>
+<a href="/stocks">Stock</a>
+<br>
+<br>
+
+
+<form action= "/stocks" method= "get">
+	<input name = "symbol" placeholder = "Enter a Stock Symbol">
+	
+	<button>Submitt</button>
+	<p> 
+
+		
+		
+</form>
+
+<p>
+	<%= @symbol %> <%= @price %>  
+</p>
+
+<p>	
+<em>The last price of <%= @symbol %> was <%= @price %> </em> 
+
+</p>
+
