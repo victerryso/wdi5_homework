@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+@import url(http://fonts.googleapis.com/css?family=Candal);
+
+body {
+  background: url("http://i.imgur.com/OF6eRTq.jpg");
+  background-size: cover;
+}
+
+h4{
+  text-align: center;
+  position: relative;
+  font-family: fantasy;
+  color:#33D6FF;
+}
+
+h4 span{
+  color:white;
+  font-size: 20px;
+}
+
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: white; text-shadow:1px 1px 8px grey;"
+  position: absolute;
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 span{
+  text-align: center;
+  font-size: 70px;
+  color: white; text-shadow:1px 1px 8px grey;"
+  position: absolute;
+  font-family: 'Candal', sans-serif;
+}
+
+nav {
+  text-align: center;
+  font-family: serif;
+  position: center;
+  padding: 10px;
+  margin: 30px;
+  background: rgba(80, 117, 200, 0.3);
+
+}
+
+nav a {
+  color: #3395B5;
+  margin: 5px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+#icons{
+  margin-left: 25%;
+  margin-right:10%;
+}
+
+#movie_icon, #stock_icon, #question_icon{
+  display: inline-block;
+  margin: 0 0px 10px 0;
+  vertical-align: bottom;
+}
+
+#container{
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 960px;
+  margin-bottom: 50px;
+}

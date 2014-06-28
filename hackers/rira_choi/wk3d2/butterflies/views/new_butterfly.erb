@@ -1,0 +1,25 @@
+<form action="/butterflies" method="post">
+
+  <label for='state'>State : </label>
+    <select name="state" id="state">
+      <option selected label="none"> None </option>
+      <option value="Victoria">Victoria</option>
+      <option value="Tasmania">Tasmania</option>
+    </select>
+   <label for="family">Family : </label>
+      <select name="family" id="family">
+        <option selected label="none"> None </option>
+          <% %w{Papilionidae Pieridae Lycaenidae Nymphalidae Hesperiidae}.each do |family| %>
+        <option value="<%= family %>"><%= family %></option>
+          <% end %>
+      </select>
+  <label for="name" id='name'>Name : </label>
+  <input type="text" id="name" name="name">
+
+  <label for="image">Image: </label>
+  <span><input type="url" id="image" name="image"></span>
+
+
+
+  <p><button>Create a new butterfly!</button></p>
+</form>

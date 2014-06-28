@@ -1,0 +1,41 @@
+<form action="/butterflies" method="post">
+
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name">
+
+  <label for="image">Image: </label>
+  <input type="url" id="image" name="image">
+
+  <label for="family">Family: </label>
+  <otpgroup>
+    <select name="family" id="family">
+     <% %w{Papilionidae Pieridae Lycaenidae Nymphalidae Hesperiidae}.each do |family| %>
+      <option value="<% family %>"><%= family %></option>
+    <% end %>
+  </select>
+</otpgroup>
+
+  <p><button>Create a new butterfly!</button></p>
+</form>
+
+
+#edit
+
+<form action="/butterflies/<%= @butterfly['id'] %>" method="post">
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name" value="<%= @butterfly['name']%>">
+
+  <label for="image">Image: </label>
+  <input type="url" id="image" name="image" value="<%= @butterfly['image']%>">
+
+  <label for="family">Family: </label>
+  <select name="family" id="family">
+    <% %w{Papilionidae Pieridae Nymphalidae Lycaenidae Riodinidae}.each do |family| %>
+      <option <%= "selected" if family == @butterfly['family'] %>>
+      <%= family %>
+    </option>
+    <% end %>
+  </select>
+
+  <button>Add butterfly!</button>
+</form>

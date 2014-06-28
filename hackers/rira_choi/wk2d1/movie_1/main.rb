@@ -11,9 +11,6 @@ end
 get '/result' do
   @title = params[:title]
   @title.gsub!(/ /,"+")
-  if @title == "" then
-    @title = "Movie not found!"
-  end
   url = "http://omdbapi.com/?t=#{ @title }"
   response = HTTParty.get(url)
   @movie = JSON.parse response # JSON method

@@ -1,0 +1,23 @@
+<form action='/mountains' method='post'>
+  <div class='first'>
+    <p>Name: <input type='text' name='mountain[name]' autofocus></p>
+  <p>Image: <input type='url' name='mountain[image]'></p>
+  </div>
+
+  <div class='second'>
+    <p>Country: <input type='text' name='mountain[country]'></p>
+    <p>Elevation: <input type='text' name='mountain[Elevation]'></p>
+  </div>
+
+  <div class='third'>
+    <p>Range: <input type='text' name='mountain[range]'></p>
+    <p>Coordinates: <input type='text' name='mountain[coordinates]'></p>
+  </div>
+
+<div class='last'>
+  <label for="description">Description:<br/>
+    <textarea id="description" name="mountain[description]" rows= "5" placeholder="Tell everyone about the mount here!">This is a mount  </textarea>
+  </label>
+</div>
+  <p><button> New Mount </button></p>
+</form>

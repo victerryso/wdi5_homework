@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+body {
+  background: url("http://i.imgur.com/0m2IUgR.jpg?1");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+
+}
+h1 {
+  font-family: 'Londrina Shadow';
+  margin-top: 3px;
+  text-align: center;
+  font-size: 75px;
+  color: black; text-shadow:1px 1px 8px #746D62;"
+  position: absolute;
+  height: 30px;
+
+}
+
+nav {
+  text-align: center;
+  font-family: serif;
+  position: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(127, 117, 94, 0.3);
+
+}
+
+nav a {
+  color: white;
+  margin: 5px;
+  text-decoration: none;;
+
+}
+
+button{
+  background: red;
+  color: white;
+  margin-top: 10px;
+  width: 70px;
+
+}
+
+label{
+  padding: 5px;
+  margin: 30px;
+  font-size: 13px;
+  background-color: rgba(127, 117, 94, 0.1);
+
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+
+}
+
+label:hover {
+  background-color: white;
+}
+
+label span{
+  font-size: 15px;
+  color: red;
+}
+
+
+#link {
+  position: relative;
+  margin-right: 0;
+  text-align: right;
+
+}
+
+#logo {
+  position: relative;
+  margin: 0 auto;
+  vertical-align: top;
+
+}
+
+#info {
+  margin-bottom: 5px;
+}
+
+#start, #end{
+  display: block;
+  margin: 30px;
+}
+
+div #map {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+p{
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  font-family: 'Muli', sans-serif;
+}
+
+p span{
+  color: red;
+  font-size: 20px;
+}
+
+p #click{
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p #click:hover{
+  color: #0000FF;
+}
+
+div .result {
+  border: 1px solid rgba(127, 117, 94, 0.1);
+  background-color: rgba(127, 117, 94, 0.4);
+  border-radius: 1.5em;
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+#smile, #print {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+#print p {
+  color: #202021;
+  text-align: left;
+  margin-left: 10px;
+}
+
+#print p span {
+  font-size: 12px;
+  color: #5D5D69;
+}
+
+@media(max-width: 480px) {
+  body{
+    background-size: 100% 100%
+    background-repeat: no-repeat 50% 0;
+  }
+
+  #start, #end {
+    display: block;
+    width: 100%;
+    margin: 20px;
+  }
+  #map img {
+    margin: 0 auto;
+  }
+
+  #container {
+    margin: 0 auto;
+  }
+}

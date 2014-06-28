@@ -1,0 +1,16 @@
+<div id="container">
+  <p>The Movie you looked for : <em><%= @movie['Title'] %><em> </p>
+  <div class= "img"><img src=<%= @poster %>/></div>
+  <div class="info">
+    <p><span>Released,  </span> <%= @year %> </p>
+    <p><span>Made by,  </span> <%= @director %></p>
+    <p><span>Awards :  </span> <br>
+      <%= @award %></p>
+    <p><span>Plot :</span><br>
+      <%= @plot %></p>
+  </div>
+</div>
+
+
+<!-- must put <% %> "after img src" -->
+

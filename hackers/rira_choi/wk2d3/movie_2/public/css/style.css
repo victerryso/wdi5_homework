@@ -1,0 +1,126 @@
+body {
+  background: url("http://i.imgur.com/AAadxlZ.jpg");
+  background-size: cover;
+}
+h1 {
+  font-family: 'Londrina Shadow';
+  text-align: center;
+  font-size: 75px;
+  color: white; text-shadow:1px 1px 8px #000;"
+  margin: 60px 0 0 0;
+}
+
+nav {
+  text-align: center;
+  font-family: serif;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+
+}
+
+nav a {
+  color: white;
+  margin: 5px;
+  text-decoration: none;;
+
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  border: 0px;
+  width : 250px;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  font-size: 12px;
+}
+
+button{
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+.info p{
+  font-size: 25px;
+  color: #888;
+  font-family: serif;
+  padding: 20px 0 0 0;
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.info span{
+  font-size: 20px;
+  color: #666;
+  font-family: serif;
+
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: center;
+    text-align: center;
+}
+
+/*div p {
+  text-align: center;
+  margin: 0px 10px 20px 10px;
+  font-family: serif;
+
+}*/
+
+div a {
+  color: red;
+  text-align: center;
+  font-family: Courier;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+div a:hover {
+  color: pink;
+}
+
+div a:visited{
+  color: purple;
+}
+
+p{
+  font-family: sans-serif;
+  font-size: 20px;
+   color: white;
+   text-align: center;
+}
+
+#year{
+  font-family: cursive;
+  text-align: center;
+}
+
+.img, .info{
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.img{
+  margin-left: 40px;
+  margin-bottom: 20px;
+  width: 35%;
+}
+
+.info{
+  width: 60%;
+}
+
+
+@media(max-width: 800px) { /* less than 800px then it will ne display like this*/
+  .main, .sidebar {
+    display: block;
+    width: 100%; /* less than 800px then block's width will be 100%*/
+    background-color: grey;
+  }

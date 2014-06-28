@@ -1,0 +1,7 @@
+<% @butterflies.each do |butterfly| %>
+  <div class="butterfly">
+    <p><a href="/butterflies/<%= butterfly['id'] %>"><%= butterfly['name'] %></a><br/><em>(<%= butterfly['state']%>)</em></p>
+
+      <a href="<%= butterfly['image'] %>" title="enlarge the image"><img src="<%= butterfly['image'] %>"></a>
+  </div>
+  <% end %>

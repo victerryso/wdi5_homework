@@ -1,0 +1,12 @@
+
+<img src="http://i.imgur.com/Ai74gZd.png?1" id='list_icon'/>
+
+<div class='book_list'>
+<h2 id='best'>Best books of the 19th Century</h2>
+<% @books.each do |book| %>
+<div class='book_each'>
+  <%= image_tag(book.image, :class =>'list_img') %>
+  <p><%= link_to(book.title, book)%></p>
+</div>
+<% end %>
+</div>
