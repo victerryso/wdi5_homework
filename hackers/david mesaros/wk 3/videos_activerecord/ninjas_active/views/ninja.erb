@@ -1,0 +1,14 @@
+<div id="edit_nav">
+<a href="/ninjas/<%= @ninja.id %>/edit">Edit</a>
+<a href="/ninjas/<%= @ninja.id %>/delete">Delete</a>
+</div>
+
+<h2>Description: <%= @ninja.description %> </h2>
+<h2>Address: <%= @ninja.address %> </h2>
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRZL71ExmhZk-Ecf8KkQLs2kjc5jBHJqw=<%= @ninja.address %>">
+</iframe>

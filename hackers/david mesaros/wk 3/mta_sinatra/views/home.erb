@@ -1,0 +1,96 @@
+<form action="/plan" method="get">
+<!-- $mta[:Line_N].index "23rd" -->
+<p>
+  <div id="depart_label">
+  <label for="start_user_line"><strong>Departure Line:</strong></label>
+  <select name="start_user_line">
+    <% $lines.keys.each do |start_user_line| %>
+      <option value="<%= start_user_line %>"><%= start_user_line %></option>
+    <%end %>
+  </select>
+  </div>
+</p>
+<p>
+ <label for="user_start"><strong>Departure Station: </strong></label>
+  <select name="user_start" id="user_start" multiple="multiple" size="7">
+    <optgroup label="Line_N">
+      <% $lines[:N].each do |user_start| %>
+      <option value="<%= user_start %>"><%= user_start %></option>
+      <% end %>
+    </optgroup>
+    <optgroup label="Line_L">
+      <% $lines[:L].each do |user_start| %>
+      <option value="<%= user_start %>"><%= user_start %></option>
+    <% end %>
+    </optgroup>
+    <optgroup label="Line_6">
+      <% $lines[:"6"].each do |user_start| %>
+      <option value="<%= user_start %>"><%= user_start %></option>
+    <% end %>
+    </optgroup>
+  </select>
+</p>
+<p>
+  <label for="end_user_line"><strong>Arrival Line:</strong></label>
+  <select name="end_user_line">
+    <% $lines.keys.each do |end_user_line| %>
+      <option value="<%= end_user_line %>"><%= end_user_line %></option>
+    <%end %>
+  </select>
+</p>
+<p>
+ <label for="user_end"><strong>Arrival Station: </strong></label>
+  <select name="user_end" id="arrival_station" multiple="multiple" size="7">
+    <optgroup label="Line_N">
+      <% $lines[:N].each do |user_end| %>
+      <option value="<%= user_end %>"><%= user_end %></option>
+      <% end %>
+    </optgroup>
+    <optgroup label="Line_L">
+      <% $lines[:L].each do |user_end| %>
+      <option value="<%= user_end %>"><%= user_end %></option>
+    <% end %>
+    </optgroup>
+    <optgroup label="Line_6">
+      <% $lines[:"6"].each do |user_end| %>
+      <option value="<%= user_end %>"><%= user_end %></option>
+    <% end %>
+    </optgroup>
+  </select>
+</p>
+
+<p>
+  <button id="submitbutton" type="submit">Submit that shizzat</button>
+</p>
+
+</form>
+
+
+
+  <p>Departing from <strong><em><%=params[:start_user_line]%></em></strong> at station <strong><%=params[:user_start]%></strong>
+  </p>
+  <p>Arriving on <strong><em><%=params[:end_user_line]%></em></strong> at station <strong><%=params[:user_end]%></strong>
+  </p>
+
+
+  <% if params[:start_user_line] == params[:end_user_line]%> 
+
+ <p> You have <%= @trip_length %> stops <p>
+ 
+  <% end %>
+
+
+
+
+
+
+
+
+
+  <!--  <% if params[:start_user_line] != params[:end_user_line]%>
+   <p>You have <%=params[:num_of_stops_unionsquare]%> stops till <strong>Union Square</strong> on <strong><em><%=params[:departure_line]%></em></strong> continued by <%=params[:num_of_stops_destination]%> stops to your arrival station, <strong><%=params[:arrival_station]%></strong> on line <strong><em><%=params[:arrival_line]%></em></strong>
+   </p>
+ <% else %>
+   <p>You have <%= @trip_length %> stops to your arrival station, <strong><%=params[:user_end]%></strong> on line <strong><em><%=params[:end_user_line]%></em></strong>
+  </p>
+ <% end %> --> 
