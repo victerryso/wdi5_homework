@@ -1,0 +1,65 @@
+<div id="container">
+
+  <form action="/journey" method="gets">
+
+  <div id="startstation">
+    <label for="start_station">Start station:<br>
+      <!-- # name is params -->
+      <select name="start_station" id="start_station">
+        <% $lines.each do |line, stations| %>
+          <optgroup label="<%= line.to_s.capitalize %> line">
+            <% stations.each do |station| %>
+
+              <% if params[:start_station] %>
+                <% start_station = params[:start_station].split(' : ')[0] %>
+              <% else %>
+                <% start_station = station %>
+              <% end %>
+
+              <option value="<%= station %> : <%= line.capitalize %>" <%= "selected" if station == start_station %>><%= station %></option>
+            <% end %>
+          </optgroup>
+        <% end %>
+      </select>
+    </label>
+  </div>
+
+  <div id="stopstation">
+    <label for="stop_station">Stop station:<br>
+      <select name="stop_station" id="stop_station">
+        <% $lines.each do |line, stations| %>
+          <optgroup label="<%= line.to_s.capitalize %> line">
+            <% stations.each do |station| %>
+
+              <% params[:stop_station] ? stop_station = params[:stop_station].split(' : ')[0] : stop_station = station %>
+              <option value="<%= station %> : <%= line.capitalize %>" <%= "selected" if station == stop_station %>><%= station %></option>
+            <% end %>
+          </optgroup>
+        <% end %>
+      </select>
+    </label>
+  </div>
+
+  <button>GO!</button>
+  </form>
+
+  <div id="trip">
+      <% if @trip == 0 %>
+        <p>
+          Um.. You want to travel to where you already are?
+        </p>
+      <% end %>
+      <% if @trip.to_i < 0 || @trip.to_i > 0 %>
+        <p>
+          Your trip is <%= @trip %> stations away.
+        </p>
+      <%end %>
+  </div>
+</div>
+
+
+
+
+
+
+

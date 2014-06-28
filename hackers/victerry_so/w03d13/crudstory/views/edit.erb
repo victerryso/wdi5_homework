@@ -1,0 +1,12 @@
+<div id="container">
+  <h1>Crud Story</h1>
+  <form action="/<%= @story.id %>" method="post">
+    <label for="name"></label>
+    <input type="text" id="name" name="name" value="<%= @story.name %>"><br>
+
+    <label for="blog"></label>
+    <textarea type="text" rows="3" id="blog" name="blog"><%= @story.blog %></textarea><br>
+
+    <button>Update Story</button>
+  </form>
+</div>

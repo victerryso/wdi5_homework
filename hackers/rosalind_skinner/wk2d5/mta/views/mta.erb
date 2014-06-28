@@ -1,0 +1,45 @@
+<section class="results">
+<form action="/journey/" method="get">
+  <label for="start_station"><h2>Start station:</h2>
+    <select name="start_station" id="start_station">
+      <option value="start_station"></option>
+        <% $lines.keys.each do |line| line%>
+          <optgroup label="<%= line %>">
+            <% $lines[line].each do |s| s %>
+            <% line %>
+              <option value="<%= line %>,<%= s %>"><%= s %></option>
+            <% end %>
+          </optgroup>
+        <% end %>
+    </select>
+  </label>
+
+   <label for="end_station"><h2>End station:</h2>
+    <select name="end_station" id="end_station">
+      <option value="end_station"></option>
+        <% $lines.keys.each do |line| line %>
+          <optgroup label="<%= line %>">
+            <% $lines[line].each do |s| s %>
+
+              <option value="<%= line %>,<%= s %>"><%= s %></option>
+            <% end %>
+          </optgroup>
+        <% end %>
+    </select>
+  </label>
+  <button type="submit">Get my journey</button>
+</form>
+
+<% if @start_station%>
+
+<p>Your trip starts at <strong><%= @start_station %></strong> on the <strong><%= @start_line%></strong> line and ends at <strong><%= @end_station %></strong> on the <strong><%= @end_line %></strong> line.</p>
+
+<p> Your stops: <strong><%="#{@trip} , #{@trip2}." %></strong></p>
+
+<p>The number of stops in your trip is <strong><%= @journey%></strong>.</p>
+</section>
+<section class="text bottom">
+  stops: <strong><%=@journey%></strong>
+</section>
+<% end%>
+

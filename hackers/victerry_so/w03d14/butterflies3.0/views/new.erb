@@ -1,0 +1,24 @@
+<form action="/butterflies" method="post">
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name">
+
+  <label for="image">Image: </label>
+  <input type="url" id="image" name="image">
+
+  <label for="family">Family: </label>
+  <select type="family" id="family" name="family">
+    <% %w{Papilionidae Pieridae Nymphalidae Lycaenidae Riodinidae}.each do |family| %>
+      <option><%= family %></option>
+    <% end %>
+  </select>
+
+   <label for="plant">Plant: </label>
+  <select name="plant_id" id="plant">
+    <option value="0">None</option> <!-- how to make a null option -->
+    <% Plant.all.each do |plant| %>
+      <option value="<%= plant.id %>"><%= plant.name %></option>
+    <% end %>
+  </select>
+
+  <button>Add Butterfly</button>
+</form>

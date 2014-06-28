@@ -1,0 +1,33 @@
+body {
+  background: url("http://i.imgur.com/cSGLl7z.jpg");
+  font-family: Verdana;
+  max-width: 960px;
+  margin: 0 auto;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+form {
+  padding: 1em;
+}
+
+#stoplist, p {
+  padding: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.stops {
+  border: 2px solid white;
+  border-radius: 1em;
+  background-color: #96C8FA;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 10em;
+  margin: 0.5em;
+  text-align: center;
+}

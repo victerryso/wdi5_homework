@@ -1,0 +1,13 @@
+<h3> Enter Movie Title! </h3>
+<form action = '/' method ="get">
+  <input name = "title" placeholder = "Enter Movie Title here...">
+  <button>Search</button>
+</form>
+
+<p>
+<% if @title %>
+  Title: <%= @title.split.map(&:capitalize).join(' ') %><br>
+  Cast: <%= @actors.split.map(&:capitalize).join(' ') %><br>
+  <img src="<%= @poster %>">
+  <% end %>
+</p>

@@ -1,0 +1,11 @@
+<form action = "/" method = "get">
+  <input name = "movie" placeholder = "Movie">
+
+  <button> Search </button>
+</form>
+
+<% if @movie %>
+  Title: <%= @movie.capitalize %> (<%= @year %>)<br>
+  Cast: <%= @actors %><br><br>
+  <img src="<%= @poster %>">
+<% end %>

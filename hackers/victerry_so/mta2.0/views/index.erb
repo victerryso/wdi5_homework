@@ -1,0 +1,39 @@
+<form action="/" method="get">
+
+  <label for="s_stop">Starting Station:
+    <select name="s_stop">
+      <% $lines.values.flatten.sort.each do |stations| %> <!-- From the lines hash, we are grabbing the stops(values) which is made up off three different arrays, flattening them into one, sorting them out alphabetically and finally listing them all in a drop box -->
+        <option value="<%= stations %>"><%= stations %></option>
+        <% end %>
+    </select>
+  </label>
+
+  <br>
+
+  <label for="f_stop">Finishing Station:
+    <select name="f_stop">
+      <% $lines.values.flatten.sort.each do |stations| %>
+        <option value="<%= stations %>"><%= stations %></option>
+        <% end %>
+    </select>
+  </label>
+
+  <button>Search</button>
+</form>
+
+<% if @stoplist %>
+  <div id="stoplist"><% @stoplist.flatten.each do |x| %> <!-- List of stops one by one in a div -->
+    <div class="stops"><%= x %></div> <!-- Each stop div -->
+  <% end %></div> <!-- List of stops div -->
+
+
+<p>Starting Line: <%= @s_line %><br>
+  Starting Stop: <%= @s_stop %><br><br>
+  Finishing Line: <%= @f_line %><br>
+  Finishing Stop: <%= @f_stop %><br><br>
+  <%if @s_line == @f_line %>
+    There are <%= @numstops %> stops in between.
+  <% else %>
+    There are <%= @numstops %> stops in between via Union Square.
+  <% end %>
+<% end %></p>

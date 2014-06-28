@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+
+html{
+  height: 100%
+}
+
+body{
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Orbitron', sans-serif;;
+  font-weight: 100;
+  text-align: center;
+  background:url(../img/robot.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  padding: 40px;
+}
+
+#yes_button, #no_button, #done_button{
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    color: #fff;
+    font-size: 2.5em;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+#yes_button:hover {
+    border: none;
+    background:#08BF08;
+    box-shadow: 0px 0px 5px #72757F;
+}
+#no_button:hover {
+    border: none;
+    background:#BF281E;
+    box-shadow: 0px 0px 5px #72757F;
+}
+#done_button:hover{
+    border: none;
+    background:#2D2DE5;
+    box-shadow: 0px 0px 5px #72757F;
+}
+
