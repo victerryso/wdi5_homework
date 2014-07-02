@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SLP Calnedar</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav>
+      <li><%= link_to('Home','/')%></li>
+      <li><%= link_to('Calendar', calendar_show_path(date: @date, :region => 'New South Wales'))%></li>
+    </nav>
+    <nav>
+       <%== smartnav %>
+    </nav>
+    <div class ='container'>
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700);
+
+
+.icon_description p{
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+}
+
+#current_calendar_date{
+  font-family: 'Syncopate', sans-serif;
+  font-size: 25px;
+  color: #B20000;
+  font-weight: 700;
+}
+
+.list > div {
+ margin-top: 10px;
+ display: inline-block;
+ width: 48%;
+ vertical-align: top;
+ margin-left:20px;
+}
+
+.icon_description img {
+  height:50px;
+  width: 50px;
+
+}
+
+#kind{
+  font-size: 15px;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.event_form p, .user_form{
+  display: inline-block;
+  margin: 20px;
+}
+
+td{
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+ /* max-height: 200px;*/
+}
+
+div.day-cell {
+  height: 100px;
+  overflow: auto;
+  font-size: 10px;
+}
+
+div.day-cell img {
+  width: 3em;
+  float: top right;
+  margin: auto 0;
+}
+
+div.day-cell a{
+  font-size: 10px;
+}
+

@@ -1,0 +1,65 @@
+
+<div class='icon_description'>
+  <p id='kind'>Pesonal<br/>Events</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/VfuWprd.png?1', :title => 'Anniversary'),'/events/kind/Anniversary')%><br/>Anniversary</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/7NfALqS.png?1', :title => 'Birthday'), '/events/kind/Birthday') %><br/>Birthday</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/pEZwa3W.png?1', :title => 'Wedding'), '/events/kind/Wedding')%><br/>Wedding</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/QgyWEnt.png?1', :title => 'Babyshower'),'/events/kind/Babyshower')%><br/>Babyshower</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/g2Pa7a9.png?1', :title => 'Dinner'),'/events/kind/Dinner')%><br/>Dinner</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/BIrp93l.png?1', :title => 'Party'),'/events/kind/Party')%><br/>Party</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/OcIn4ds.png?1', :title => 'Travel'),'/events/kind/Travel')%><br/>Travel</p>
+
+  <p><%= link_to(image_tag('http://i.imgur.com/VgujmI2.png?1', :title => 'Meeting'),'/events/kind/Meeting')%><br/>Meeting</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/q4shvdS.png?1', :title => 'Workshop'),'/events/kind/Workshop')%><br/>Workshop</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/f10BbHs.png?1', :title => 'Presentation'),'/events/kind/Presentation')%><br/>Presentation</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/5PrjrVs.png?1', :title => 'Conference'),'/events/kind/Conference')%><br/>Conference</p>
+  <p><%= link_to(image_tag('http://i.imgur.com/tAT8AUw.png?1', :title => 'Others'),'/events/kind/others')%><br/>Others</p>
+</div>
+
+
+<div class='icon_description'>
+  <p id='kind' >Public<br/>Holiday</p>
+  <p><%= image_tag('http://i.imgur.com/Sxa1rTl.png?1')%><br/>New Year</p>
+  <p><%= image_tag('http://i.imgur.com/zOhmINw.png?1')%><br/>Easter</p>
+  <p><%= image_tag('http://i.imgur.com/YRAOZlL.png?1')%><br/>Qeen's Birthday</p>
+  <p><%= image_tag('http://i.imgur.com/rvGvYSh.png?1')%><br/>Christmas</p>
+  <p><%= image_tag('http://i.imgur.com/NxNrPHD.png?1')%><br/>Others</p>
+</div>
+
+<div class='list' >
+
+<div class='Events_list'>
+  <h1>Your Events</h1>
+  <ol>
+  <% @events.each do |event| %>
+    <li><%= image_tag(event.image) %><%= event.name %>
+      ( <%= link_to(event.date, events_path(date: event.date, :region => "New South Wales"))%> ) <%= link_to('Details', event) %>
+    </li>
+  <% end %>
+  </ol>
+</div>
+
+<div class='Public_holiday_list'>
+  <h1>Public Holiday</h1>
+   <ol>
+    <% @public_holidays.each do |holiday| %>
+      <li><% holi_name = holiday.local_name.to_s.split(" ").first %>
+        <%  if holi_name == "New"
+              holiday_image ='http://i.imgur.com/Sxa1rTl.png?1'
+            elsif holi_name == "Easter"
+                holiday_image = 'http://i.imgur.com/zOhmINw.png?1'
+            elsif holi_name == "Queen's"
+                holiday_image = 'http://i.imgur.com/YRAOZlL.png?1'
+            elsif holi_name == "Christmas"
+                holiday_image = 'http://i.imgur.com/rvGvYSh.png?1'
+            else
+                holiday_image = 'http://i.imgur.com/NxNrPHD.png?1'
+            end %>
+        <%= image_tag(holiday_image) %>
+        <%= holiday.local_name.to_s %>
+        ( <%= link_to(holiday.date, events_path(date: holiday.date, :region => "New South Wales"))%> )
+      </li>
+   <% end %>
+  </ol>
+ </div>
+</div>
