@@ -5,8 +5,6 @@ var network = {
   lineN: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"]
 };
 
-// WANT TO HAVE = inputs can be capitalized or lowercase
-
 // F1: Function to get user input
 var getInput = function(message, value) {
   var input = window.prompt(message, value);
@@ -84,60 +82,52 @@ var getJourney = function() {
     var journey = network[startLine].reverse().slice((network[startLine].indexOf(startStation) + 1),(network[stopLine].indexOf(stopStation) + 1));
     console.log("There are " + journey.length + " stop(s) between " + startStation + " and " + stopStation + ".");
     console.log("Your journey: " + journey);
-
   } else if (directionTest() === "upline THEN... downline."){
-// GOOD
-    console.log("MULTIPLE LINES, Journey 1 upline THEN... downline.");
     var journey1 = network[startLine].slice(startIndex + 1, UnionIndex(startLine) + 1);
     var journey2 = network[stopLine].reverse().slice(network[stopLine].indexOf("Union Square") + 1, network[stopLine].indexOf(stopStation) + 1);
     console.log("There are " + ( journey1.length + journey2.length ) + " stop(s) between " + startStation + " and " + stopStation + ".");
-    console.log(journey1 + " [TRANSFER LINE] " + journey2.reverse());
+    console.log("Your journey: " + journey1 + " [TRANSFER] " + journey2);
 // GOOD
   } else if (directionTest() === "upline THEN... upline."){
-    console.log("MULTIPLE LINES, Journey 2 upline THEN... upline.");
     var journey1 = network[startLine].slice(startIndex + 1, UnionIndex(startLine) + 1);
     var journey2 = network[stopLine].slice(UnionIndex(stopLine) + 1, stopIndex + 1);
     console.log("There are " + ( journey1.length + journey2.length ) + " stop(s) between " + startStation + " and " + stopStation + ".");
-    console.log(journey1 + " [TRANSFER LINE] " + journey2);  
+    console.log("Your journey: " + journey1 + " [TRANSFER] " + journey2);  
 // GOOD
   } else if (directionTest() === "downline THEN... upline."){
-    console.log("MULTIPLE LINES, Journey 3 downline THEN... upline.");
     var journey1 = network[startLine].reverse().slice(network[startLine].indexOf(startStation) + 1, network[startLine].indexOf("Union Square") + 1);
     var journey2 = network[stopLine].slice(UnionIndex(stopLine) + 1, stopIndex + 1);
     console.log("There are " + ( journey1.length + journey2.length ) + " stop(s) between " + startStation + " and " + stopStation + ".");
-    console.log(journey1.reverse() + " [TRANSFER LINE] " + journey2);  
+    console.log("Your journey: " + journey1.reverse() + " [TRANSFER] " + journey2);  
 // GOOD
   } else if (directionTest() === "downline THEN... downline."){
-    console.log("MULTIPLE LINES, Journey 4 downline THEN... downline.");
     var journey1 = network[startLine].reverse().slice(network[startLine].indexOf(startStation) + 1, network[startLine].indexOf("Union Square") + 1);
     var journey2 = network[stopLine].reverse().slice(network[stopLine].indexOf("Union Square") + 1, network[stopLine].indexOf(stopStation) + 1);
     console.log("There are " + ( journey1.length + journey2.length ) + " stop(s) between " + startStation + " and " + stopStation + ".");
-    console.log(journey1 + " [TRANSFER LINE] " + journey2);  
+    console.log("Your journey: " + journey1 + " [TRANSFER] " + journey2);  
   } else {
     console.log("Invalid.")
   };
 };
 
-
-// Math.abs(index)
-
 // ALL THINGS START POSITION
+// SEED IF NEEDED: var startLineInput = "L";
+// SEED IF NEEDED: var startStation = "1st";
 var startLineInput = getInput("Type in start line.", "6, " + "L or " + "N");
 var startLine = transformLine(startLineInput);
 var startStation = getInput("What is your start station?", network[startLine]);
 var startIndex = getIndex(startLine, startStation);
 
 // ALL THINGS STOP POSITION
+// SEED IF NEEDED: var stopLineInput = "N";
+// SEED IF NEEDED: var stopStation = "Times Square";
 var stopLineInput = getInput("Type in stop line.", "6, " + "L or " + "N");
 var stopLine = transformLine(stopLineInput);
 var stopStation = getInput("What is your stop station?", network[stopLine]);
 var stopIndex = getIndex(stopLine, stopStation);
 
-
-// CONSOLE RESULTS
-console.log("Number of line(s): " + lineCount());
-
-console.log(startLine + " " + startStation + " " + startIndex );
-console.log(stopLine + " " + stopStation + " " + stopIndex);
+// RESULTS IN CONSOLE
+console.log("Start Station: " + startStation + " on Line " + startLineInput);
+console.log("Stop Station: " + stopStation + " on Line " + stopLineInput);
 
 getJourney();
