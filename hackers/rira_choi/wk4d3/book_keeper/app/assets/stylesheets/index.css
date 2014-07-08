@@ -28,7 +28,7 @@ nav li, a{
 }
 
 nav .blank{
-  margin-right: 400px;
+  margin-right: 450px;
 }
 
 h1{
@@ -50,7 +50,7 @@ h4{
 
 h2{
   text-align: right;
-  margin-right: 200px;
+  margin-right: 20%;
 }
 
 #new_left, #new_right{
@@ -60,7 +60,7 @@ h2{
 }
 
 #new_left{
-  margin-left: 10px;
+  margin-left: 7%;
   margin-bottom: 50px;
 }
 
@@ -70,15 +70,20 @@ h2{
 }
 
 .logo{
-   max-width: 600px;
-  margin-left: 170px;
+  max-width: 600px;
+  margin-left: 15%;
   margin-top: 20px;
 }
 
+.logo a:hover{
+  opacity: 0.7;
+}
+
 #logo_left{
-  max-width: 350px;
+  max-width: 4300px;
+  height: 550px;
   border:20px solid rgba(127, 117, 94, 0.3);
-  margin-left: 100px;
+  margin-left: 5%;
   margin-bottom: 100px;
 }
 
@@ -108,5 +113,5 @@ input, textarea {
 }
 
 #container{
-  margin-bottom: 60px;w
+  margin-bottom: 60px;
 }

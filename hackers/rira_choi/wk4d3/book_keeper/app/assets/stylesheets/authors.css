@@ -22,7 +22,7 @@
 }
 
 .authors_book{
-  margin-left: 250px;
+  margin-left: 25%;
 }
 
 .list_img{
@@ -31,6 +31,11 @@
 .abook_each{
   display: inline-block;
 }
+
+.abook_each a:hover{
+  opacity: 0.5
+}
+
 
 .book_each{
   max-width: 500px;
@@ -52,14 +57,23 @@
   vertical-align: top;
 }
 
+#list_icon{
+  margin-left: 8%;
+}
+
 .book_list{
   max-width: 450px;
-  margin-left: 200px;
+  margin-left: 15%;
 }
 
 #show_img, .book_info{
   display: inline-block;
   vertical-align: top;
+}
+
+#authors_book_list{
+  text-align: left;
+  margin-left: 5%;
 }
 
 .book_info{
@@ -73,7 +87,7 @@
   color: #E6E6B8;
 }
 
-.option a, .book_info a:hover{
+.option a:hover, .book_info a:hover{
   color: #FFE680;
 }
 
