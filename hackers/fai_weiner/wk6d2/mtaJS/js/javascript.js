@@ -23,7 +23,7 @@ var transformLine = function(line) {
 
 // Function to get index automatically
 var getIndex = function(startLine, startStation) {
-  var index = network[transformLine(startLine)].indexOf(startStation);
+  var index = network[startLine].indexOf(startStation);
   return index;
 };
 
@@ -34,24 +34,30 @@ var getIndex = function(startLine, startStation) {
 
 // .reverse()
 
-var startLine = getInput("Type in start line.", "6, " + "L or " + "N");
-var startStation = getInput("What is your start station?", network[transformLine(startLine)]);
-var stopLine = getInput("Type in stop line.", "6, " + "L or " + "N");
-var stopStation = getInput("What is your stop station?", network[transformLine(stopLine)]);
+var startLineInput = getInput("Type in start line.", "6, " + "L or " + "N");
+var startLine = transformLine(startLineInput);
+var startStation = getInput("What is your start station?", network[startLine]);
+
+var stopLineInput = getInput("Type in stop line.", "6, " + "L or " + "N");
+var stopLine = transformLine(stopLineInput);
+var stopStation = getInput("What is your stop station?", network[stopLine]);
+
 
 var startIndex = getIndex(startLine, startStation);
 var stopIndex = getIndex(stopLine, stopStation);
 
-console.log(transformLine(startLine)); 
+console.log(startLine);
 console.log(startIndex);
-console.log(transformLine(stopLine));  
+console.log(stopLine);  
 console.log(stopIndex);
 
 if (startLine === stopLine) {
   console.log("Same line.");
   if (startIndex === -1 || stopIndex === -1) {
     console.log("end of the line included.");
-  }
+  } else {
+    console.log("come back to this");
+  };
 } else {
   console.log("Stations are not on the same line.");
 };
