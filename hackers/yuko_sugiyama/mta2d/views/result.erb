@@ -1,0 +1,32 @@
+<%= erb :form %>
+<div id = "result_shown">
+  <% if @total_stops != 0 && @total_stops_two != 0 %>
+    <% if @dep_line == @arr_line %>
+      <p>Total stops for destination: <%=@total_stops%></p>
+
+        <% if @check_direction > 0 %>
+          <p>Your trip starts from <%=@dep_station_pick%> and stop at <%= @arr_station_pick %>.<br>The stop stations are :<div class = "stop"><%= @user_stops %></div></p>
+        <% else %>
+        <p>Your trip starts from <%=@dep_station_pick%> and stop at <%= @arr_station_pick %>.<br> The stop stations are :<%= @r_user_stops %> </p>
+        <% end %>
+    <% else %>
+      <p>Total stops for destination: <%= @total_stops_two %></p>
+
+        <%if (@intersection_index_dep - @index_dep)> 0 %>
+            <% if (@index_arr - @intersection_index_arr)>0 %>
+              <p>Your trip starts from <%= @dep_line.upcase %>: <%= @dep_station_pick%> to <%= @arr_line.upcase %>: <%= @arr_station_pick %>.<br>Change at <%= $mta[@dep_line][@intersection_index_dep]%>.<br> The stop stations are: <%= @user_total_stops_two %> </p>
+              <% else %>
+              <p>Your trip starts from <%= @dep_line.upcase %>: <%= @dep_station_pick %> to <%= @arr_line.upcase %>: <%= @arr_station_pick %>.<br>Change at <%= $mta[@dep_line][@intersection_index_dep]%>.<br> The stop stations are: <%= @r_user_total_stops_two %>.</p>
+            <% end %>
+        <% else %>
+            <% if (@index_arr - @intersection_index_arr)>0 %>
+              <p>Your trip starts from <%= @dep_line.upcase %>: <%= @dep_station_pick%> to <%= @arr_line.upcase %>: <%= @arr_station_pick%>.<br>Change at <%= $mta[@dep_line][@r_intersection_index_dep] %>.<br>The stop stations are:<%=@rd_user_total_stops %>.</p>
+              <% else %>
+                <p>Your trip starts from <%= @dep_line.upcase %>: <%= @dep_station_pick%> to <%= @arr_line.upcase %>: <%= @arr_station_pick %>.<br>Change at <%= @r_dep_array[@r_intersection_index_dep] %>.<br>The stop stations are:<%=@rda_user_total_stops %>.
+            <% end %>
+      <% end %>
+    <% end%>
+  <% else %>
+    <p>You are already at the destination staion.</p>
+  <% end %>
+</div>
