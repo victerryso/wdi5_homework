@@ -136,3 +136,75 @@ select {
   background-color: #FFF;
   border:1px solid #ccc;
 }
+
+.trip {
+  position: relative;
+}
+
+.s {
+  width:20px;
+  height: 20px;
+  border: 5px solid #EF504F;
+  border-radius: 100%;
+  background:#FFF;
+  display:inline-block;
+  box-sizing:border-box;
+  margin:40px;
+  position:relative;
+}
+
+.s p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  white-space: nowrap;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.connect {
+  width: 100px;
+  height: 1px;
+  border: 2px solid #EF504F;
+  background: #FFF;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 3px;
+}
+
+.union_square {
+  border: 5px solid #84CDC2;
+}
+
+.end {
+  border: 2px solid rgba(255,255,255,0);
+  background:rgba(255,255,255,0);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .bottom {
+    position:inherit;
+    margin-left:300px;
+  }
+
+  button {
+    width:100%;
+  }
+
+  .s {
+    display:block;
+  }
+
+  .s p {
+    margin-left:40px;
+    margin-top:0;
+  }
+  .connect {
+    -webkit-transform: rotate(0.25turn);
+    position:absolute;
+    left:-33px;
+    top:32px;
+    width:75px;
+  }
+}

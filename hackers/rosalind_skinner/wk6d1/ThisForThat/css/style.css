@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
+html,body {
+  text-align:center;
+  height:100vh;
+}
+
+h1,h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight:100;
+}
+
+h3 {
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+}
+
+div {
+  vertical-align:middle;
+  margin:auto;
+  margin-top:100px;
+  width:50%;
+}

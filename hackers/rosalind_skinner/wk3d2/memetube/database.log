@@ -1,0 +1,6 @@
+D, [2014-06-21T18:11:08.538913 #10510] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-21T18:11:08.548171 #10510] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-21T18:11:08.550038 #10510] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-21T20:01:57.071820 #10510] DEBUG -- :   [1m[35m (2.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-21T20:01:57.085053 #10510] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-21T20:01:57.276474 #10510] DEBUG -- :   [1m[35m (0.4ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
