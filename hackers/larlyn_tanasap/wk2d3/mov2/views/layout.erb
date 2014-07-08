@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%= yield %>
+    <form action="/" method="get">
+      <label for="prompt">What movie are you looking for? </label>
+      <input name="search" placeholder="Movie title here">
+      <button>Find the info!</button>
+    </form>
+</body>
+</html>

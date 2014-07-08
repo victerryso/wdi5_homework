@@ -1,0 +1,254 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+*:focus {
+  outline: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+html {
+  background: #111;
+  margin: 0;
+  overflow: auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background: #111;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+  font-size: 1.4em;
+  font-weight: 300;
+  overflow: auto;
+}
+
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #333;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.3em;
+}
+
+div#station_input {
+  padding: 1.5em;
+  background: #bf0000;
+  position: fixed;
+  width: 100%;
+  height: 10em;
+  top: 0;
+  border-bottom: 1em double #222;
+  z-index: 10;
+}
+
+form, h1 {
+  max-width: 800px;
+  margin: auto;
+}
+
+fieldset {
+  display: inline-block;
+  border: 0;
+}
+
+form label {
+  display: inline-block;
+  margin: .2em;
+  position: relative;
+  width: 20em;
+}
+
+form select {
+  background: #222;
+  border: 0;
+  margin-right: 10px;
+  position: absolute;
+  right:0;
+  min-width: 9.5em;
+}
+
+form button {
+  background: #222;
+  border: 0;
+  padding: 1em;
+  border-radius: 2em;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 5px 5px #111;
+}
+
+form button:hover, form button:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+
+h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+h2:last-of-type {
+  margin: 4em 2.5em;
+}
+
+div#results {
+  padding: 0;
+  margin-top: 10em;
+}
+
+div#results p {
+  text-align: center;
+}
+
+.stopinfo {
+  color: #df2020;
+  font-weight: 400;
+}
+
+div#results #tripplan {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div.arrow {
+  font-size: 1.3em;
+  font-weight: 700;
+  background: #bf0000;
+  width: 2em;
+  height:2em;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: .5em;
+  margin:auto;
+}
+
+div.station {
+  margin-top: 8em;
+  height: 5em;
+  width: 5em;
+  display: inline-block;
+  border-radius: 100%;
+  background: #aadd00;
+  border: 1em solid #181;
+}
+
+div.station:nth-of-type(odd){
+  background: #dfdf00;
+  border: 1em solid #970;
+}
+
+div.station:hover, div.station:active {
+  background: #af0000;
+  border: 1em solid #811;
+}
+
+div.tripline {
+  background: #111;
+  border-left: 1em double #ddd;
+  position: absolute;
+  z-index: 1;
+  height: 8.4em;
+  width: 1px;
+  margin-left: 2em;
+  margin-top: 12.95em;
+}
+
+div.tripline:hover, div.tripline:active {
+  border-left: 1em double #af0000;
+}
+
+div.stationtext {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9.5em;
+  margin-left: 1em;
+  border-bottom: .3em solid;
+  padding-bottom: .2em;/*
+  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -moz-transform:rotate(-25deg);*/
+}
+
+@media (max-width: 729px){
+  p {
+    font-size: 1.6em;
+  }
+  div#station_input {
+    height: 14em;
+  }
+  div#results {
+    margin-top: 15em;
+  }
+  form {
+    margin: auto;
+    position: relative;
+  }
+  form button {
+    position: relative;
+    left: 13em;
+  }
+  form button:hover, form button:active {
+    position: relative;
+    left: 13.2em;
+    top: 5px;
+  }
+}
+
+@media (max-width: 520px){
+  p {
+    font-size: 1.5em;
+  }
+  h1 {
+    margin: auto;
+    font-size: 1.9em;
+  }
+
+  h2:last-of-type {
+  margin: 4em 1em;
+  }
+
+  div#station_input {
+    height: 16em;
+    padding: 1em;
+  }
+  form {
+    max-width: 520px;
+  }
+  form label {
+    text-align: center;
+    margin-left: -3em;
+  }
+  form select {
+    margin: .3em 1em;
+    position: relative;
+    width: 12em;
+  }
+  form button {
+    position: relative;
+    left:7.5em;
+    font-size: .7em;
+  }
+  form button:hover, form button:active {
+    position: relative;
+    left: 7.7em;
+    top: 5px;
+  }
+  div#results {
+    margin-top: 16em;
+  }
+}

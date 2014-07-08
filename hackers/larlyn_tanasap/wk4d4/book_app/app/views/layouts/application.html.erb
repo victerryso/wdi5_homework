@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to( 'bookBASE', root_path) %></li>
+      <li><%= link_to( 'All Authors', authors_path ) %></li>
+      <li><%= link_to( 'New Author', new_author_path ) %></li>
+      <li><%= link_to( 'All Books', books_path) %></li>
+      <li><%= link_to( 'New Books', new_book_path) %></li>
+      <li><%= render :partial => '/pages/searchform' %>
+      </li>
+    </ul>
+  </nav>
+  <div id="wrap">
+    <%= yield %>
+    <footer>
+      bookBASE 2014
+    </footer>
+  </div>
+</body>
+</html>

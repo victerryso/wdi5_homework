@@ -1,0 +1,2 @@
+D, [2014-06-19T11:48:08.518008 #5426] DEBUG -- :   [1m[36mButterfly Load (1.2ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"[0m
+D, [2014-06-19T11:48:08.523494 #5426] DEBUG -- :   [1m[35mButterfly Load (0.1ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"

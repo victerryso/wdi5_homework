@@ -1,0 +1,7 @@
+
+<% @videos.reverse.each do |video|%>
+  <li>
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/<%= video['url'][-11..-1] %>" frameborder="0" allowfullscreen></iframe><br>
+  <a href="/videos/<%= video['id']%>"><%= video['title'] %></a>
+  </li>
+<% end %>

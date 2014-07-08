@@ -1,0 +1,69 @@
+D, [2014-06-18T14:20:07.432798 #2164] DEBUG -- :   [1m[36mVideo Load (0.9ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T14:20:07.438890 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:35:04.681343 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T14:35:04.682719 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:35:39.020153 #2164] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T14:35:39.023720 #2164] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("description", "genre", "title", "url") VALUES (?, ?, ?, ?)  [["description", "dfsfasd"], ["genre", "comedy"], ["title", "Relateable"], ["url", "https://www.youtube.com/watch?v=E_UjbvLvp4A"]]
+D, [2014-06-18T14:35:39.024500 #2164] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T14:35:39.031419 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T14:35:39.032890 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:37:27.236022 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T14:37:27.237389 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:37:29.162548 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 10]]
+D, [2014-06-18T14:37:29.164724 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:38:51.307907 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 10]]
+D, [2014-06-18T14:38:51.309951 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:38:52.524139 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 10]]
+D, [2014-06-18T14:38:52.526905 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:38:58.972353 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 10]]
+D, [2014-06-18T14:38:58.972764 #2164] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T14:38:58.973938 #2164] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "videos" SET "description" = ?, "title" = ? WHERE "videos"."id" = 10  [["description", "  dfsfasd\r\n  "], ["title", "Relateable Comedy"]]
+D, [2014-06-18T14:38:58.974661 #2164] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T14:38:58.975743 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:39:58.627889 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:39:58.630001 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:40:00.747557 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:40:00.750100 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:40:04.263330 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:40:04.263794 #2164] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:40:04.264714 #2164] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "videos" SET "description" = ? WHERE "videos"."id" = 10[0m  [["description", "Lol\r\n  \r\n  "]]
+D, [2014-06-18T14:40:04.265416 #2164] DEBUG -- :   [1m[35m (0.5ms)[0m  commit transaction
+D, [2014-06-18T14:40:04.271052 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:40:04.273181 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:41:09.886959 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:09.890120 #2164] DEBUG -- :   [1m[35mVideo Load (0.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:41:12.589502 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:12.592199 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:41:16.495822 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:16.496159 #2164] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:41:16.496837 #2164] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "videos" SET "description" = ? WHERE "videos"."id" = 10[0m  [["description", "Lol\r\n  \r\n  \r\n  "]]
+D, [2014-06-18T14:41:16.497348 #2164] DEBUG -- :   [1m[35m (0.4ms)[0m  commit transaction
+D, [2014-06-18T14:41:16.502471 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:16.504721 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:41:20.411670 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:20.414959 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:41:22.588235 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:22.588651 #2164] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:41:22.589358 #2164] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "videos" SET "description" = ? WHERE "videos"."id" = 10[0m  [["description", "  Lol\r\n  dsfasdfa\r\n  \r\n  \r\n  "]]
+D, [2014-06-18T14:41:22.589968 #2164] DEBUG -- :   [1m[35m (0.5ms)[0m  commit transaction
+D, [2014-06-18T14:41:22.595138 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1[0m  [["id", 10]]
+D, [2014-06-18T14:41:22.597315 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:42:25.964922 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T14:42:25.966218 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T14:42:33.175740 #2164] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T14:42:33.176586 #2164] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("description", "genre", "title", "url") VALUES (?, ?, ?, ?)  [["description", "sdfasdfas"], ["genre", "parody"], ["title", "toy story"], ["url", "https://www.youtube.com/watch?v=E_UjbvLvp4A"]]
+D, [2014-06-18T14:42:33.177229 #2164] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T14:42:33.183341 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T14:42:33.184767 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:42:36.437186 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 11]]
+D, [2014-06-18T14:42:36.440024 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T14:42:38.389011 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 11]]
+D, [2014-06-18T14:42:38.389219 #2164] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T14:42:38.391920 #2164] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  DELETE FROM "videos" WHERE "videos"."id" = ?  [["id", 11]]
+D, [2014-06-18T14:42:38.397329 #2164] DEBUG -- :   [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T14:42:38.403921 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T14:42:38.405314 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T21:48:43.692981 #2164] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T21:48:43.694827 #2164] DEBUG -- :   [1m[36mVideo Load (0.1ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T21:48:46.376572 #2164] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT  "videos".* FROM "videos"  WHERE "videos"."id" = ? LIMIT 1  [["id", 10]]
+D, [2014-06-18T21:48:46.378952 #2164] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m

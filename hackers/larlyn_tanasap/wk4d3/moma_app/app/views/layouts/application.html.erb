@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MOMA - Museum of Modern Art</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><%= link_to('MoMA', root_path) %></li>
+    <li><%= link_to('Works', works_path) %></li>
+    <li><%= link_to('Add Work', new_work_path) %></li>
+    <li><%= link_to('Artists', artists_path) %></li>
+    <li><%= link_to('Add Artist', new_artist_path) %></li>
+  </ul>
+</nav>
+  <%= yield %>
+
+</body>
+</html>

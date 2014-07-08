@@ -1,0 +1,13 @@
+<h2><%= @mountain.name %></h2>
+
+<p>
+  <%= @mountain.name %> was first climbed in the year <%= @mountain.first_climb%>.
+  It is located in the country <%= @mountain.country %>, and is roughly <%= number_to_human(@mountain.height, :units => :distance) %> tall.
+</p>
+
+<% if @mountain.image %>
+<p><%= image_tag(@mountain.image, :class => 'thumb')%></p>
+<% end %>
+<p>
+<%= link_to('Move mountain', mountain_edit_path(@mountain.id)) %>
+</p>

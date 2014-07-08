@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MountainApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to('All mountains', root_path) %></li>
+      <li><%= link_to('New Mountain', new_path) %></li>
+    </ul>
+  <div id="content">
+       <%= yield %>
+
+       <h1>Remember: Mountains are merely mountains.</h1>
+     </div>
+  </div>
+
+
+</body>
+</html>

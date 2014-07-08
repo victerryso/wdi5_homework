@@ -1,0 +1,25 @@
+<h2>Books recently published</h2>
+<div class='recent book'>
+  <% @recent_books.each do |book| %>
+      <p>
+        <%= link_to(book) do %>
+          <%= image_tag(book.image, :class => 'thumb') %>
+          <br>
+          <%= book.title %>
+        <% end %>
+      </p>
+  <% end %>
+</div>
+
+<h2>Recently published Authors</h2>
+<div class='recent author'>
+  <% @recent_authors.each do |author| %>
+      <p>
+        <%= link_to(author) do %>
+          <%= image_tag(author.image, :class => 'thumb') %>
+          <br>
+          <%= author.name %>
+        <% end %>
+      </p>
+  <% end %>
+</div>

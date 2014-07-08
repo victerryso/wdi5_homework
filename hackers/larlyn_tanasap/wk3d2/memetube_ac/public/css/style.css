@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  margin:0;
+  padding: 0;
+  border:0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+body {
+  margin: auto;
+  font-size: 1.2em;
+  background: #000;
+  font-family: 'Oswald', sans-serif;
+  color: #ddd;
+  font-weight: 300;
+  letter-spacing: .06em;
+}
+
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:visited {
+  color: #ff8205;
+}
+
+a:hover {
+  color: #ffad35;
+}
+
+#wrap {
+  max-width: 960px;
+  margin: auto;
+  background: #111;
+  background: radial-gradient(#333,#111)  ;
+  background: -moz-radial-gradient(#333,#111)  ;
+  background: -webkit-radial-gradient(#333,#111)  ;
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+
+h1.topbar {
+  display: inline-block;
+  color: #ff8205;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover {
+  border-radius:1em 1em 0 0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav {
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+}
+
+nav ul {
+  background: #111;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  border-radius: 2em;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 2em;
+  padding: 0 1em;
+}
+
+nav ul li:hover {
+    background: #444;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  border-radius: 0 0 1em 1em;
+  margin-left: -1em;
+}
+
+nav ul ul li {
+    position: relative;
+    width: 100%;
+}
+
+nav ul ul li:hover {
+    background: #444;
+    border-radius:0 0;
+}
+
+nav ul ul li:hover:last-child {
+    background: #444;
+    border-radius: 0 0 1em 1em;
+}
+
+div.vidform {
+  max-width: 80%;
+  margin:auto;
+  padding: 2em;
+}
+
+div.vidform form {
+  width: 90%;
+  margin: auto;
+  font-size: 1em;
+}
+
+div.vidform label {
+  display: block;
+}
+
+div.vidform input {
+  font-size: 1em;
+  padding: .2em;
+  margin: .2em;
+  border-radius: .4em;
+  background: #444;
+  color: #ddd;
+}
+
+div.vidform button {
+  font-size: 1em;
+  padding: .3em;
+  border-radius: .5em;
+  background: #ff8205;
+}
+
+div.vidform button:hover {
+  background: #ffad05;
+}
+
+div.vidform textarea {
+  width: 14em;
+  font-size: 1em;
+  height: 3em;
+  padding: .2em;
+  margin: .2em;
+  border-radius: .4em;
+  background: #444;
+  color: #ddd;
+}
+
+.vidfeed {
+  width: 80%;
+  margin: auto;
+  background: rgba(10,10,10,.3);
+ }
+
+.vidfeed li {
+  display: block;
+  padding: 2em;
+  margin:auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer {
+  text-align: center;
+  font-size: .7em;
+}
