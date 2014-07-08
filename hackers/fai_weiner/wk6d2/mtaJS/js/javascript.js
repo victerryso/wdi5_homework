@@ -3,13 +3,13 @@ var network = {
   lineL: ["8th", "6th", "Union Square", "3rd", "1st"],
   lineN: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"]
 };
-
+// Function to get user input
 var getInput = function(message, value) {
   var input = window.prompt(message, value);
   return input;
 };
 
-// Makes user life easier, transform line input into proper line name to match network
+// Transform line input into a variable that matches lines within network
 var transformLine = function(line) {
   if (line === "6") {
     return line = "line6"
@@ -17,8 +17,17 @@ var transformLine = function(line) {
     return line = "lineL"
   } else if (line === "N") {
     return line = "lineN"
+    // CATCH!!! wrong line input
   };
 };
+
+// Function to get index automatically
+var getIndex = function(startLine, startStation) {
+  var index = network[transformLine(startLine)].indexOf(startStation);
+  return index;
+};
+
+
 // Math.abs(index)
 
 // array.slice(start_index, stop_index + 1)
@@ -26,25 +35,25 @@ var transformLine = function(line) {
 // .reverse()
 
 var startLine = getInput("Type in start line.", "6, " + "L or " + "N");
-// var startStation = getInput("What is your start station?", "");
+var startStation = getInput("What is your start station?", network[transformLine(startLine)]);
 var stopLine = getInput("Type in stop line.", "6, " + "L or " + "N");
-// var stopStation = getInput("What is your stop station?", "");
+var stopStation = getInput("What is your stop station?", network[transformLine(stopLine)]);
 
-// if (startLine === "6") {
-//   var startIndex = network.lineL.indexOf(startLine);
-// } else if (startLine === "L") { 
-//   line = "lineL";
-//   var startIndex = network.lineL.indexOf(startLine);
-// } else if (startLine === "N") {
-//   line = "lineN";
-//   var startIndex = network.lineN.indexOf(startLine);
-// } else {
-//   alert("Invalid Line, please try again.");
-// };
+var startIndex = getIndex(startLine, startStation);
+var stopIndex = getIndex(stopLine, stopStation);
 
-console.log(transformLine(startLine))
-console.log(transformLine(stopLine))  
-// console.log(network[startLine]);
-// console.log(network[startLine].indexOf(startStation));
-// console.log(network[stopLine]);
-// console.log(network[stopLine].indexOf(stopStation));
+console.log(transformLine(startLine)); 
+console.log(startIndex);
+console.log(transformLine(stopLine));  
+console.log(stopIndex);
+
+if (startLine === stopLine) {
+  console.log("Same line.");
+  if (startIndex === -1 || stopIndex === -1) {
+    console.log("end of the line included.");
+  }
+} else {
+  console.log("Stations are not on the same line.");
+};
+
+
