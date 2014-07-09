@@ -1,0 +1,15 @@
+<h2><%= @author.name %></h2>
+<p><%= @author.nationality %></p>
+<p><%= @author.dob.strftime('%d %B %Y') %></p>
+<%= image_tag(@author.image) %>
+<%= link_to("Edit", edit_author_path(@author)) %>
+
+<% if !@author.books.empty? %>
+  <h3>Books</h3>
+    <% @author.books.each do |book| %>
+      <div class="writer_book">
+        <p><%= link_to(book.title, book) %></p>
+        <%= link_to(image_tag(book.image), book) %>
+      </div>
+    <% end %>
+<% end %>

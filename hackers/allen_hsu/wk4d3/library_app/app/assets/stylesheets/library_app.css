@@ -1,0 +1,88 @@
+/*main styles*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+body {
+  font-family: 'Merriweather', serif;
+  background: url(/assets/Riggs_Library_-_Georgetown_University.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+#container {
+  max-width: 960px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 20em;
+}
+/*nav styling*/
+nav {
+  background-color: black;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: 0;
+
+}
+nav h1 {
+  color: white;
+  font-size: 7em;
+  display: inline-block;
+  margin: 0 auto;
+}
+nav ul {
+  display: inline-block;
+  text-align: right;
+  list-style: none;
+  vertical-align: top;
+  margin-left: 2em;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  color: red;
+}
+nav form {
+  text-align: right;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+#search {
+  display: inline-block;
+  position: absolute;
+  top:7em;
+  right:10.5em;
+}
+/*content styling*/
+#content {
+  background: rgba(255,255,255,.9);
+  box-sizing: border-box;
+  min-height: 800px;
+  border-radius: 0 0 1em 1em;
+  padding: 1em;
+}
+#content label {
+  width: 90px;
+}
+#content a {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+#content a:hover {
+  color: red;
+}
+/*styling show*/
+.writer_book {
+  display: inline-block;
+  margin-right: 1em;
+}
+.writer_book img {
+  width: 15em;
+}
