@@ -1,0 +1,40 @@
+body {
+  color: white;
+  background: black;
+  font-family: arial;
+  text-align: center;
+}
+h1 {
+
+}
+.button {
+  display: inline-block;
+  width:150px;
+  height: 150px;
+  border-radius: 1em;
+  line-height: 150px;
+}
+
+.button:hover {
+  font-size: 2em;
+}
+.yes {
+  background: green
+}
+
+.no {
+  background: red;
+}
+
+.done {
+  background: blue;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+
+}

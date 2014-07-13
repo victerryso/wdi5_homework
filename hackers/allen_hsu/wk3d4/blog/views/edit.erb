@@ -1,0 +1,12 @@
+<div id="posting">
+  <form action="/blog/<%= @post.id %>" method="post">
+    <label for="heading">Heading
+      <input type="text" name="heading" id="heading" value="<%= @post.heading %>">
+    </label>
+    <label for="Blog">
+      <textarea name="new_post" id="" cols="30" rows="10" placeholder="Blog in here"><%= @post.content %>
+      </textarea>
+    </label>
+    <input type="submit">
+  </form>
+</div>

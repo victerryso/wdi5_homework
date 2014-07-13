@@ -1,10 +1,10 @@
-require 'pry'
-require 'pry-debugger'
+# require 'pry' if development?
+# require 'pry-debugger' if development?
 require 'sinatra'
-require 'sinatra/reloader'
-require 'httparty'
-require 'JSON'
-require 'sinatra/cookies'
+# require 'sinatra/reloader'
+# require 'httparty'
+# require 'JSON'
+# require 'sinatra/cookies'
 
 $Lines = {
   :N => [:N_Times_Square,:N_34th,:N_28th,:N_23rd,:Union_Square,:N8th],
@@ -44,6 +44,7 @@ def stops_list_1st(hash, start_station, end_station)
     return [stops]
   end
 end
+
 #multi stop transitions
 def stops_list_multi(hash, start_station, end_station)
   visited_common_stations = {
@@ -109,7 +110,6 @@ get '/' do
       :station => @stop
     }
     @stops = stops_list_multi($Lines, start_station, stop_station)
-    binding.pry
   end
   erb :form
 end

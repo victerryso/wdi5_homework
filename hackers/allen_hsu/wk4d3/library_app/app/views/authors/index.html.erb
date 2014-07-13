@@ -1,0 +1,8 @@
+<h2>Authors</h2>
+<% @authors.each do |author| %>
+  <div id="author">
+    <%= link_to(author.name, author) %>
+    <%= link_to("Edit", edit_author_path(author)) %>
+    <%= link_to("Delete", author_path(author), data:{method: :delete, confirm: "Are you sure you want to delete #{author.name}?"}) %>
+  </div>
+<% end %>
