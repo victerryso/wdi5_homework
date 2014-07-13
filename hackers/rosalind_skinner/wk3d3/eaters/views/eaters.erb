@@ -1,0 +1,23 @@
+<section class="grid">
+<% if params[:category] %>
+  <h2><%= params[:category]%></h2>
+<%else %>
+  <h2>Eat&Drink</h2>
+<% end %>
+
+  <ul class="grid-item">
+    <% @places.each do |place|%>
+    <li>
+      <ul>
+        <li>
+          <a href="/eaters/<%=place.id %>">
+            <%= place.name %>
+          </a>
+           <%= place.rating %>/5
+        </li>
+      </ul>
+      <img src="<%= place.image %>">
+    <% end %>
+    </li>
+  </ul>
+</section>

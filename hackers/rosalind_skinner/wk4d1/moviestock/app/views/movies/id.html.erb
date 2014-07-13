@@ -1,0 +1,17 @@
+<section class="movie">
+  <form action= "/lookup" method = "get">
+    <input type="text" name = "title" required placeholder = "Movie Title">
+
+    <button>Find Movie!</button>
+  </form>
+
+
+<h2><%= @movies['Title']%></h2>
+  <img src="<%= @movies['Poster']%>">
+  <div class="text">
+    <p><strong>Year: </strong><%= @movies['Year']%></p>
+    <p><strong>Actors: </strong><%= @movies['Actors']%></p>
+    <p><strong>Plot: </strong><%= @movies['Plot']%></p>
+  </div>
+
+</section>

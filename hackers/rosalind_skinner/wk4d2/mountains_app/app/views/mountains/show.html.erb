@@ -1,0 +1,9 @@
+
+<p>Name: <%= @mountain.name  %></p>
+<p>Location: <%= @mountain.location  %></p>
+<p>Elevation: <%= @mountain.elevation  %> ft</p>
+<p>Range: <%= @mountain.range  %></p>
+<p>Year of First Climb: <%= @mountain.first  %></p>
+
+<%= link_to('Mountain Edit', mountain_edit_path(@mountain.id))  %>
+

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Eaters</title>
+</head>
+<body>
+  <section class="container">
+    <header>
+      <h1><a href="/eaters">Eaters</a></h1>
+      <a href="/eaters/category/Bar"><img src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-beer-8-icon.png&r=0&g=0&b=0"></a>
+      <a href="/eaters/category/Cafe"><img src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-coffee-8-icon.png&r=0&g=0&b=0"></a>
+      <a href="/eaters/category/Restaurant"><img src="http://www.flaticon.com/png/256/18482.png"></a>
+      <nav>
+      <ul>
+
+        <li><a href="/eaters/new">New Eat</a></li>
+        <li><a hred="#">Category</a>
+          <ul>
+
+            <% @categories.each do |category| %>
+            <li><a href="/eaters/category/<%=category%>"><%=category%></a></li>
+            <% end %>
+          </ul>
+          </li>
+      </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </section>
+</body>
+</html>

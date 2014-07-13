@@ -1,0 +1,22 @@
+<section class="movie">
+  <form action= "/lookup" method = "get">
+    <input type="text" name = "title" required placeholder = "Movie Title">
+
+    <button>Find Movie!</button>
+  </form>
+
+
+
+    <h2>"<%= @title.gsub('+',' ') %>" results:</h2>
+    <% @movies['Search'].each do |movie| %>
+      <p>
+          <% @id = movie['imdbID']%>
+          <a href= <%= "/movies/#{@id}"%>>
+          <%=movie['Title']%> (<%=movie['Year']%>)
+        </a>
+      </p>
+
+    <% end %>
+
+  </section>
+

@@ -12,8 +12,10 @@
   </header>
   <div class="text">
       <h2>NYC MTA</h2>
-    </div>
+  </div>
     <%= yield %>
-
+  <section class="text bottom">
+    stops: <strong><%=@journey%></strong>
+  </section>
   </body>
 </html>

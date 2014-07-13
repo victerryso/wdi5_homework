@@ -1,0 +1,9 @@
+<h2>Are you sure you want to delete <%= @receipts['service'] %>?</h2>
+<form action="/receipts/<%= @receipts['id']%>/delete" method ="post">
+  <button type="submit" id="<%= @receipts['id']%>">
+  Yes!
+  </button>
+  <a href="/"><button type="button" href="/" value = "no">
+  No!
+  </button></a>
+</form>

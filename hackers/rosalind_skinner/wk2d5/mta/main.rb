@@ -41,13 +41,14 @@ get '/journey/' do
       else
         @trip = $lines[@end_line][@end..@start]
       end
-      @trip = @trip.length
+      @journey = @trip.length
+      @trip = @trip.join(', ')
     else
       if @start < @intersection1
         @trip = $lines[@start_line][@start..@intersection1]
       end
       if @end < @intersection2
-        @trip2 = $lines[@end_line][@end...@intersection2]
+        @trip2 = $lines[@end_line][@end..@intersection2]
         @trip2.reverse!
       end
       if @start > @intersection1
@@ -55,12 +56,19 @@ get '/journey/' do
         @trip.reverse!
       end
       if @end > @intersection2
-        @trip2 = $lines[@end_line][@intersection2...@end]
+        @trip2 = $lines[@end_line][@intersection2..@end]
       end
-      @journey = @trip.length + @trip2.length
-      @trip = @trip.join(', ')
-      @trip2 = @trip2.join(',  ')
-
+      if @trip2.nil?
+        @trip2
+        @journey = @trip.length
+        @trip = @trip.join(', ')
+      else
+        @trip2.shift
+        @journey = @trip.length + @trip2.length
+        @trip = @trip.join(', ')
+        @trip2 = @trip2.join(',')
+        @trip = @trip << (', ') << @trip2
+      end
     end
 
     erb :mta
