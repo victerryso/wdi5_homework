@@ -1,0 +1,12 @@
+<div class="inputs">
+  <form action="/bloggle/<%= @blog.id %>" method="post">
+    <label for="title">Title: </label>
+    <input type="text" id="title" name="title" value="<%= @blog.title %>">
+
+    <label for="description">Description: </label>
+    <textarea type="comment" id="description" name="description"><%= @blog.description %>"></textarea>
+
+    <button type="submit">Add!</button>
+  </form>
+</div>
+

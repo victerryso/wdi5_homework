@@ -1,0 +1,35 @@
+<h1><%= @book.title %></h1>
+<ul>
+  <li>
+    <%= image_tag(@book.image, :class => 'medium') %>
+  </li>
+  <li>
+    <%= link_to(@book.author.name, @book.author) if @book.author %>
+  </li>
+  <li>
+    <%= @book.description %>
+  </li>
+  <li>
+    <% if @book.genre != nil %>
+      <%= "Genre: #{@book.genre}" %>
+    <% end %>
+  </li>
+  <li>
+    <% if @book.release != nil %>
+      <%= "Released:  #{@book.release}" %>
+    <% end %>
+  </li>
+  <li>
+    <% if @book.pages != nil %>
+      <%= "Pages: #{@book.pages}" %>
+    <% end %>
+  </li>
+  <li>
+    <% if @book.ISBN != nil %>
+      <%= "ISBN: #{@book.ISBN}" %>
+    <% end %>
+  </li>
+  <li><%= link_to('Edit', edit_book_path(@book)) %></li>
+  <li><%= link_to('Delete', @book, :data => {:confirm => 'Are you sure you want to delete this work?', :method => :delete }) %></li>
+</ul>
+

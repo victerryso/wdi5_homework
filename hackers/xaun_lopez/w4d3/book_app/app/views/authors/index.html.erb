@@ -1,0 +1,11 @@
+<% @authors.each do |author| %>
+  <div id="tile">
+    <ul>
+      <li><%= image_tag(author.image, :class => 'thumb') %></li>
+      <li><%= link_to(author.name, author) %></li>
+      <li><%= author.nationality %></li>
+      <li><%= author.dob %></li>
+    </ul>
+  </div>
+<% end %>
+
