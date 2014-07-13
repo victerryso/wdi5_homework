@@ -18,7 +18,7 @@ body {
 }
 
 #carousel img {
-  float: left;
+  position: absolute;
 }
 
 .carousel-direction {

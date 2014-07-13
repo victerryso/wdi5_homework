@@ -1,0 +1,13 @@
+.backwards {
+  -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(1); /* linting rule fix + IE9 fix */
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    filter: fliph;
+}
+
+body {
+  height: 100vh;
+}

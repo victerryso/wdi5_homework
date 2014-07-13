@@ -52,12 +52,16 @@ nav form {
   margin-bottom: 1em;
   display: inline-block;
 }
+.links {
+  margin-top: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
 
 #search {
-  display: inline-block;
-  position: absolute;
-  top:7em;
-  right:10.5em;
+  text-align: right;
+  vertical-align: bottom;
+  margin-bottom: 2em;
 }
 /*content styling*/
 #content {
