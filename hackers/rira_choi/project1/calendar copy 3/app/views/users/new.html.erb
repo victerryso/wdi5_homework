@@ -1,0 +1,31 @@
+<% if @user.errors.any? %>
+  <h1> TRY AGAIN! </h1>
+  <ol>
+    <% @user.errors.full_messages.each do |msg| %>
+    <li><%=  msg  %></li>
+    <% end %>
+  </ol>
+<% end %>
+
+
+<%= form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username, :autofocs => true %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, :placeholder => 'hello@hello.com' %>
+
+  <%= f.label :dob, 'Date of birth' %>
+  <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD' %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image, :default => 'http://i.imgur.com/9Yka0wL.png?3' %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.submit %>
+  <% end %>

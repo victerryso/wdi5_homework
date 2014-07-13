@@ -1,5 +1,0 @@
-Author.destroy_all
-Book.destroy_all
-
-Author.create(:name => 'Jane Austen', :nationality => 'United Kingdom', :dob => '1775/12/16', :image => 'http://a3.files.saymedia-content.com/image/upload/c_fill,g_face,h_300,q_80,w_300/MTE1ODA0OTcxNTQ2ODcxMzA5.jpg')
-Book.create(:title => 'Pride and Prejudice', :year => '1813', :genre=> 'Romance novel', :description => 'Pride and Prejudice is a novel of manners by Jane Austen, first published in 1813. The story follows the main character Elizabeth Bennet as she deals with issues of manners, upbringing, morality, education, and marriage in the society of the landed gentry of early 19th-century England. Elizabeth is the second of five daughters of a country gentleman living near the fictional town of Meryton in Hertfordshire, near London.', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_VdBRlGPVuOjYhzwJbe-hTvU-qgye7Yb7wBslDx00RnEYu6uf7cN1FI')

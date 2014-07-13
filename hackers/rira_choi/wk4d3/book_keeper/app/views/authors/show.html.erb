@@ -9,7 +9,7 @@
   <p>Nationality | <%= @author.nationality %></p>
   <p style ='margin-bottom:50px;'>Born | <%= @author.dob.strftime('%d %B %Y')  %></p>
 
-  <h2 >The Author's books, </h2>
+  <h2 id='authors_book_list'>The Author's books, </h2>
   <% @author.books.each do |book| %>
   <div class='abook_each'>
   <p><%= link_to(image_tag(book.image, :class => 'small_img'), book) %></p>
