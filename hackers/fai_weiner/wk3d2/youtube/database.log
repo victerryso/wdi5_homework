@@ -1,0 +1,152 @@
+D, [2014-06-18T14:42:15.556903 #24470] DEBUG -- :   [1m[36mYoutube Load (1.5ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:42:33.955398 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:42:45.000621 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:44:16.451880 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:44:17.847866 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:46:54.017312 #24470] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:46:54.025994 #24470] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2014-06-18T14:49:10.198559 #24470] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:49:10.200896 #24470] DEBUG -- :   [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "youtubes" ("description", "genre", "title") VALUES (?, ?, ?)[0m  [["description", "The original Harlem Shake!"], ["genre", "Pop Culture"], ["title", "The Harlem Shake v1 (TSCS original)"]]
+D, [2014-06-18T14:49:10.202183 #24470] DEBUG -- :   [1m[35m (0.9ms)[0m  commit transaction
+D, [2014-06-18T14:49:10.209169 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:49:30.751231 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:49:40.518458 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:49:42.934385 #24470] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T14:49:42.935301 #24470] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "youtubes" ("description", "genre", "title") VALUES (?, ?, ?)[0m  [["description", "The original Harlem Shake!"], ["genre", "Pop Culture"], ["title", "The Harlem Shake v1 (TSCS original)"]]
+D, [2014-06-18T14:49:42.936447 #24470] DEBUG -- :   [1m[35m (0.9ms)[0m  commit transaction
+D, [2014-06-18T14:49:42.943938 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:50:18.761154 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:50:40.980053 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:52:08.925426 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:52:11.995669 #24470] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T14:52:11.996691 #24470] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "youtubes" ("description", "genre", "title") VALUES (?, ?, ?)  [["description", "The original Harlem Shake!"], ["genre", "Pop Culture"], ["title", "The Harlem Shake v1 (TSCS original)"]]
+D, [2014-06-18T14:52:11.997666 #24470] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T14:52:12.005971 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:53:38.012090 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:53:41.394204 #24470] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-18T14:53:41.395897 #24470] DEBUG -- :   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "youtubes" ("description", "genre", "title", "url") VALUES (?, ?, ?, ?)[0m  [["description", "The original Harlem Shake!"], ["genre", "Pop Culture"], ["title", "The Harlem Shake v1 (TSCS original)"], ["url", "https://www.youtube.com/watch?v=384IUU43bfQ"]]
+D, [2014-06-18T14:53:41.397153 #24470] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2014-06-18T14:53:41.406610 #24470] DEBUG -- :   [1m[36mYoutube Load (0.5ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:54:00.347150 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:54:01.407200 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:54:36.824766 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:54:53.585717 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:58:50.358000 #24470] DEBUG -- :   [1m[35mYoutube Load (0.3ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:59:04.771628 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:59:13.661678 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:59:17.173446 #24470] DEBUG -- :   [1m[36mYoutube Load (0.7ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:59:25.987930 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T14:59:55.549301 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T14:59:58.696680 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:01:02.565728 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:03:04.639664 #24470] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T15:03:04.640845 #24470] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "youtubes" ("description", "genre", "title", "url") VALUES (?, ?, ?, ?)[0m  [["description", "https://www.youtube.com/watch?v=384IUU43bfQ"], ["genre", "Pop Culture"], ["title", "GoT"], ["url", "https://www.youtube.com/watch?v=384IUU43bfQ"]]
+D, [2014-06-18T15:03:04.641722 #24470] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2014-06-18T15:03:56.049846 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:04:48.588990 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:04:59.052758 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:05:35.487894 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:05:39.015761 #24470] DEBUG -- :   [1m[36mYoutube Load (0.3ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-18T15:06:46.218783 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:07:08.305217 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:07:14.799878 #24470] DEBUG -- :   [1m[35mYoutube Load (0.4ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:07:25.000695 #24470] DEBUG -- :   [1m[36mYoutube Load (0.7ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:07:34.006875 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:08:05.855488 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:08:07.187464 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:09:09.363687 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:10:00.729879 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:10:01.876904 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:11:03.501968 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:12:15.088847 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:12:28.124615 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:14:34.026626 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:14:35.484737 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:14:39.565450 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:15:13.572708 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:15:45.795337 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:16:16.422219 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:17:21.378008 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:17:30.870938 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:17:30.871293 #24470] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T15:17:30.871512 #24470] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-18T15:17:30.879580 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:17:32.948438 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:17:36.321923 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T15:17:37.588882 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T15:17:37.589279 #24470] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T15:17:37.590183 #24470] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  DELETE FROM "youtubes" WHERE "youtubes"."id" = ?  [["id", 1]]
+D, [2014-06-18T15:17:37.598739 #24470] DEBUG -- :   [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T15:17:37.639175 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:17:38.595832 #24470] DEBUG -- :   [1m[36mYoutube Load (0.3ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-18T15:17:39.383556 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T15:17:39.383933 #24470] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T15:17:39.384427 #24470] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  DELETE FROM "youtubes" WHERE "youtubes"."id" = ?  [["id", 2]]
+D, [2014-06-18T15:17:39.385159 #24470] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T15:17:39.390722 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:17:40.328323 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-18T15:17:41.179240 #24470] DEBUG -- :   [1m[35mYoutube Load (0.3ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-18T15:17:41.180028 #24470] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T15:17:41.181085 #24470] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  DELETE FROM "youtubes" WHERE "youtubes"."id" = ?  [["id", 3]]
+D, [2014-06-18T15:17:41.182679 #24470] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T15:17:41.191109 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:19:30.092569 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:19:31.360863 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-18T15:19:37.409573 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-18T15:20:02.066865 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-18T15:20:08.266292 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-18T15:20:16.170681 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-18T15:20:24.477708 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-18T15:20:56.596455 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-18T15:21:05.643758 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-18T15:21:21.319657 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-18T15:21:38.917714 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:21:39.556581 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:21:39.725334 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:22:21.386422 #24470] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2014-06-18T15:22:21.387763 #24470] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "youtubes" ("description", "genre", "title", "url") VALUES (?, ?, ?, ?)[0m  [["description", "Old college fav"], ["genre", "Comedy"], ["title", "Charlie Bit My Finger"], ["url", "https://www.youtube.com/watch?v=_OBlgSz8sSM"]]
+D, [2014-06-18T15:22:21.388666 #24470] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2014-06-18T15:22:21.396990 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:22:27.602858 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-18T15:22:28.970470 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-18T15:22:28.971153 #24470] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T15:22:28.972589 #24470] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "youtubes" WHERE "youtubes"."id" = ?[0m  [["id", 5]]
+D, [2014-06-18T15:22:28.973267 #24470] DEBUG -- :   [1m[35m (0.5ms)[0m  commit transaction
+D, [2014-06-18T15:22:28.980550 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:22:30.992101 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-18T15:23:02.043789 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-18T15:23:32.170319 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-18T15:23:51.585496 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-18T15:24:01.138569 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-18T15:37:39.661816 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-18T15:37:52.170378 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-18T15:38:03.368940 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-18T15:38:08.061796 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-18T15:38:17.236287 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-18T15:38:33.842551 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:39:27.363989 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:39:49.118223 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:40:03.862801 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:40:13.067619 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:40:39.742820 #24470] DEBUG -- :   [1m[36mYoutube Load (0.5ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:40:50.537149 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:40:59.711043 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:41:23.171517 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:41:27.357453 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:41:36.560731 #24470] DEBUG -- :   [1m[35mYoutube Load (0.3ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:41:40.695965 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:41:56.877589 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:42:03.505068 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:42:17.663704 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:42:26.364051 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:42:32.271691 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:42:59.868449 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:43:06.094925 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:43:15.800332 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:43:22.980440 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:43:27.193099 #24470] DEBUG -- :   [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes"[0m
+D, [2014-06-18T15:43:56.683354 #24470] DEBUG -- :   [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes"
+D, [2014-06-18T15:44:02.645165 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-18T15:44:25.618385 #24470] DEBUG -- :   [1m[35mYoutube Load (0.5ms)[0m  SELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-18T15:54:27.209552 #24470] DEBUG -- :   [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT  "youtubes".* FROM "youtubes"  WHERE "youtubes"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-18T15:54:30.159134 #24470] DEBUG -- :   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"

@@ -1,0 +1,21 @@
+<%= form_for @book do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :autofocus => true %>
+  </p>
+  <p>
+    <%= f.label :pages %> 
+    <%= f.integer :pages %>
+  </p>
+  <p>
+    <%= f.label :ISBN %> 
+    <%= f.text_field :ISBN %>
+  </p>
+  <p>
+    <%= f.label :image %> 
+    <%= f.text_field :image %>
+  </p>  
+  <%= f.label :author_id %>
+  <%= f.select :author_id, Author.all.map{ |author| [author.name, author.id] }, :include_blank => true %>
+  <%= f.submit %>
+<% end %>

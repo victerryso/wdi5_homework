@@ -1,0 +1,38 @@
+<form action='/steakhouse/<%= @steakhouse.id %>' method='post'>
+  <label for"name">Steakhouse Name:</label>
+  <input type="text" name="name" id="name" value="<%= @steakhouse.name %>">
+
+  <label for"logo">Logo:</label>
+  <input type="text" name="logo" id="logo" value="<%= @steakhouse.logo %>">
+
+  <label for"url">Website:</label>
+  <input type="text" name="url" id="url" value="<%= @steakhouse.url %>">
+
+  <label for"address">Address:</label>
+  <input type="text" name="address" id="address" value="<%= @steakhouse.address %>">
+
+  <label for"zipcode_id">ZIP:</label>
+  <input type="text" name="zipcode_id" id="zipcode_id" value="<%= @steakhouse.zipcode_id %>">
+
+  <label for"description">Description:</label>
+  <input type="text" name="description" id="description" value="<%= @steakhouse.description %>">
+
+  <label for"style">Style:</label>
+  <input type="text" name="style" id="style" value="<%= @steakhouse.style %>">
+
+  <label for"rating">Rating:</label>
+  <select name="rating" id="rating" value="<%= @steakhouse.rating %>">
+    <% %w(10 9 8 7 6 5 4 3 2 1).each do |num| %>
+      <option <% "select" if rating = @steakhouse.rating %>><%= num %></option>
+    <% end %>
+  </select>
+  
+  <label for"latitude">Latitude:</label>
+  <input type="text" name="latitude" id="latitude" value="<%= @steakhouse.latitude %>">
+
+  <label for"longtitude">Longtitude:</label>
+  <input type="text" name="longtitude" id="longtitude" value="<%= @steakhouse.longtitude %>">
+
+  <button type="submit">Update Steakhouse</button>
+  
+</form>

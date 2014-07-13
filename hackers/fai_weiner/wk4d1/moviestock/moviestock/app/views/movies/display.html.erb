@@ -1,0 +1,17 @@
+<div class="inner-container">
+  <p>Congratulations - You've selected a very unique movie!</p>
+
+  <div class="poster-box">
+    <img src="<%= @select_poster %>" alt="">
+  </div>
+  <div class="movie-info">
+    <%= @select_movie %>
+    <%= @select_movie %>
+    <p><strong><%= @select_movie['Year']%> (<%= @select_movie['Year'] %>)</strong></p>
+    <p>Rating: <%= @select_movie['Rated']%><br>
+    Rotten Tomatoes Rating: <a href="http://www.rottentomatoes.com/search/?search=<%= @select_movie['Title'] %>&sitesearch=rt"><%= @select_movie['Metascore']%>%</a><br>
+    Actors: <%= @select_movie['Actors']%><br>
+    </p>
+  </div>
+
+</div>

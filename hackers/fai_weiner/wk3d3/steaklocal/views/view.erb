@@ -1,0 +1,25 @@
+<div class="fp-single-display-box">
+  <h3><%= @steakhouse.name %></h3>
+    <label for"name">Steakhouse Name:</label>
+    <p><%= @steakhouse.name %></p>
+    <label for"url">Website:</label>
+    <p><%= @steakhouse.url %></p>    
+    <label for"address">Address:</label>
+    <p><%= @steakhouse.address %></p>
+    <label for"zipcode_id">ZIP:</label>
+    <p><%= @steakhouse.zipcode_id %></p>
+    <label for"description">Description:</label>
+    <p><%= @steakhouse.description %></p>
+    <label for"style">Style:</label>
+    <p><%= @steakhouse.style %></p>
+    <label for"rating">Rating:</label>
+    <p><%= @steakhouse.rating %></p>
+    <div id="map_canvas">
+        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsU8oT8AXa9Y8uKXKia1ENGtarlASfmOI&q=<%= @steakhouse.address%>"></iframe>
+    </div>
+
+    <a href="/steakhouse/<%= @steakhouse.id %>/edit">Edit</a>
+    <a href="/steakhouse/<%= @steakhouse.id %>/delete">Delete</a>
+</div>
+
+

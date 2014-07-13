@@ -1,10 +1,13 @@
 <form action="/fetch" method="get">
   <input type="text" name="Title" placeholder="Title">
   <button>Get movie poster</button>
+  binding.pry
 </form>
+
+<img src="../images/background.png" alt=""/>
 
 <% if @title != nil %>
 <p>
-  <%= @movie["Title"] %> poster: <img src="<%= @poster %>"/>.
+  <strong><%= @movie["Title"] %> (<%= @movie["Year"]%>)</strong> <img src="<%= @poster %>"/>.
 </p>
 <% end %>

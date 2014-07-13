@@ -1,0 +1,11 @@
+<h1>The World's Oceans</h1>
+
+<ul>
+  <% @oceans.each do |ocean| %>
+    <li>
+      <%= link_to(ocean.name, ocean_path(ocean.id)) %>
+      <%= button_to('Delete', ocean_delete_path( ocean.id )) %>    
+      <%= link_to('Edit', ocean_edit_path( ocean.id )) %>
+    </li>
+  <% end %>
+</ul>
