@@ -1,0 +1,16 @@
+body {
+  background-color: #2AA44F;
+}
+
+#buttons {
+ background-color: #A1D2F1;
+ height: 300px;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+}
+
+article {
+  margin-top: 6em;
+}
