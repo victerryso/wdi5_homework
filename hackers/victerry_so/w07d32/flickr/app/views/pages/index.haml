@@ -1,0 +1,17 @@
+%h1 Flickr
+%div
+  = text_field_tag 'search', nil, :autofocus => true
+  = button_tag 'Search Flickr', :id => 'search_flickr'
+  = button_tag 'Clear Images', :id => 'clear_images'
+
+%div#images
+
+/ style
+/ clear images
+/ pagination
+/ - infinite
+/ - fetch more
+/ search repeatedly
+/ try jquery.com
+/ jquery first
+/ flight -> ajax
