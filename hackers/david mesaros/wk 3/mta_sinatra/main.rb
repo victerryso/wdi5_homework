@@ -23,6 +23,7 @@ get '/plan' do
 		user_start = params[:user_start]
 		user_end = params[:user_end]
 		trip_length = params[:trip_length]
+    intersection1 = params[:Union]
 		
  
 		intersection1 = $lines[start_user_line].index 'Union Square'
@@ -39,35 +40,57 @@ get '/plan' do
     trip1 = $lines[start_user_line][end_station..start_station]
   end
 
-  raise 'dfsdf'
-  @trip_length = trip1.length #puts "The number of stops in your trip is #{ trip.length } "
-  trip_station= trip1.reverse.join(', ') #puts "The stops are : #{trip.join(', ')}"
+  # raise 'dfsdf'
+  @trip1_length = trip1.length #puts "The number of stops in your trip is #{ trip.length } "
+  @trip1_station= trip1.reverse.join(', ') #puts "The stops are : #{trip.join(', ')}"
 
 
 else
   if start_station < intersection1
-    trip = lines[start_user_line][start_station..intersection1]
+    trip = $lines[start_user_line][start_station..intersection1]
+    trip.length 
+    @trip_inter = trip.join(', ')
+   
+  
   end
+
   if end_station < intersection2
-    trip2 = lines[end_user_line][end_station...intersection2]
+    trip2 = $lines[end_user_line][end_station..intersection2]-["Union Square"]
     trip2.reverse!
+    trip2.length
+    @trip2_inter = trip2.join(', ')
+
+    
+  
+ 
   end
   if start_station > intersection1
-    trip = lines[start_user_line][intersection1..start_station]
-    trip.reverse!
+    trip = $lines[start_user_line][intersection1..start_station]-["Union Square"]
+    trip.length
+    trip.reverse! 
+    @trip_inter = trip.join(', ') 
+   
+      
   end
+
   if end_station > intersection2
-    trip2 = lines[end_user_line][intersection2...end_station]
+    trip2 = $lines[end_user_line][intersection2..end_station] -["Union Square"]
+     trip2.length
+    @trip2_inter = trip2.join(', ')
+   
   end
-  puts "Your stops: #{trip.join(', ')}, #{trip2.join(', ')}"
-  puts "The number of stops in your trip is #{ trip.length + trip2.length } "
+
+  @total_trip = trip.length + trip2.length
+  #binding.pry
+  # puts "Your stops: #{trip.join(', ')}, #{trip2.join(', ')}"
+  # puts "The number of stops in your trip is #{ trip.length + trip2.length } "
 end
 
 
 
 			
 	end
-	# params.inspect
+   #params.inspect
 	erb :home
 end 
 

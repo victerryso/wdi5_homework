@@ -75,11 +75,20 @@
 
   <% if params[:start_user_line] == params[:end_user_line]%> 
 
- <p> You have <%= @trip_length %> stops <p>
- 
+ <p> You have <%= @trip1_length %> stops <p>
+ <p> The stops are as followed <%= @trip1_station %></P>
+
+   <% else %> 
+
+ <p> You have <%= @total_trip %> stops <p>
+ <p> The stations are as followed <%= @trip_inter %> then get off at line <%= params[:start_user_line] %> at Union Square </p>
+ <p> Change to line <%= params[:end_user_line] %>  for  the remaining stops <%= @trip2_inter %> 
+
+
+
   <% end %>
 
-
+      
 
 
 
