@@ -1,0 +1,13 @@
+
+<div>
+<p>The Movie you looked for : </p>
+
+
+<% @movie["Search"].each do |movie| %> 
+  <a href="/movielist?imdbid=<%= movie["imdbID"] %>">
+
+
+  <h2><%= movie["Title"] %></h2></a> <br>
+  <p id="year">(Year : <%= movie["Year"] %>)</p>
+<% end %>
+</div>

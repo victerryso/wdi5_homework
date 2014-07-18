@@ -1,0 +1,12 @@
+.thumb {
+  height:15em;
+}
+
+.grid {
+  display:inline-block;
+  margin:10px;
+}
+
+.book {
+  height:20em;
+}

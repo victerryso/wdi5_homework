@@ -1,0 +1,16 @@
+
+<div class = 'event_details'>
+  <h1><%= @current_user.username %>'s Event Details</h1>
+  <p>Title: <%= @event.name %> <%= image_tag(@event.image) %></p>
+  <p>Date : <%= link_to(@event.date, events_path(date: @event.date, :region => @region)) %></p>
+
+  <p>
+    <%= link_to('Edit', edit_event_path)%>
+    <%= link_to('Delete', events_lists_path, :data => { :confirm => 'Are you sure you want to delete this?', :method => :delete })%><br/>
+    <%= link_to('Create Aonther Event', new_event_path) %>
+    <%= link_to('Your Events list', events_lists_path) %>
+  </p>
+
+</div>
+
+

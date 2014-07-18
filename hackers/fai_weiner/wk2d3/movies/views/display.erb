@@ -1,0 +1,17 @@
+<% if @counts == 1 %>
+  <p>Congratulations - You've selected a very unique movie!
+  <br>Unfortunately the poster is currently unavailable,
+  Please stay tuned!</p>
+
+<% else %>
+  <div class="poster-box">
+    <img src="<%= @select_poster %>" alt="">
+  </div>
+  <div class="movie-info">
+    <p><strong><%= @select_movie['Title'] %> (<%= @select_movie['Year'] %>)</strong></p>
+    <p>Rating: <%= @select_movie['Rated']%><br>
+    Rotten Tomatoes: <%= @select_movie['Metascore']%>%<br>
+    Actors: <%= @select_movie['Awards']%><br>
+    </p>
+  </div>
+<% end %>

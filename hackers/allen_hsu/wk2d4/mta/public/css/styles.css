@@ -38,26 +38,40 @@ img {
 }
 h1 {
   max-width: 500px;
-  font-size: 4em;
+  font-size: 3.5em;
   padding: 0;
   line-height: 0;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 nav {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
 }
 
 nav a {
   color: white;
-  font-size: 1em;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
 }
 
 input, button {
-  font-size: 2em;
+  font-size: 1em;
+}
+button {
+  display: block;
+  margin: 0 auto;
 }
 
 label {
   display: block;
+  font-size: 1em;
 }
 
 /* For Journey Representation*/
@@ -66,7 +80,7 @@ label {
   width: 5em;
   text-align: center;
   display: block;
-  margin-top: -11.9em;
+  margin-top: -12.3em;
 
 }
 .journey #line-name {
@@ -111,6 +125,7 @@ label {
   position: absolute;
   display: table;
   z-index: 1;
+  -webkit-box-shadow: 0 15px 6px -6px black;
 }
 
 .station_text {
@@ -118,4 +133,6 @@ label {
   vertical-align: middle;
   text-align: center;
   color: black;
+  font-size: 0.8em;
 }
+

@@ -1,0 +1,10 @@
+<% @books.each do |book| %>
+  <div id="tile">
+
+    <%= link_to(book) do %>
+      <%= image_tag(book.image, :class => 'thumb') %>
+    <% end %>
+
+  </div>
+<% end %>
+

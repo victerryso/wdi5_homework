@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moviestock</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <a href="/">home</a>
+      <a href="/faq">faq</a>
+      <a href="/about">about</a>
+    </nav>
+    <form action="/" method="get">
+        <label for="title">Movie</label>
+        <input type="text" name="title" value="<%= params[:title]%>" id="title" placeholder="Enter a movie title">
+        <label for="symbol">Stocks</label>
+        <input type="text" name="symbol" value="<%= params[:symbol]%>" id="symbol" placeholder="Enter a stock symbol">
+        <button>Find</button>
+
+    </form>
+    <%= yield %>
+  </div>
+</body>
+</html>

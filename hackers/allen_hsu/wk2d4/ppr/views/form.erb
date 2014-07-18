@@ -1,0 +1,6 @@
+<h1> <%=@prompt %> </h1>
+<% @links.each do |text,link| %>
+<div class ="button <%=text%>" >
+<a href="/?prompt=<%=link%>"><%=text%></a>
+</div>
+<% end %>

@@ -1,0 +1,40 @@
+<h1>Add new steakhouse</h1>
+<form action='/steakhouse' method='post'>
+  <label for"name">Steakhouse Name:</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for"logo">Logo:</label>
+  <input type="text" name="logo" id="logo">
+
+  <label for"url">Website:</label>
+  <input type="text" name="url" id="url">
+
+  <label for"address">Address:</label>
+  <input type="text" name="address" id="address">
+
+  <label for"zipcode_id">ZIP:</label>
+  <input type="text" name="zipcode_id" id="zipcode_id">
+
+  <label for"description">Description:</label>
+  <textarea row="2" type="text" name="description" id="description"></textarea>
+
+  <label for"style">Style:</label>
+  <input type="text" name="style" id="style">
+
+  <label for"rating">Rating:</label>
+  <select name="rating" id="rating" required>
+    <% %w(10 9 8 7 6 5 4 3 2 1).each do |num| %>
+      <option><%= num %></option>
+    <% end %>
+  </select>
+  
+  <label for"latitude">Latitude:</label>
+  <input type="text" name="latitude" id="latitude">
+
+  <label for"longtitude">Longtitude:</label>
+  <input type="text" name="longtitude" id="longtitude">
+
+  <button type="submit">Rate Steakhouse</button>
+  
+</form>
+

@@ -1,0 +1,33 @@
+<%= link_to 'NSW', calendar_show_path(date: @date, :region => 'New South Wales') %>
+<%= link_to 'VIC', calendar_show_path(date: @date, :region => 'Victoria') %>
+<%= link_to 'QLD', calendar_show_path(date: @date, :region => 'Queensland') %>
+<%= link_to 'WA', calendar_show_path(date: @date, :region => 'Western Australia') %>
+<%= link_to 'SA', calendar_show_path(date: @date, :region => 'South Australia') %>
+<%= link_to 'ACT', calendar_show_path(date: @date, :region => 'Australian Capital Territory') %>
+<%= link_to 'TAS', calendar_show_path(date: @date, :region => 'Tasmania') %>
+<%= link_to 'NT', calendar_show_path(date: @date, :region => 'Northern Territory') %>
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="arrows">
+
+      <%= link_to calendar_show_path(date: @date - 12.month, :region => @region) do %>
+        <i><%=image_tag('http://i.imgur.com/9GN8wMm.png?1')%></i>
+      <% end %>
+
+      <%= link_to calendar_show_path(date: @date - 1.month, :region => @region) do %>
+        <i><%= image_tag("http://i.imgur.com/ca2RSq3.png?1")%></i>
+      <% end %>
+
+      <span id='current_calendar_date'><%= "#{@date.strftime("%B")} #{@date.year}" %></span>
+
+      <%= link_to calendar_show_path(date: @date + 1.month, :region => @region) do %>
+        <i ><%= image_tag('http://i.imgur.com/obLPimz.png?1')%></i>
+      <% end %>
+
+      <%= link_to calendar_show_path(date: @date + 12.month, :region => @region) do %>
+        <i><%= image_tag('http://i.imgur.com/ErCSqCA.png?1')%></i>
+      <% end %>
+    </div>
+  </div>
+</div>

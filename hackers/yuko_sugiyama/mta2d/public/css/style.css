@@ -1,0 +1,149 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
+
+body{
+  width: 100%;
+  height: 400px;/*as default setting*/
+  background: url("http://www.stormlogix.com/wp-content/uploads/2011/09/city-9.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+
+}
+
+#back_ground{
+  background-color: white;
+  opacity:.85;
+}
+
+#container{
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  /*border: 1px solid red;*/
+  background-color: ;
+  font-family: 'Ubuntu', sans-serif;
+  color:;
+}
+
+#logo
+{
+  width: 10%;
+  background-color:#0C70F0; /*#FB9785;*/
+  color:#ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  display: inline-block;
+
+  -moz-border-radius-topleft: 100px;
+-webkit-border-top-left-radius: 100px;
+ border-top-left-radius: 100px;
+-moz-border-radius-topright: 15px;
+-webkit-border-top-right-radius: 15px;
+border-top-right-radius: 15px;
+-moz-border-radius-bottomright: 15px;
+-webkit-border-bottom-right-radius: 15px;
+border-bottom-right-radius: 15px;
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-bottom-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+
+h1{
+  width: 100%;
+  /*border: 1px solid red;*/
+  text-align: right;
+
+}
+
+#search_dep {
+  width: 33%;
+  position: relative;
+  display: inline-block;
+  margin-left:22%;
+  margin-top:2%;
+  /*border: 1px solid green;*/
+}
+#search_arr {
+  width: 33%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  /*margin-left:52%;*/
+  margin-top:2%;
+  /*border: 1px solid red;*/
+}
+h2{
+  width: 80%;
+  display: inline-block;
+  /*margin-top: 5%;*/
+
+}
+
+#dep_option{
+  width: 80%;
+  position: relative;
+
+  background-color:#F2F2F2;
+  font-size: 120%;
+  padding:5em;
+  margin-top:-10%;
+}
+#arr_option{
+  width: 80%;
+  position: relative;
+  background-color:#F2F2F2;
+  font-size: 120%;
+  padding:5em;
+  margin-top:-10%;
+}
+
+button{
+  width: 8%;
+  font-size: 120%;
+  border-radius: 100px;
+  position: relative;
+  display: inline-block;
+  /*margin-left:90%;
+  margin-top: -150%;*/
+
+}
+.clear{
+  clear:left;
+}
+.clear{
+  clear: both;
+}
+#result_shown{
+font-family: 'Ubuntu', sans-serif;
+font-size: 120%;
+position: relative;
+display: inline-block;
+margin-left: 35%;
+}
+
+/*--- change at 23Jun--*/
+#stop{
+
+
+}
+
+/*width: 300px;
+  padding: 2em;
+  padding-top: 2em;
+  margin-left: 50px;*/
+
+/*input, textarea {
+  width: 95%;
+  padding: 1em;
+  display: block;
+  margin: auto;
+}
+
+input[type="radio"] {
+  display: inline;
+  width: auto;
+}*/
+
+

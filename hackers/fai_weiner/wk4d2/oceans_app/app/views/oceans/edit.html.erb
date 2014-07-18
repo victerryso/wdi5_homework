@@ -1,0 +1,10 @@
+<form action="<%= ocean_path @ocean %>" method="post">
+  <p>Name: <input type="text" name="ocean[name]" autofocus value="<%= @ocean.name %>"></p>
+  <p>Image: <input type="url" name="ocean[image]" value="<%= @ocean.image %>"></p>
+  <p>Size: <input type="number" name="ocean[size]" value="<%= @ocean.size %>"></p>
+  <p>Continents: <input type="text" name="ocean[continents]" value="<%= @ocean.continents %>"></p>
+  <p>Year Discovered: <input type="number" name="ocean[year_discovered]" value="<%= @ocean.year_discovered %>"></p>
+  <p>Nickname: <input type="text" name="ocean[nickname]" value="<%= @ocean.nickname %>"></p>
+  <p>Percentage: <input type="number" name="ocean[percentage]" value="<%= @ocean.percentage %>"></p>
+  <p><button type="submit">Update Ocean</button></p>
+</form>

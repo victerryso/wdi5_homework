@@ -1,0 +1,29 @@
+<div class='user_form'>
+<%= form_for @user do |f| %>
+<p>
+  <%= f.label :username %><br/>
+  <%= f.text_field :username, :autofocs => true %>
+</p>
+<p>
+  <%= f.label :email %><br/>
+  <%= f.email_field :email, :placeholder => 'hello@hello.com' %>
+</p>
+<p>
+  <%= f.label :dob, 'Date of birth' %><br/>
+  <%= f.date_field :dob %>
+</p>
+<p>
+  <%= f.label :image %><br/>
+  <%= f.url_field :image, :value => "http://i.imgur.com/9Yka0wL.png?3" %>
+</p>
+<p>
+  <%= f.label :password %><br/>
+  <%= f.password_field :password %><br/>
+
+  <%= f.label :password_confirmation %><br/>
+  <%= f.password_field :password_confirmation %>
+</p>
+  <%= f.submit %>
+  <% end %>
+</p>
+</div>

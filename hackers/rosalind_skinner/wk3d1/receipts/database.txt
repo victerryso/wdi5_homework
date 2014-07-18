@@ -1,3 +1,0 @@
-Ros, 24, female
-Bill, 27, male
-April, 24, female

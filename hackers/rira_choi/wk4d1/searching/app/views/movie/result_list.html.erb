@@ -1,0 +1,8 @@
+<div class="movie_list">
+  <h2>The Movie you looked for : </h2>
+
+  <% @movie["Search"].each do |movie| %> 
+  <p>Year | <%= movie["Year"] %></p>
+  <h3><a href="/movie/result?imdbid=<%= movie["imdbID"] %>"><%= movie["Title"] %></h3></a> 
+  <% end %>
+</div>

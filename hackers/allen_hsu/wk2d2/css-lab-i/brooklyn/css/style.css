@@ -1,0 +1,28 @@
+body {
+  font-size: : 12px;
+  line-height:  17px;
+  font-family: "Times New Roman", serif;
+  color: #656565;
+  }
+a {
+  text-decoration: none;
+  color: #5ea0cf;
+}
+a:hover {
+  color: #20222a;
+}
+
+.press {
+  border: solid #c5c5c5 4px;
+  padding: 1px;
+  margin: 4px;
+}
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#press_nav {
+  display: -webkit-flex;
+
+}

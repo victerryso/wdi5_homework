@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: Fai
+  password:
+
+development:
+  <<: *default
+  database: library_development
+
+test:
+  <<: *default
+  database: library_test
+
+production:
+  <<: *default
+  database: library_production

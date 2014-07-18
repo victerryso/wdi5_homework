@@ -1,0 +1,36 @@
+<form action="/eaters/<%= @place.id %>" method="post">
+  <label for="name">Name:
+    <input type="text" id="name" name="name" value="<%=@place.name %>">
+  </label>
+
+   <label for="area">Area:
+    <input type="text" id="area" name="area" value="<%=@place.area %>">
+  </label>
+
+  <label for="phone">Phone:
+    <input type="tel" id="phone" name="phone" value="<%=@place.phone %>">
+  </label>
+
+  <label for="url">Url:
+    <input type="url" id="url" name="url" value="<%=@place.url %>">
+  </label>
+
+   <label for="category">Category:
+    <input type="text" id="category" name="category" value="<%=@place.category %>">
+  </label>
+
+   <label for="rating">Rating:
+    <input type="number" id="rating" name="rating" value="<%=@place.rating %>" min="0" max="5">
+
+  </label>
+
+   <label for="review">Review:
+    <textarea type="text" id="review" name="review" value="<%=@place.review %>">
+  </textarea>
+
+<label for="image">Image(url):
+    <input type="url" id="image" name="image" value="<%=@place.image %>">
+  </label>
+
+  <button type="submit">Upload</button>
+</form>

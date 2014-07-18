@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <img src="http://i.imgur.com/mm5CPs7.jpg">
+    </header>
+    <div id="outer-container">
+      <div id="inner-container">
+
+        <nav>
+          <div id="menu_button1">
+            <a href="/bloggle">All Blogs</a>
+          </div>
+          <div id="menu_button2">
+            <a href="/bloggle/new">New Blog</a>
+          </div>
+        </nav>
+
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p></p>
+  </footer>
+</body>

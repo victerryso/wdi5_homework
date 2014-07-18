@@ -1,0 +1,17 @@
+<h2>All Ratings</h2>
+
+<% @steakhouses.each do |steakhouse| %>
+  <div class="sm-single-display-box">
+    <img class="old-paper" src="/img/old-paper.gif" alt="torn paper background">
+    <div class="single-display-inside">
+      <h3><%= steakhouse.name %></h3>
+        <h4>Rating: <span class="rating"><%= steakhouse.rating %></span></h4>
+        <img class="logo" src="<%= steakhouse.logo %>" alt=""/><br>
+        <a href="/steakhouse/<%= steakhouse.id %>">Info</a>
+        <a href="/steakhouse/<%= steakhouse.id %>/edit">Edit</a>
+        <a href="/steakhouse/<%= steakhouse.id %>/delete">Delete</a>
+        <p><%= steakhouse.description %></p>
+    </div>
+  </div>
+<% end %>
+

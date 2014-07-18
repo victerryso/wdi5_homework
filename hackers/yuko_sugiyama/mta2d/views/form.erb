@@ -1,0 +1,46 @@
+<form action="/processing" method="get">
+<div id = "search_dep" >
+<label for="dep_station"><h2>Trip strat from:</h2>
+    <select name="dep_station" id ="dep_option">
+    	<optgroup label="Line_N">
+      		<% $mta["line_N"].each do |dep_station| %>
+        	<option value="line_N:<%= dep_station %>" <%= "selected" if dep_station == @dep_station %>><%= dep_station %></option>
+        	 <% end %>
+        </optgroup>
+        <optgroup label="Line_L">
+          <% $mta["line_L"].each do |dep_station| %>
+          <option value="line_L:<%= dep_station %>" <%= "selected" if dep_station == @dep_station %>><%= dep_station %></option>
+           <% end %>
+        </optgroup>
+        <optgroup label="Line_6">
+          <% $mta["line_6"].each do |dep_station| %>
+          <option value="line_6:<%= dep_station %>" <%= "selected" if dep_station == @dep_station %>><%= dep_station %></option>
+           <% end %>
+        </optgroup>
+    </select>
+  </label>
+</div>
+<div id="search_arr">
+ <label for="arr_station"><h2>Trip finish at:</h2>
+    <select name="arr_station" id ="arr_option">
+    	<optgroup label="Line_N">
+      		<% $mta["line_N"].each do |arr_station| %>
+        	<option value="line_N:<%= arr_station %>"<%= "selected" if arr_station == @arr_station %>><%= arr_station %></option>
+        	 <% end %>
+        </optgroup>
+        <optgroup label="Line_L">
+          <% $mta["line_L"].each do |arr_station| %>
+          <option value="line_L:<%= arr_station %>"<%= "selected" if arr_station == @arr_station %>><%= arr_station %></option>
+           <% end %>
+        </optgroup>
+        <optgroup label="Line_6">
+          <% $mta["line_6"].each do |arr_station| %>
+          <option value="line_6:<%= arr_station %>"<%= "selected" if arr_station == @arr_station %>><%= arr_station %></option>
+           <% end %>
+        </optgroup>
+    </select>
+  </div>
+  </label>
+<button type="submit" >Search</button>
+</div>
+</form>

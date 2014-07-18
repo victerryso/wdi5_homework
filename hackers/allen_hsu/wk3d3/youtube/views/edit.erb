@@ -1,0 +1,11 @@
+<form action="/videos/<%= @info['id'] %>" method="post" >
+  <label for="name">Title<input type="text" name="title" id="title" value="<%= @info["title"] %>"></label>
+  <label for="image">Image<input type="text" name="url" id="url" value="<%= @info["url"] %>"></label>
+  <label for="genre">Genre
+    <select name="genre" id="genre">
+      <% %w(HandshakeFails ShaqtinAFool).each do |genre| %>
+      <option <%= "selected" if genre == @info["genre"]%>><%= genre %></option>
+    <% end %>
+  </label>
+  <input type="submit" value="Update">
+</form>
