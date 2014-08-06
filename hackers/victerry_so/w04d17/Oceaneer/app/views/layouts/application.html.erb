@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oceaneer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id='container'>
+  <nav>
+    <div class="top"><%= link_to('HOME', index_path) %></div>
+    <div class="top"><%= link_to('NEW', new_path) %></div>
+  </nav>
+<%= yield %>
+</div>
+</body>
+</html>

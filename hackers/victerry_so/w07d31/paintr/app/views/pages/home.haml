@@ -1,0 +1,19 @@
+%div
+  = text_field_tag 'color', nil,  :autofocus => true
+  = button_tag 'Add Color', :id => 'add_color'
+  = button_tag 'Clear', :id => 'clear'
+
+  = text_field_tag 'bg', nil
+  = button_tag 'Add Background', :id => 'add_bg'
+
+%div#colors
+  %div.box#selected
+
+%div#canvas
+
+/ Add by URL
+/ Add colors to palette with Enter instead of click
+/ Styling
+/ Paint with shift key
+/ Try jQuery
+/ Underscore DOCs

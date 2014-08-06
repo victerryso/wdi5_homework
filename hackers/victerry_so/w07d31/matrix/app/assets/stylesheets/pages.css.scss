@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: black;
+  color: #ffcc99;
+}
+
+#boxes {
+  -webkit-transform-origin: left;
+  -webkit-transform: rotate(90deg);
+}
+
+.box {
+  -webkit-transform: rotate(-90deg);
+  display: inline-block;
+  border: 1px dashed #ccc;
+  height: 40px;
+  min-width: 40px;
+  text-align: center;
+  /*padding: 0.5em;
+  margin: 0.5em;*/
+  line-height: 40px
+}
