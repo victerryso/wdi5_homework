@@ -1,0 +1,202 @@
+/* 
+Project Name: Ecard.ly
+Client: General Assembly 
+Author: Christopher Castig | @castig
+Developer @GA in NYC
+*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+     background-color: #d6d6d6;
+     background-image: url("../ecardly/images/background.jpg");
+     background-repeat: repeat-x;
+     width: 100%;
+     border: 1px solid transparent;
+     color: #000000;
+}
+#container{
+     width: 940px;
+     display: block; 
+     margin-left: auto;
+     margin-right: auto;
+
+}
+/*Inside of #header*/
+.logo{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+}
+
+h2{
+     font-size: 20px;
+     margin-top: 30px;
+     margin-bottom: 30px;
+
+}
+p{
+     font-size: 12px;
+}
+
+#main{
+     display: inline-block;
+     vertical-align: top;
+     width: 640px;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+     background-color: white;
+}
+
+#main_box{
+     width: 90%;
+     height:auto;
+     display: block; 
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.card_image {
+     max-width: 100%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.main_contents{
+     max-width:100%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+
+}
+
+hr{
+     height: 0;
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+.dot_line{
+     border-top:1px dotted #000000;   
+}
+
+.solid_line{
+     border-top: 1px solid #000000; 
+}
+
+#sidebar{
+     display: inline-block;
+     vertical-align: top;
+     width: 280px;
+     height: auto;
+     margin-left: 10px;
+     margin-right: auto;
+     margin-top: 30px;
+     background-color: white;
+}
+#side_box{
+     width:79%;
+     height: auto;
+     margin: 0 auto;
+
+
+}
+
+ul{
+     list-style: none;
+     
+}
+li{
+     list-style: none;
+     margin-top: 5px;
+}
+.s_top{
+     margin-left: -41px;
+     font-size: 12px;
+     font-weight: bold;
+
+}
+.inside{
+     margin-left: -81px;
+     font-size: 12px;
+     font-weight: bold;
+}
+
+.s_middle{
+     margin-top: -1px;
+}
+
+.s_bottom{
+     margin-top: -1px;
+}
+a{
+     color: #cc6633;
+     text-decoration: none;
+}
+
+#logo{
+     width:150px;
+     margin: 0 auto;
+     margin-top: 30px;
+}
+
+/*Below is using for only half.html*/
+#main_half{
+     width: 900px;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+     background-color: white;
+}
+
+#main_contents{
+     width: 98%;
+     margin: 0 auto;
+
+}
+#contents_half{
+     width:39%;
+     display: inline-block;
+     vertical-align: top;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 13px;
+
+}
+
+.image_half{
+     width: 60%;
+     display: inline-block;
+     vertical-align: top;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+
+

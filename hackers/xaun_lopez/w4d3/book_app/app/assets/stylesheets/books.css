@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+html {
+  font-family: 'Shadows Into Light', cursive;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 920px;
+  height: 100%;
+  background-image: url(/assets/gradient1.jpg);
+}
+
+#container {
+  height: 97%;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid #7A7A6E;
+  box-shadow: -6px 6px 20px black;
+  /*padding: 0 15px 15px 15px;*/
+}
+
+.thumb {
+  max-width: 180px;
+  max-height: 250px;
+}
+
+.medium {
+  max-width: 10em;
+  max-height: 200px;
+}
+
+.book {
+  display: inline-block;
+  padding: 20px;
+}
+
+label {
+  min-width: 80px;
+  display: inline-block;
+  text-align: right;
+}
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+div#tile {
+  display: inline-block;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a {
+  font-size: 2em;
+}

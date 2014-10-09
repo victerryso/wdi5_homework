@@ -1,0 +1,8 @@
+
+<div class="category_all">
+  <% @videos.each do |video| %>
+    <h5><%= video.category.name %> | <%= video.genre %> | <a href="/videos/<%= video.id %>" title="Video's details"><%= video.title %></a></h5>
+
+    <iframe width="300" height="200" src="//www.youtube.com/embed/<%= video.url.split("/").last %>" frameborder="0" allowfullscreen%></iframe>
+  <% end %>
+</div>

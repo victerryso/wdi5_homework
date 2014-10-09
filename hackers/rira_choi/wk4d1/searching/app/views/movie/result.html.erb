@@ -1,0 +1,17 @@
+  <h2>The Movie you looked for : <em><%= @movie['Title'] %></em> </h2>
+  <div class= "img"><img src=<%= @poster %>/></div>
+  <div class="info">
+    <p><span>Released Date:</span> <%= @year %> </p>
+    <p><span>Director:</span> <%= @director %></p>
+    <% if @award %>
+    <p><span>Awards: <br>
+      <%= @award %></span></p>
+    <% end %>
+    </form class="plot">
+      <span>View Plot ?</span>
+      <input class ="plot" type="checkbox" name="plot">
+      <div class= "show_plot">
+        <%= @plot %>
+      </div>
+    </form>
+  </div>

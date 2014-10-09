@@ -1,0 +1,13 @@
+<h2>
+  Edit Info of <%= @receipts['service'] %>
+
+</h2>
+<form action="/receipts/<%= @receipts['id']%>/edit" method="post">
+  <label for="service">Service Provided:</label>
+  <input type="text" id="service" name="service" value= "<%= @receipts['service']%>"required>
+
+  <label for="cost">Cost:</label>
+  <input type="text" id="cost" name="cost" placeholder="0.00" value= "<%= @receipts['cost']%>"required>
+
+  <input type="submit" value="Update">
+</form>

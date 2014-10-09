@@ -1,0 +1,14 @@
+<h2><%= @author.name  %></h2>
+<%= image_tag(@author.image, :class => "author") %>
+<p>Nationality: <%= @author.nationality  %></p>
+<p>D.O.B: <%= @author.dob %>  </p>
+<p> <%= link_to("Edit", edit_author_path(@author)) %> </p>
+<p> <%= link_to('Delete', @author, :data =>{:confirm=>'Are you sure you want to do delete this author?',:method => :delete }) %> </p>
+
+<% @author.books.each do |book| %>
+  <div class="books">
+    <%= image_tag(book.image, :class => 'thumb') %>
+    <p><%= link_to(book.title, book) %></p>
+  </div>
+
+  <% end %>

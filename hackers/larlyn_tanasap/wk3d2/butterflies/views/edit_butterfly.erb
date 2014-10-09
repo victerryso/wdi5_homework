@@ -1,0 +1,19 @@
+<div class="butterfly">
+    <h3><%= @butterfly['name']%></h3>
+    <h4><%= @butterfly['family']%></h4>
+    <img src="<%=@butterfly['image']%>">
+  </div>
+
+<form action="/butterflies/<%= @butterfly['id'] %>" method="post">
+  <label for="name">Name of Butterfly:</label>
+  <input type="text" name="name" id="name" value="<%= @butterfly['name'] %>">
+  <label for="image">Image URL:</label>
+  <input type="URL" name="image" id="image" value="<%= @butterfly['image'] %>">
+  <label for="family">Family:</label>
+  <select name="family" id="family">
+    <% %w(Papilionidae Pieridae Nymphalidae Lycaenidae Riodinidae).each do |family| %>
+      <option <%= "selected" if family == @butterfly['family']%>><%= family %></option>
+    <% end %>
+  </select>
+  <button type="submit">Edit butterfly</button>
+</form>

@@ -1,0 +1,7 @@
+<ul>
+<% @works.each do |work| %>
+    <li><%= link_to(work.title, work) %>
+    <%= link_to("Delete", work, :method => :delete, :data => {:confirm => "Are you sure you want to delete #{work.title}?"} )%> by <%= link_to(work.artist.name, work.artist ) if work.artist %>
+    <%= link_to("Edit", edit_work_path(work) )%>
+<% end %>
+</ul>

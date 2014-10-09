@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  color: #57575C;
+  margin:0;
+}
+
+.container {
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  margin:100px auto;
+}
+
+nav {
+  margin:40px auto;
+}
+
+header{
+  background:#FFF;
+  border-bottom:1px solid #ccc;
+}
+
+
+h1 {
+  font-family: inherit;
+  font-weight:400;
+  font-size: 40px;
+  color:#57575C;
+  width:auto;
+  display:block;
+}
+
+header h1 {
+  font-size: 80px;
+  padding:0;
+}
+
+header h2 {
+  margin:10px auto;
+}
+
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color:#ccc;
+}
+
+
+.results p {
+  line-height: 1em;
+}
+
+/*Search Input*/
+form {
+  margin:0 auto;
+  text-align:center;
+  display: block;
+}
+
+
+input[value="MOVIES"]{
+  background-color: #F0EBD2;
+  border:none;
+  font-family: inherit;
+  font-weight: inherit;
+  color:#3B7C8F;
+  font-size: 1.5em;
+  padding:35px 20px;
+  border-radius: 100% 100% 0 0;
+  width:130px;
+  margin:20px -65px;
+  cursor: pointer;
+  position:absolute;
+  bottom:0;
+}
+
+input[value="STOCK"]{
+  background-color: #3B7C8F;
+  border:none;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #F0EBD2;
+  font-size: 1.5em;
+  padding:35px 20px;
+  border-radius: 0 0 100% 100%;
+  width:130px;
+  margin:20px;
+  cursor: pointer;
+}
+
+label {
+  display:inline-block;
+  margin:40px;
+}
+
+select {
+  background-color: #FFF;
+  border:1px solid #ccc;
+}
+
+footer {
+  width:500px;
+  bottom: 0;
+  margin:auto;
+  text-align: center;
+}
+
+#top{
+  background-color: #3B7C8F;
+  height:280px;
+  position: relative;
+}
+
+#bottom {
+  background-color: #F0EBD2;
+  height:280px;
+}
+
+input {
+  padding:14px;
+  border:none;
+}
+
+button {
+  background-color: #F0EBD2;
+  border:none;
+  font-family: inherit;
+  font-weight: inherit;
+  color:#3B7C8F;
+  font-size: 1.0em;
+  width:130px;
+  margin:20px;
+  cursor: pointer;
+  padding:10px;
+}
+
+.movie {
+  background-color: #3B7C8F;
+  padding:0 200px;
+  color:#FFF;
+  height:80vh;
+}
+
+.movie img, .movie .text{
+  display: inline-block;
+  width:270px;
+  text-align: left;
+}
+
+.movie .text {
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.stock {
+  background-color:#F0EBD2;
+  height:80vh;
+
+}
+
+.stock button {
+  background-color: #3B7C8F;
+  color:#FFF;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}

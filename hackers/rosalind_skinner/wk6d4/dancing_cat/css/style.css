@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+body {
+  text-align:center;
+  margin:0;
+
+}
+
+#staring-cat {
+  margin:0 auto;
+  width:600px;
+  position:absolute;
+  bottom:50px;
+  left:20%;
+  z-index: 0;
+}
+
+#walking-cat {
+  z-index:9;
+}
+
+.content {
+  width:100%;
+  height:100vh;
+  background-image: url(http://madetobeunique.com/stock/rooms-and-studio/floors/wood-floor-by-madetobeunique-4.png);
+  background-size:cover;
+  z-index: -5;
+
+}
+
+.container {
+  width:100%;
+  height:100vh;
+  background-image: url(http://4.bp.blogspot.com/-i665snsos5I/TxxeW9Ht4fI/AAAAAAAACB0/EAf9TWm8DX8/s1600/cat+board.jpg);
+  background-size:cover;
+  z-index:-6;
+
+}
+
+h1 {
+  z-index:10;
+  text-align:left;
+  width:300px;
+  color: #FFF;
+  font-family: 'Droid Serif', serif;
+  font-size:5em;
+  margin:0;
+  padding-left:20px;
+}
+

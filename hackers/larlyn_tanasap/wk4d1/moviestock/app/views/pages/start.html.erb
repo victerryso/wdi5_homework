@@ -1,0 +1,16 @@
+<% if @movie || @last_trade %>
+  <% if @movie %>
+  <p>
+  <%= @movie['Title'] %> is rated <%= @movie['Rated'] %> and was released on <%= @movie['Released'] %>
+  </p>
+  <% end %>
+  <% if @last_trade %>
+  <p>
+  The last trade for <%= @symbol %> was <%= @last_trade %>
+  </p>
+  <% end %>
+<% else %>
+  <p>
+  For all those people who want to look up movies and last trades on stock symbols at the same time.
+  </p>
+<% end %>

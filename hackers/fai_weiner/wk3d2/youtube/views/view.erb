@@ -1,0 +1,13 @@
+<h3><%= @youtube.title %></h3>
+
+<p>URL: <a href="<%= @youtube.url %>"><%= @youtube.url %></a> </p>
+
+<%= youtube_id = @youtube.url[-11..-1] %>
+<p>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/<%= youtube_id %>/" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p>Genre: <%= @youtube.genre %></p>
+
+<a href="/youtube/<%= @youtube.id %>/edit">Edit</a>
+<a href="/youtube/<%= @youtube.id %>/delete">Delete</a>

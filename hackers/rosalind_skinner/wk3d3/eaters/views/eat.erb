@@ -1,0 +1,32 @@
+<h2><%= @place.name%> <%= @place.rating%>/5</h2>
+<h3><%= @place.category%></h3>
+<section class="content">
+  <img src="<%= @place.image%>">
+  <p><%= @place.review%></p>
+
+
+  <section>
+    <p><%= @place.phone%></p>
+    <p><a href="<%= @place.url%>"><%= @place.url%></a> </p>
+  </section>
+
+  <div>
+  <section class="task">
+    <a href="/eaters/<%= @place.id %>/edit">Edit</a>
+  </section>
+  <section class="task">
+    <a href="/eaters/<%= @place.id%>/delete">Delete</a>
+  </section>
+  </div>
+</section>
+
+<aside>
+<% @places_all.each do |place|%>
+<div>
+<a href="/eaters/<%= place.id %>">
+    <%= place.name%>
+    <img src="<%= place.image%>">
+    </a>
+</div>
+<% end %>
+</aside>

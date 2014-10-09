@@ -1,0 +1,11 @@
+<div>
+  <p><%= @author.name %></p>  
+  <p><%= @author.birth_place %></p>  
+  <p><%= @author.dob.strftime('%B %d %Y') %></p>  
+  <p><%= image_tag(@author.image, :class => 'full-image') %></p>  
+  <p><%= @author.name %></p>  
+</div>
+  <div>
+    <span class="button"><%= link_to('Edit', edit_author_path(@author)) %></span>
+    <span class="button"><%= link_to('Delete', :method => :delete ) %></span>
+  </div>

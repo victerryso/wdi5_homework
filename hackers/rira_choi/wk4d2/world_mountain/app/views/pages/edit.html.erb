@@ -1,0 +1,23 @@
+<form action='<%= mountain_path @mountain %>' method='post'>
+  <div class='first'>
+    <p>Name: <input type='text' name='mountain[name]'  autofocus value='<%= @mountain.name %>'></p>
+    <p>Image: <input type='url' name='mountain[image]' value='<%= @mountain.image %>'></p>
+  </div>
+
+  <div class='second'>
+    <p>Country: <input type='text' name='mountain[country]' value='<%= @mountain.country %>'></p>
+    <p>Elevation: <input type='text' name='mountain[Elevation]'   value='<%= @mountain.Elevation %>'></p>
+  </div>
+
+ <div class='third'>
+  <p>Range: <input type='text' name='mountain[range]' value='<%= @mountain.range %>'></p>
+  <p>Coordinates: <input type='text' name='mountain[coordinates]'value="<%= @mountain.coordinates %>"></p>
+ </div>
+
+ <div class='last'>
+  <label for="description">Description:<br/>
+    <textarea id="description" name="mountain[description]" rows= "5" placeholder="Tell everyone about the mount here!"><%= @mountain.description %> </textarea>
+  </label>
+ </div>
+  <p><button> Update Mount </button></p>
+</form>

@@ -1,0 +1,31 @@
+<h3>Select your start and end stops</h3>
+
+<form action="/results" method="get">
+
+  <label for="start_option">Start</label>
+  <select name="start_option">
+    <% $lines.each do |line, stations| line %>
+      <optgroup label="<%= line %> line">
+        <% stations.each do |station| %>
+          <option value="<%= line %>,<%= station %>">
+            <%= station %>
+          </option>
+        <% end %>
+      </optgroup>
+    <% end %>
+  </select>
+
+<label for="end_option">End</label>
+  <select name="end_option">
+    <% $lines.each do |line, stations| %>
+      <optgroup label="<%= line %> line">
+        <% stations.each do |station| %>
+          <option value="<%= line %>,<%= station %>">
+            <%= station %>
+          </option>
+        <% end %>
+      </optgroup>
+    <% end %>
+  </select>
+    <button>Go!</button>
+</form>

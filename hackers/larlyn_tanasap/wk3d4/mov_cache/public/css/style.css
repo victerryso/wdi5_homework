@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+
+html {
+  /*color: rgba(185,10,50,1);*/
+  color: rgba(230,230,230,1);
+  font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+  height: 100%;
+  margin-top: -30px;
+}
+
+
+body {
+  margin: 0 auto 3em auto;
+  height:100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+a:link {
+  color: #de2030;
+}
+
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  color: #333;
+}
+
+a:active {
+  color: #eee;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+}
+
+h2, h3,h4 {
+  font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
+}
+
+div#box {
+  min-width:600px;
+  max-width: 800px;
+  background: rgba(10,10,10,.8);
+  padding-top: 0;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  height: 100%;
+  /*padding-left: 50px*/
+}
+
+form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
+  background: rgba(10,10,10,1);
+  padding-top: 10px;
+}
+
+
+input {
+  border: 0;
+  width: 300px;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 20px 10px;
+  padding-left: 15px;
+}
+
+input:focus {
+  outline: none
+}
+
+button {
+  width: 300px;
+  margin: auto;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+button:focus{
+  outline: none
+}
+
+@media (max-width: 800px) {
+      form {
+        display: block;
+        height: 6em;
+      }
+      div#box {
+        max-width: 200px;
+      }
+      form img {
+        max-width: 200px;
+      }
+      input,button {
+        width: 200px;
+      }
+      }

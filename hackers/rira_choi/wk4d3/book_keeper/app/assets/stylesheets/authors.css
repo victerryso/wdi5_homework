@@ -1,0 +1,101 @@
+#best{
+  width: 400px;
+}
+
+.a_img{
+  max-width: 30em;
+  margin-left: 30px;
+}
+
+#a_info{
+  margin-left: 30px;
+}
+
+.small_img{
+  max-width: 7em;
+  margin: 15px;
+
+}
+#a_info, .authors_book{
+  display: inline-block;
+  vertical-align: center;
+}
+
+.authors_book{
+  margin-left: 25%;
+}
+
+.list_img{
+  max-width: 190px;
+}
+.abook_each{
+  display: inline-block;
+}
+
+.abook_each a:hover{
+  opacity: 0.5
+}
+
+
+.book_each{
+  max-width: 500px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.abook_each, .book_each a{
+  font-size: 20px;
+  color: #E6E6B8;
+}
+
+.abook_each, .book_each a:hover{
+   color: #FFE680;
+}
+
+#list_icon, .book_list{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#list_icon{
+  margin-left: 8%;
+}
+
+.book_list{
+  max-width: 450px;
+  margin-left: 15%;
+}
+
+#show_img, .book_info{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#authors_book_list{
+  text-align: left;
+  margin-left: 5%;
+}
+
+.book_info{
+  max-width: 400px;
+  margin-left:30%;
+  margin-top: 20px;
+}
+
+.option a, .book_info a{
+  font-size: 20px;
+  color: #E6E6B8;
+}
+
+.option a:hover, .book_info a:hover{
+  color: #FFE680;
+}
+
+#show_img{
+  width: 300px;
+  margin-left: 100px;
+}
+
+h3{
+  font-size: 40px;
+}

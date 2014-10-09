@@ -1,0 +1,3 @@
+name,num_of_children,age,array
+Walbert,45,3,"[#<Animal:0x00000101118418 @name=""Birdie"", @species=:bird, @age=2, @gender=:male, @weight=3, @color=:blue, @was_neutered=:no, @toy=""Makes alot of noice in the morning"", @description=""XYZ"">]"
+HappiTails,0,0,"[#<Animal:0x000001011182b0 @name=""Jack"", @species=:dog, @age=5, @gender=:male, @weight=6, @color=:yellow, @was_neutered=:yes, @toy=""Loves bacon"", @description=""XYZ"">]"

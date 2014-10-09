@@ -1,0 +1,6 @@
+CREATE TABLE BLOGGLES(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  image TEXT,
+  description TEXT
+);

@@ -1,0 +1,6 @@
+<h1>Events for <%= params[:kind] %></h1>
+  <% @events.each do |event| %>
+  <p><%= image_tag(event.image)%> <%= event.name%>
+  (<em><%= link_to(event.date, events_path(date: event.date, :region => @region)) %></em>)</p>
+
+<% end %>

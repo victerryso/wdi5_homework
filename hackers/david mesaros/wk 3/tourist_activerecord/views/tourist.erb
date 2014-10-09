@@ -1,0 +1,17 @@
+
+<% @places.each do |place| %>
+ <div class="each_place">
+ 	<h3><a href="/tourist/<%= place.id %>"></a></h3>
+ 	<h2> Place Title: <%= place.title %></h2>
+ 	<h2> Place description: <%= place.description %></h2>
+ 	<h2> Place address: <%= place.address %></h2>
+ 	<% if place.address != '' %>
+ 	<iframe
+	  width="600"
+	  height="450"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRZL71ExmhZk-Ecf8KkQLs2kjc5jBHJqw&q=<%= place.address %>">
+	</iframe>
+	<% end %>
+
+<% end %>

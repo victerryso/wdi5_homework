@@ -1,0 +1,8 @@
+<h2>ARE YOU SURE YOU WANT TO DELETE <%= @steakhouse.name.upcase %> FROM YOUR COLLECTION?</h2>
+
+<form action="/steakhouse/<%= @steakhouse.id %>/delete" method="post">
+    <button type="submit" class="confirm">Yes</button>
+</form>
+<form action="/steakhouse" method="get">
+  <button class="cancel">No</button>
+</form>

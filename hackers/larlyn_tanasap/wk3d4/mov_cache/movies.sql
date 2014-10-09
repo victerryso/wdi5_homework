@@ -1,0 +1,23 @@
+CREATE TABLE movies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  year INTEGER,
+  rated TEXT,
+  released TEXT,
+  runtime INTEGER,
+  genre TEXT,
+  director TEXT,
+  writer TEXT,
+  actors TEXT,
+  plot TEXT,
+  language TEXT,
+  country TEXT,
+  awards TEXT,
+  poster TEXT,
+  metascore TEXT,
+  imdb_rating DECIMAL,
+  imdb_ID TEXT,
+  movie_type TEXT,
+  created_at TIMESTAMP,
+  updated_at TIMESTAMP
+);

@@ -1,0 +1,2 @@
+Ocean.create(:name => 'Pacific', :image => 'http://upload.wikimedia.org/wikipedia/commons/f/f6/Pacific_Ocean_-_en.png', :size => '63000000', :continents => 'North America, South America, Antartica, Australia, Asia', :year_discovered => 1513, :nickname => 'peaceful sea', :percentage => 50.1)
+Ocean.create(:name => 'Atlantic', :image => 'http://upload.wikimedia.org/wikipedia/commons/f/f6/Pacific_Ocean_-_en.png', :size => '63000000', :continents => 'North America, South America, Europe, South Africa', :year_discovered => 1200, :nickname => 'peaceful sea', :percentage => 20.1)

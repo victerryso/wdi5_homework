@@ -1,0 +1,44 @@
+body {
+  background-color: #66a2a2;
+  font-family: arial;
+  max-width: 400px;
+  border: solid black 2px;
+  border-radius: 20px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}
+
+form {
+  margin: auto;
+}
+div {
+  padding: 10px;
+  background: white;
+  border: pink;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.lorem {
+  text-align: justify;
+}
+p {
+  margin: 0px;
+  padding: 20px;
+
+}
+66a2a2

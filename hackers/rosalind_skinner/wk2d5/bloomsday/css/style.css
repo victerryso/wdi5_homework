@@ -1,0 +1,88 @@
+    @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+    @import url(http://fonts.googleapis.com/css?family=Arvo);
+
+    body {
+        margin:0 auto;
+        padding:0 60px;
+        background:#323A46;
+        background: -webkit-gradient(radial, center center, 100, center center, 900, from(#3E4857), to(#22282F));
+        background-attachment: fixed;
+        max-width:700px;
+        text-align:justify;
+        color:#FFF;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
+        font-size: 1em;
+        line-height: 1.5em;
+        position: relative;
+        text-shadow:0px -1px 0px rgb(0,0,0);
+
+    }
+
+    table {
+        position: fixed;
+        top:0;
+        width:100%;
+        left:0px;
+        background:#E9F0F5;
+    }
+
+    td {
+        text-align: center;
+        padding: 20px;
+    }
+
+    td a{
+        color:#3E4857;
+        text-shadow:0px 1px 0px rgba(255,255,255,0.9);
+    }
+
+    a {
+        color:#FFF;
+        text-decoration:none;
+        font-weight: 400;
+        font-family: 'Arvo',serif;
+    }
+
+    td br{
+        display: none;
+    }
+
+    a:hover {
+        color: ;
+    }
+
+    p {
+        text-indent: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Arvo', serif;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: inherit;
+        padding:20px;
+    }
+
+    h2 {
+        border-bottom: 1px solid #FFF;
+        font-size: 50px;
+        line-height: 1.2em;
+    }
+
+    h3 {
+        display:none;
+    }
+
+    hr  {
+        border:none;
+    }
+
+    pre {
+        font-family: 'Arvo', serif;
+        font-size: 90%;
+        margin-left: 10%;
+    }

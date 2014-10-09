@@ -1,0 +1,14 @@
+
+<div class="edit">
+  <div id='img'>
+    <img src="<%= @butterfly['image']%>">
+  </div>
+  <div id="info">
+    <h2><%= @butterfly['name'] %></h2>
+    <h4><em>State: </em><%= @butterfly['state']%></h4>
+    <h4><em>Family: </em><%= @butterfly['family']%></h4>
+
+    <a href="/butterflies/<%= @butterfly['id']%>/edit">Edit</a>
+    <a href="/butterflies/<%= @butterfly['id']%>/delete">Delete</a>
+  </div>
+</div>

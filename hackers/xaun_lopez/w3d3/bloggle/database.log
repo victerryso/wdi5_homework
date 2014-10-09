@@ -1,0 +1,5 @@
+D, [2014-06-19T16:50:45.495891 #18944] DEBUG -- :   [1m[36mBloggle Load (331.9ms)[0m  [1mSELECT "bloggles".* FROM "bloggles"[0m
+D, [2014-06-19T16:51:12.226484 #18944] DEBUG -- :   [1m[35mBloggle Load (0.3ms)[0m  SELECT "bloggles".* FROM "bloggles"
+D, [2014-06-19T16:51:13.253505 #18944] DEBUG -- :   [1m[36mBloggle Load (0.2ms)[0m  [1mSELECT "bloggles".* FROM "bloggles"[0m
+D, [2014-06-19T17:05:25.475991 #18944] DEBUG -- :   [1m[35mBloggle Load (9.5ms)[0m  SELECT "bloggles".* FROM "bloggles"
+D, [2014-06-20T10:44:45.119853 #18944] DEBUG -- :   [1m[36mBloggle Load (123.6ms)[0m  [1mSELECT  "bloggles".* FROM "bloggles"  WHERE "bloggles"."id" = ? LIMIT 1[0m  [["id", 7]]

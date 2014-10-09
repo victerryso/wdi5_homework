@@ -1,0 +1,27 @@
+<div id='a_info'>
+
+<p><%= image_tag(@author.image, :class =>'a_img')%></p>
+
+</div>
+
+<div class='authors_book'>
+  <h3><%= @author.name %></h3>
+  <p>Nationality | <%= @author.nationality %></p>
+  <p style ='margin-bottom:50px;'>Born | <%= @author.dob.strftime('%d %B %Y')  %></p>
+
+  <h2 id='authors_book_list'>The Author's books, </h2>
+  <% @author.books.each do |book| %>
+  <div class='abook_each'>
+  <p><%= link_to(image_tag(book.image, :class => 'small_img'), book) %></p>
+  </div>
+  <% end %>
+    <div class='option'>
+    <p><%= link_to('Back', authors_path)%>
+      <%= link_to('Edit', edit_author_path(@author))%>
+    <%= link_to('Delete', @author, :data => { :confirm => 'Are you sure you want to delete this?', :method => :delete }) %>
+
+      <a href='/authors/<%= @author.id + 1 %>'>Next</a>
+  </p>
+  </div>
+</div>
+

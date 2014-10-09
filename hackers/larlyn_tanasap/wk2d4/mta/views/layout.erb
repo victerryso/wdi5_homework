@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MTA Trip Planner</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body>
+    <div id="station_input">
+
+      <h1><a href="/">MTA Trip Planner</a></h1>
+
+      <form action="/" method="get">
+
+        <fieldset>
+          <label for="stop_on">I'm starting my trip at:
+            <select id="stop_on" name="stop_on">
+
+              <option value="<%= "" %>"><%= "" %></option>
+              <% $all_stops.uniq.each do |stop| %>
+                  <option value="<%= stop %>" <%="selected" if stop == params[:stop_on]%>><%= stop %></option>
+              <% end %>
+
+            </select>
+          </label>
+          <br>
+          <label for="stop_off">I'm getting off at:
+            <select id="stop_off" name="stop_off">
+
+              <option value="<%= "" %>"><%= "" %></option>
+              <% $all_stops.uniq.each do |stop| %>
+                  <option value="<%= stop %>" <%="selected" if stop == params[:stop_off]%>><%= stop %></option>
+              <% end %>
+
+            </select>
+          </label>
+          </fieldset>
+
+        <button type="submit">Plan my trip!</button>
+
+      </form>
+    </div>
+
+    <div id="results">
+        <div id="tripplan">
+          <%= yield %>
+        </div>
+    </div>
+</body>
+</html>

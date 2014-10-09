@@ -1,0 +1,46 @@
+<%= render :partial => 'calendar' %>
+
+<div class="row">
+  <div class="col-md-12">
+    <%= calendar @date do |date| %>
+      <%= date.day  %>
+      <div class="day-cell">
+      <% if @public_holidays.present? %>
+        <% @public_holidays.each do |holiday| %>
+          <% if holiday.date.strftime('%d').gsub(/^0/,'').to_s == date.day.to_s %>
+              <p>
+                  <% holi_name = holiday.local_name.to_s.split(" ").first %>
+                  <%= if holi_name == "New"
+                        image_tag('http://i.imgur.com/Sxa1rTl.png?1')
+                      elsif holi_name == "Easter"
+                        image_tag('http://i.imgur.com/zOhmINw.png?1')
+                      elsif holi_name == "Queen's"
+                        image_tag('http://i.imgur.com/YRAOZlL.png?1')
+                      elsif holi_name == "Christmas"
+                        image_tag('http://i.imgur.com/rvGvYSh.png?1')
+                      else
+                        image_tag('http://i.imgur.com/NxNrPHD.png?1')
+                      end %><br/>
+                      <%= holiday.local_name.to_s %>
+                </p>
+          <% end %>
+        <% end %>
+      <% end %>
+
+      <% if @events.present? %>
+        <% @events.each do |event| %>
+          <% if event.date == date %>
+            <p>
+              <%= image_tag(event.image) %><br/>
+              <%= link_to event.name, event %>
+
+            </p>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+    <% end %>
+
+
+  </div>
+</div>

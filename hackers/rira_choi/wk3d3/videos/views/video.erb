@@ -1,0 +1,22 @@
+<div class="single_video">
+
+  <div id="info">
+  <h2><%= @video.title %></h2>
+
+
+    <p>Category: <em><%= @video.category.name %></em> | Genre: <em><%= @video.genre %></em></p>
+    </form class="description">
+      View description?
+      <input class ="description" type="checkbox" name="description">
+      <div class= "show_description">
+      <%= @video.description %>
+      </div>
+    </form>
+  </div>
+
+  <iframe width="540" height="400" src="//www.youtube.com/embed/<%=@video.url.split("/").last %>" frameborder="0" allowfullscreen%></iframe>
+
+    <a href="/videos/<%= @video.id %>/edit">Edit</a>
+    <a href="/videos/<%= @video.id %>/delete">Delete</a>
+</div>
+

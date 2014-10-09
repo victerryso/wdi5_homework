@@ -1,0 +1,62 @@
+<form action="/videos" method="post">
+  <div class="first">
+  </div>
+    <label for="category" name="category">Category: </label>
+      <select name="category_id" id="category">
+        <option selected label="none">None</option>
+          <% Category.all.each do |category|%>
+        <option value="<%= category.id %>"><%= category.name %></option>
+          <% end %>
+      </select>
+
+  <div class="second">
+    <label for="genre">Genre: </label>
+      <select for="genre" name="genre">
+        <option selected label="none">None</option>
+         <optgroup label="Asking">
+          <% %w(Reviews Recipes Others).each do |genre| %>
+            <option value="<%= genre %>"><%= genre %></option>
+          <% end %>
+         </optgroup>
+
+        <optgroup label="Laughing">
+          <% %w(Funny Interesting Others).each do |genre| %>
+            <option value="<%= genre %>"><%= genre %></option>
+          <% end %>
+        </optgroup>
+
+        <optgroup label="Listening">
+          <% %w(Top10 Pop Rock Classic Others).each do |genre| %>
+           <option value="<%= genre %>"><%= genre %></option>
+          <% end %>
+        </optgroup>
+
+        <optgroup label="Studying">
+          <% %w(Language Computer Others).each do |genre| %>
+            <option value="<%= genre %>"><%= genre %></option>
+          <% end %>
+        </optgroup>
+
+        <optgroup label="Watching">
+          <% %w(Trailer Movies TVshow Others).each do |genre| %>
+            <option value="<%= genre %>"><%= genre %></option>
+          <% end %>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="third">
+      <label for="title">Title: </label>
+      <input type="text" id="title" name="title">
+
+      <label for="url" id="url">URL: </label>
+      <input type="url" id="url" name="url" ><br/>
+    </div>
+
+    <div class="last">
+      <label for="description">Description:<br/>
+        <textarea id="description" name="description" rows= "5" placeholder="Tell everyone about the video here!">This is a video about  </textarea>
+      </label>
+    </div>
+  <button>Create a new video!</button>
+</form>

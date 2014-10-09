@@ -1,0 +1,56 @@
+<form action="/processing" method="get">
+
+  <div id="start">
+  <!-- start-->
+  <label for="start_stop"> Choose the stop you will get <span>on</span>  :
+     <select name="start_stop"> <!-- This is The key and I can make it hash!input["start_stop"] -->
+      <!-- after select put none option and make it selected-->
+        <option selected label="none" value="none"> None </option>
+        <optgroup label= "Line N" value= "N_line" >
+          <% ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"].each do |stop| %>
+          <option value="<%= stop %>,N_line"><%= stop %></option>
+          <% end %>
+        </optgroup>
+
+        <optgroup label="Line L">
+           <% ['8th','6th','Union Square','3rd','1st'].each do |stop| %>
+          <option value="<%= stop %>,L_line"><%= stop %></option>
+           <% end %>
+        </optgroup>
+
+       <optgroup label="Line 6">
+          <% ['Grand Central','33rd','28th','23rd','Union Square','Astor Place'].each do |stop| %>
+          <option value="<%= stop %>,6_line"><%= stop %></option>
+          <% end %>
+       </optgroup>
+     </select>
+    </label>
+  </div>
+
+  <!-- end -->
+  <div id ="end">
+     <label for="end_stop" id="end_stop"> Choose the stop you will get <span>off</span>  :
+        <select name="end_stop">
+          <option selected label="none" value="none"> None </option>
+          <optgroup label="Line N">
+            <% ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'].each do |stop| %>
+           <option value="<%= stop %>,N_line"><%= stop %></option>
+            <% end %>
+          </optgroup>
+
+          <optgroup label="Line L">
+            <% ['8th','6th','Union Square','3rd','1st'].each do |stop| %>
+            <option value="<%= stop %>,L_line"><%= stop %></option>
+            <% end %>
+          </optgroup>
+
+          <optgroup label="Line 6">
+            <% ['Grand Central','33rd','28th','23rd','Union Square','Astor Place'].each do |stop| %>
+            <option value ="<%= stop %>,6_line"><%= stop %></option>
+            <% end %>
+          </optgroup>
+        </select>
+      </label>
+  </div>
+  <button type= "submit" >Calculate! </botton>
+</form>

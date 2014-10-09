@@ -1,0 +1,12 @@
+<section class="search">
+  <form action= "/" method = "get">
+    <input name = "title" placeholder = "Movie Title">
+
+    <button>Find Movie!</button>
+  </form>
+</section>
+
+<section class="results">
+<h2>"<%= @title.gsub('+', ' ') %>": is an invalid movie title</h2>
+<p>Please make sure you have correctly spelt the movie title!</p>
+</section>

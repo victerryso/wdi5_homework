@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Memetube</title>
+</head>
+<body>
+  <section class="container">
+    <header>
+      <h1><a href="/memetube">Memetube</a></h1>
+      <nav>
+      <ul>
+
+        <li><a href="/memetube/new">New Video</a></li>
+        <li><a hred="#">Genre</a>
+          <ul>
+
+            <% @genres.each do |genre| %>
+            <li><a href="/memetube/genre/<%=genre%>"><%=genre%></a></li>
+            <% end %>
+          </ul>
+          </li>
+      </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </section>
+</body>
+</html>
