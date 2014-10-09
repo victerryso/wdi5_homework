@@ -1,0 +1,7 @@
+
+<% @authors.each do |author|  %>
+<section class="grid">
+<p> <%= link_to(author.name, author) %> </p>
+<%= image_tag(author.image, :class => 'thumb') %>
+</section>
+<% end %>

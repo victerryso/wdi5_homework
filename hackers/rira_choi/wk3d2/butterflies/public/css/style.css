@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Goblin+One);
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+
+body {
+  background: url("http://i.imgur.com/YGJwpxO.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+#map_info, h3{
+  text-align: center;
+  margin-right: 100px;
+}
+
+span{
+  color:red;
+  font-size: 20px;
+}
+
+body h2{
+  color: white;
+}
+
+h2{
+  text-align: center;
+  position: relative;
+  font-family: 'Chelsea Market', cursive;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 70px;
+  color: white; text-shadow:1px 1px 8px grey;"
+  position: absolute;
+  font-family: 'Chelsea Market', cursive;
+}
+nav {
+  text-align: center;
+  font-family: serif;
+  position: center;
+  padding: 10px;
+  margin: 30px;
+  background: rgba(127, 117, 94, 0.3);
+
+}
+
+nav a {
+  color: white;
+  margin: 5px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+div #map{
+  margin-left: 150px;
+  margin-bottom: 70px;
+}
+
+#container{
+  margin-left: 150px;
+  max-width: 960px;
+}
+
+form{
+
+  color: red;
+  margin: 0 auto;
+}
+
+button{
+  background: red;
+  color: white;
+  margin-top: 30px;
+  margin-left: 350px;
+}
+
+
+label{
+  padding: 5px;
+  margin-right: 5px ;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+input {
+  padding: 3px 0 3px 0;
+  font-size: 13px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.edit img{
+  width:300px;
+  height: 200px;
+}
+
+#img, #info {
+  display: inline-block;
+  font-family: 'Chelsea Market', cursive;
+}
+
+#info{
+  margin: 20px;
+
+}
+
+#info a {
+  text-decoration: none;
+  padding: 3px 0 3px 0;
+  font-size: 13px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+#info a:hover{
+  color: white;
+}
+
+.butterfly{
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #777;
+
+}
+
+.butterfly p a{
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.butterfly img{
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}

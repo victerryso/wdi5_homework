@@ -1,0 +1,16 @@
+<h2><%= @mountain.name %></h2>
+<%= image_tag(@mountain.image, :class => 'm_img')%>
+<div id='info'>
+  <p><span>Country |</span> <%= @mountain.country %></p>
+  <p><span>Elevation |</span> <%= @mountain.Elevation %></p>
+  <p><span>Range |</span> <%= @mountain.range %></p>
+  <p><span>Coordinates |</span> <%= @mountain.coordinates %></p>
+</div>
+<div id='des'>
+  <p><span>Description |</span></p>
+  <p><%= @mountain.description%></p>
+</div>
+<div id='option'>
+  <p><%= link_to('Edit', mountain_edit_path )%></p>
+  <p><%= link_to('Delete', mountain_delete_path(@mountain.id))%></p>
+</div>

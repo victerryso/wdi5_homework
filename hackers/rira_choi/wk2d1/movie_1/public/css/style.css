@@ -1,0 +1,60 @@
+body {
+  background: url("http://i.imgur.com/AAadxlZ.jpg");
+  background-size: cover;
+}
+h1 {
+  font-family: 'Londrina Shadow';
+  text-align: center;
+  font-size: 75px;
+  color: white; text-shadow:1px 1px 8px #000;"
+  margin: 60px 0 0 0;
+}
+
+nav {
+  text-align: center;
+  font-family: serif;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+
+}
+
+nav a {
+  color: white;
+  margin: 5px;
+  text-decoration: none;;
+
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  border: 0px;
+  width : 250px;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  font-size: 12px;
+}
+p{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+
+  color: white;
+}
+
+button{
+    background: red;
+    color: white;
+    text-align: center;
+}
+div{
+  position: left;
+  margin: 0px 500px 0px 500px;
+  font-family: times;
+  color: white
+}
+
+
+

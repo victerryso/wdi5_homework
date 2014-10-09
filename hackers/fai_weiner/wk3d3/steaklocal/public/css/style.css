@@ -1,0 +1,103 @@
+body {
+  background: url(/img/Red_Tie.jpg);
+  background-repeat: none;
+  background-size: cover;
+  font-family: 'Muli', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+#container {
+  max-width: 960px;
+  padding-top: 10px;
+  background-color: #fefad2;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#index {
+  border: 1px ;
+  max-height: 600px;
+}
+
+nav {
+  background-color: #fefad2;
+  display: block;
+  max-width: 960px;
+  margin: 10px auto 20px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#map_canvas {
+  width: 200px;
+  background-color: black;
+}
+
+.logo {
+  width: 150px;
+}
+
+.sm-single-display-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  height: 400px;
+  padding: 0;
+}
+
+.single-display-inside {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 10px;
+  height: 60%;
+  text-align: right;
+  vertical-align: middle;
+  border: 1px dashed red;
+  overflow: scroll;
+}
+
+.old-paper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/*ELELEMNT STYLING*/
+
+h1, h2, h3 {
+  font-family: 'Special Elite', cursive;
+}
+
+.rating {
+  color: red;
+}
+
+form {
+  position: relative;
+  display: block;
+
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto 10px auto;
+  border-radius: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-family: 'Special Elite', cursive;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}

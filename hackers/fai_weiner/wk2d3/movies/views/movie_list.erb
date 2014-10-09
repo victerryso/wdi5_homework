@@ -1,0 +1,14 @@
+<% if @titles_list != nil %>
+  <p>Search count: <% @counts %></p>
+  <p>Multiple titles matching search term. Please select title.</p>
+  <% @titles_list["Search"].uniq.each do |movie| %>
+    <% if movie['Type'] == "movie" && movie['Rated'] != "N/A"%>
+      <div class="movie-list">
+        <p>
+          <a href="/display?id=<%= movie['imdbID']%>"><%=movie['Title']%></a>
+          (<%= movie['Year'] %>)
+        </p>
+      </div>
+    <% end %>   
+  <% end %>
+<% end %>

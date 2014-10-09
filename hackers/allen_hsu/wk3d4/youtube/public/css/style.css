@@ -1,0 +1,36 @@
+body {
+  background-color: #d5d5d5;
+  color: black;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 960px;
+  margin:auto;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+/*Navigation styling*/
+nav {
+  background-color: black;
+  color: white;
+}
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+nav a:hover {
+  color: red;
+}
+.butterfly img {
+  max-width:10em;
+}
+
+.full {
+  max-width: 960px;
+}

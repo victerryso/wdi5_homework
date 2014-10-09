@@ -1,0 +1,7 @@
+<% @oceans.each do |ocean| %>
+<p>
+	<%= link_to(ocean.name, ocean_path(ocean.id)) %> has <%=  pluralize(ocean.zone, 'zone') %>
+
+	<%= button_to('Delete Ocean', ocean_delete_path(ocean.id)) %>
+</p>
+<% end %>

@@ -1,0 +1,32 @@
+body {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Times New Roman", serif;
+  color: #656565;
+  max-width: 960px;
+  margin-left: 72px;
+}
+
+h1 {
+  padding-top: 18px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+div img {
+  border: 5px solid #878484;
+  border-color: #878484;
+  padding: 1px;
+}
+
+a {
+  color: #5ea0cf;
+  text-decoration: none;
+}
+
+p {
+  line-height: 175%;
+}

@@ -1,0 +1,9 @@
+<h2><%= @book.title %></h2>
+<%= image_tag(@book.image) %>
+<p>Year: <%= @book.year %></p>
+<p>Synopsis: <%= @book.synopsis %></p>
+<p>Pages: <%= @book.pages %></p>
+<p>ISBN: <%= @book.isbn %></p>
+<p>Author: <%= link_to(@book.author.name, @book.author) if @book.author %> </p>
+<%= link_to("Edit", edit_book_path(@book)) %>
+

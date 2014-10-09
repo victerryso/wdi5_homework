@@ -1,0 +1,18 @@
+
+<form action="/movies" method="get">
+  <input name = "movie_name" placeholder = "Movie Title">
+  <button>ACTION!</button>
+</form>
+
+<% if @movie_name %>
+    <% @movie['Search'].each do |movie| %>
+      <p>
+        <a href="/poster?id=<%= movie['imdbID']%>"><%= movie['Title'] %>:   <%= movie["Year"] %></a>
+      </p>
+    <% end %>
+<% end %>
+
+
+
+
+

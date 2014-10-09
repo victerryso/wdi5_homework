@@ -1,0 +1,45 @@
+.container {
+  max-width: 864px;
+}
+
+.main-content {
+  position: relative;
+  background-color: #ffffff;
+  display: inline-block;
+  max-width: 864px;
+  padding: 18px;
+  margin: 15px auto 0 auto;
+  vertical-align: top;
+}
+
+section img, .main-content p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+section h2 {
+  width: 100%;
+}
+section img {
+  width: 60%;
+  margin: 0;
+}
+
+.main-content p {
+  vertical-align: top;
+  width: 38%;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 520px) {
+  section img {
+    max-width: 100%;
+    background-color: yellow;
+    display: block;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,12 @@
+<% @categories.each do |category| %>
+
+  <h2><%= category.name %></h2>
+  <div class="group_list">
+    <% video = Video.where(:category_id => category.id).limit(3)%>
+    <% video.each do |vid| %>
+    <iframe width="250" height="170" src="//www.youtube.com/embed/<%= vid.url.split("/").last %>" frameborder="0" allowfullscreen%></iframe>
+    <% end %>
+  </div>
+    <a href="/videos/category/<%= category.id %>" title="Asking">More....</a>
+
+<% end %>

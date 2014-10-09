@@ -1,0 +1,477 @@
+D, [2014-06-18T23:08:58.407687 #1299] DEBUG -- :   [1m[36mSteakhouse Load (2.4ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-18T23:10:57.052298 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T23:10:57.059675 #1299] DEBUG -- :   [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "steakhouses" ("address", "description", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address", "1450 Lombard St"], ["description", "Fun Experience"], ["name", "Bobo's"], ["rating", 8], ["style", "American Style"], ["url", "www.boboquivaris.com"], ["zipcode_id", 94123]]
+D, [2014-06-18T23:10:57.060675 #1299] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2014-06-18T23:10:57.070791 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-18T23:10:59.719660 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T23:11:25.809182 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T23:15:48.917872 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T23:15:55.621475 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-18T23:16:52.822394 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T23:16:52.823349 #1299] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "fdadsa"], ["description", "fdafs"], ["latitude", "fdaf"], ["logo", "fdsas"], ["longtitude", "fsdafsa"], ["name", "fdaa"], ["rating", 10], ["style", "fsdafas"], ["url", "dafdsf"], ["zipcode_id", 0]]
+D, [2014-06-18T23:16:52.825150 #1299] DEBUG -- :   [1m[35m (1.5ms)[0m  commit transaction
+D, [2014-06-18T23:16:52.830658 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-18T23:17:01.913481 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T23:17:05.469192 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.4ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T23:18:31.371432 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-18T23:19:11.782654 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T23:22:31.799686 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.4ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-18T23:22:37.395130 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-18T23:22:41.996890 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T23:24:44.928997 #1299] DEBUG -- :   [1m[36mSteakhouse Load (7.9ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-18T23:25:42.803348 #1299] DEBUG -- :   [1m[35mSteakhouse Load (7.6ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T23:27:16.972792 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-18T23:28:01.414624 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T23:28:02.541450 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-18T23:28:02.541939 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T23:28:02.542600 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T23:28:16.155544 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T23:28:16.155966 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T23:28:16.156170 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-18T23:28:16.160943 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-18T23:29:00.969205 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-18T23:29:00.969760 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T23:29:00.970074 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-18T23:29:00.975336 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-18T23:39:22.467754 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.4ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-18T23:49:44.410014 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-18T23:50:17.216579 #1299] DEBUG -- :   [1m[35mSteakhouse Load (15.5ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-18T23:51:21.260325 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-18T23:51:40.423973 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-18T23:55:16.039345 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T23:55:16.044132 #1299] DEBUG -- :   [1m[35mSQL (4.1ms)[0m  INSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "dafsda"], ["description", "fdafds"], ["latitude", "dafs"], ["logo", "fdafs"], ["longtitude", "fasfsd"], ["name", "Keens"], ["rating", 10], ["style", "fdsafsd"], ["url", "fdafsd"], ["zipcode_id", 0]]
+D, [2014-06-18T23:55:16.045105 #1299] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T23:55:16.052671 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-18T23:57:24.593523 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-18T23:57:24.594796 #1299] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "fdafs"], ["description", "fdasfd"], ["latitude", "fsadfs"], ["logo", "fdafs"], ["longtitude", "fdafsd"], ["name", "Keens"], ["rating", 10], ["style", "fafs"], ["url", "fdafds"], ["zipcode_id", 0]]
+D, [2014-06-18T23:57:24.595718 #1299] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+D, [2014-06-18T23:58:38.084687 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-18T23:58:38.085591 #1299] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "fafsd"], ["description", "fdafds"], ["latitude", "fdsafd"], ["logo", "fdafs"], ["longtitude", "fafsd"], ["name", "Keens"], ["rating", 10], ["style", "fdassfd"], ["url", "fdafsa"], ["zipcode_id", 0]]
+D, [2014-06-18T23:58:38.090455 #1299] DEBUG -- :   [1m[35m (4.6ms)[0m  commit transaction
+D, [2014-06-19T00:00:23.523187 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T00:00:23.524072 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "fdsaf"], ["description", "fdsaf"], ["latitude", "fdafs"], ["logo", "fdafsd"], ["longtitude", "fdsafdas"], ["name", "Keens"], ["rating", 10], ["style", "fdafsd"], ["url", "fdsafs"], ["zipcode_id", 0]]
+D, [2014-06-19T00:00:23.524932 #1299] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T00:01:34.475764 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T00:01:34.507040 #1299] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "fdsaf"], ["description", "fdsaf"], ["latitude", "fdafs"], ["logo", "fdafsd"], ["longtitude", "fdsafdas"], ["name", "Keens"], ["rating", 10], ["style", "fdafsd"], ["url", "fdsafs"], ["zipcode_id", 0]]
+D, [2014-06-19T00:01:34.516159 #1299] DEBUG -- :   [1m[35m (8.8ms)[0m  commit transaction
+D, [2014-06-19T00:02:22.516085 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T00:02:22.516906 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "steakhouses" ("address", "description", "latitude", "logo", "longtitude", "name", "rating", "style", "url", "zipcode_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "fdsaf"], ["description", "fdsaf"], ["latitude", "fdafs"], ["logo", "fdafsd"], ["longtitude", "fdsafdas"], ["name", "Keens"], ["rating", 10], ["style", "fdafsd"], ["url", "fdsafs"], ["zipcode_id", 0]]
+D, [2014-06-19T00:02:22.525965 #1299] DEBUG -- :   [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T00:02:22.532643 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T00:02:36.638590 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-19T00:03:58.869546 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T00:07:32.467772 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T00:08:03.134467 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-19T00:08:06.637155 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T00:08:07.642419 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-19T00:08:33.049001 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-19T00:08:42.749614 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-19T00:08:57.413519 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-19T00:09:17.573782 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-19T00:14:49.367021 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-19T00:14:54.589448 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 1]]
+D, [2014-06-19T00:14:54.589694 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T00:14:54.590184 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  DELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?  [["id", 1]]
+D, [2014-06-19T00:14:54.591594 #1299] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T00:14:54.600047 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.7ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T00:15:24.175785 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-06-19T00:15:27.030028 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-19T00:15:27.030433 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T00:15:27.030949 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  DELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?  [["id", 2]]
+D, [2014-06-19T00:15:27.031583 #1299] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T00:15:27.082998 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T00:15:31.440106 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2014-06-19T00:15:34.200684 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 8]]
+D, [2014-06-19T00:15:34.201066 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T00:15:34.201795 #1299] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  DELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?  [["id", 8]]
+D, [2014-06-19T00:15:34.202552 #1299] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T00:15:34.208631 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T00:28:24.944559 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.9ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:29:14.483413 #1299] DEBUG -- :   [1m[35mSteakhouse Load (1.4ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:33:11.567576 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:34:24.765206 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:34:36.996494 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:34:48.913511 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.6ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:35:03.413550 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:36:09.066639 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:36:32.707577 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:37:02.025378 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:37:59.055697 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:38:08.103491 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:38:13.474172 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:38:39.105231 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:38:45.592183 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:39:01.265329 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:39:11.865838 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:39:51.194871 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:43:50.387656 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:43:54.890177 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T01:44:01.597434 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T01:44:01.598414 #1299] DEBUG -- :   [1m[35m (0.3ms)[0m  begin transaction
+D, [2014-06-19T01:44:01.599236 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T01:44:01.606209 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-19T01:44:21.663088 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 6]]
+D, [2014-06-19T01:44:27.003689 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 6]]
+D, [2014-06-19T01:44:27.003944 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T01:44:27.004505 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  DELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?  [["id", 6]]
+D, [2014-06-19T01:44:27.012748 #1299] DEBUG -- :   [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T01:44:27.018281 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:47:16.286465 #1299] DEBUG -- :   [1m[36mSteakhouse Load (1.7ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:47:53.889109 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:48:02.345747 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:49:39.369705 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:49:49.896814 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:50:25.401697 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:50:42.960980 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:51:05.042577 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:51:22.769959 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:51:38.276020 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:51:46.916195 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:51:56.403012 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:52:05.422249 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:52:23.724552 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:52:44.659498 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:52:59.604342 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:53:09.725285 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:56:31.762425 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:56:42.449242 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:57:00.178416 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:57:22.648909 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:57:38.721122 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:57:49.202204 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:58:10.191992 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:58:35.056200 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:59:09.993839 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T01:59:46.616543 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T01:59:59.434906 #1299] DEBUG -- :   [1m[35mSteakhouse Load (7.8ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:00:12.916715 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:00:22.210618 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:00:34.241135 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:00:47.764400 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:00:58.905610 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:01:06.402626 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:01:23.282955 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:01:31.873137 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:01:50.609823 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:02:42.179835 #1299] DEBUG -- :   [1m[35mSteakhouse Load (8.4ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:03:13.381441 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:03:40.064240 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:03:50.176604 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:04:17.520205 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:05:18.953674 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:05:44.001186 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:05:56.169357 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:06:15.441141 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:07:00.415675 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:07:06.599252 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:07:27.407892 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:07:41.174305 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:07:51.060911 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:08:05.104740 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.5ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:08:14.575799 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:08:19.463529 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:08:32.223842 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:08:36.448251 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:08:43.760288 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:08:56.383306 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:09:05.154521 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:09:36.337593 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:09:42.162025 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:09:48.178704 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:09:56.321794 #1299] DEBUG -- :   [1m[36mSteakhouse Load (8.4ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:10:32.546560 #1299] DEBUG -- :   [1m[35mSteakhouse Load (7.8ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:10:46.394563 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:10:52.618727 #1299] DEBUG -- :   [1m[35mSteakhouse Load (7.7ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:10:57.564189 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:11:30.061525 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:11:40.297121 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.5ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:11:51.244723 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:12:02.547847 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.5ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:12:08.208616 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:12:21.588001 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:12:33.248169 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:12:40.997021 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.5ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:14:08.442591 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:14:18.159613 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:14:27.712600 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:14:48.531583 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:15:18.291293 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:15:51.123261 #1299] DEBUG -- :   [1m[36mSteakhouse Load (8.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:16:03.337073 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:16:11.097129 #1299] DEBUG -- :   [1m[36mSteakhouse Load (8.5ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:16:31.165846 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:16:42.376000 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:17:10.605372 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:17:18.550775 #1299] DEBUG -- :   [1m[36mSteakhouse Load (7.8ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:17:43.230128 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:18:07.110765 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:18:20.879399 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:18:56.312421 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:18:58.008275 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.5ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:21:12.486810 #1299] DEBUG -- :   [1m[36mSteakhouse Load (2.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:21:19.017552 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:21:20.734598 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:22:23.899348 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:23:10.204408 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:25:09.964800 #1299] DEBUG -- :   [1m[35mSteakhouse Load (8.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:38:06.312466 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.5ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:39:13.303133 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:39:21.725197 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:39:26.974416 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:39:40.380907 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:40:05.398075 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:41:34.191345 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:42:04.656187 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:42:26.855718 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:42:57.224316 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:44:24.768765 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:44:30.289583 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-19T02:44:34.368338 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:44:35.969583 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:44:46.223388 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:44:46.223927 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:44:46.225179 #1299] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "steakhouses" SET "description" = ? WHERE "steakhouses"."id" = 4[0m  [["description", "fdafdfasfdalawiefoiafiafoe a odisodajdias  lorem"]]
+D, [2014-06-19T02:44:46.225931 #1299] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2014-06-19T02:44:46.231465 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-19T02:45:57.881017 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-19T02:46:01.738239 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:46:02.976036 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:46:02.976481 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:46:02.976706 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T02:46:02.980740 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:46:02.981095 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T02:46:02.981273 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:46:07.554671 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:46:09.425929 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:46:09.426392 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:46:09.426617 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:46:09.431287 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:46:09.431661 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:46:09.431830 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T02:46:22.512707 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-19T02:46:33.648030 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 0]]
+D, [2014-06-19T02:47:05.752262 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-19T02:47:08.920199 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:47:12.275448 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:47:14.265537 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:47:18.921848 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:47:20.353095 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:47:21.802996 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:47:21.803621 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:47:21.803944 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:47:21.809101 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:47:21.809578 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:47:21.809857 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T02:47:21.817157 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:47:21.817491 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T02:47:21.817666 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:48:05.781365 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:48:09.595988 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:48:11.162130 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:48:12.558649 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:48:12.559299 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:48:12.559665 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:48:12.564143 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:48:12.564530 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:48:12.564743 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T02:48:12.571068 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:48:12.571394 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T02:48:12.571688 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:48:12.578985 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:48:12.579639 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:48:12.579824 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T02:48:15.170864 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:16.950607 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:28.201555 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:49:30.407267 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:31.988773 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:31.989280 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:49:31.989539 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:49:31.993635 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:31.994415 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:49:31.994896 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T02:49:32.002207 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:32.003346 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:49:32.003647 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:49:35.235058 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:37.387507 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:37.387989 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:49:37.388238 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:49:37.394765 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:37.395689 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:49:37.396054 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T02:49:37.399835 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:37.400138 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T02:49:37.400306 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:49:37.407768 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:49:37.408440 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:49:37.408830 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T02:49:37.413678 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T02:49:37.413971 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T02:49:37.414124 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:50:26.258942 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T02:50:31.305784 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:50:32.971535 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:50:34.590747 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:50:34.591339 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:50:34.591606 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:50:34.598469 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:50:34.599147 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:50:34.599488 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T02:50:34.604839 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T02:50:34.605551 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:50:34.606241 #1299] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T02:50:34.613394 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T02:50:34.613875 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T02:50:34.614151 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T02:54:14.640463 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:54:56.593709 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:55:06.581300 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:55:11.792200 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.4ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:55:19.999193 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:55:25.725465 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:55:35.327446 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:55:43.821926 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:55:56.814075 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.4ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:56:27.935493 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:56:40.184340 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:56:51.105334 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:57:18.072360 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:57:30.289636 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:57:38.974873 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:57:47.150649 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:58:03.328266 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:58:13.847373 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T02:58:24.546485 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:58:38.917996 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-19T02:58:41.289669 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-19T02:58:41.290039 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:58:41.290640 #1299] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?[0m  [["id", 5]]
+D, [2014-06-19T02:58:41.299940 #1299] DEBUG -- :   [1m[35m (9.0ms)[0m  commit transaction
+D, [2014-06-19T02:58:41.306383 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T02:58:44.448261 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 7]]
+D, [2014-06-19T02:58:45.777403 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 7]]
+D, [2014-06-19T02:58:45.777763 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T02:58:45.779799 #1299] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "steakhouses" WHERE "steakhouses"."id" = ?[0m  [["id", 7]]
+D, [2014-06-19T02:58:45.789131 #1299] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2014-06-19T02:58:45.795116 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T03:01:36.754995 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:01:41.703000 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 0]]
+D, [2014-06-19T03:07:12.321895 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:07:19.078248 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T03:07:58.964579 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:08:00.287473 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T03:08:01.639731 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:08:04.374642 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T03:08:05.629833 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:08:07.085155 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-19T03:08:08.338982 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T03:08:15.396957 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T03:08:18.996822 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T03:08:18.997587 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T03:08:18.998055 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T03:08:19.003824 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T03:08:19.004141 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2014-06-19T03:08:19.004312 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:44:44.179032 #1299] DEBUG -- :   [1m[35mSteakhouse Load (2.5ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:46:44.337797 #1299] DEBUG -- :   [1m[36mSteakhouse Load (1.1ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T08:46:46.698624 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:46:49.677112 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:46:49.679266 #1299] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2014-06-19T08:46:49.680667 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:46:49.690443 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:46:49.691011 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T08:46:49.691522 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2014-06-19T08:46:49.702163 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:46:49.702599 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T08:46:49.702819 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:46:55.894425 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:47:21.504811 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:47:30.167899 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:47:30.168653 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T08:47:30.170451 #1299] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "steakhouses" SET "logo" = ? WHERE "steakhouses"."id" = 3  [["logo", "work"]]
+D, [2014-06-19T08:47:30.171727 #1299] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:47:30.176537 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:47:30.176887 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T08:47:30.177066 #1299] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2014-06-19T08:47:32.092337 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:49:24.391967 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T08:49:24.600360 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T08:50:05.906295 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:52:52.762860 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:52:52.763569 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T08:52:52.763931 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:53:36.050772 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:53:40.614434 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:53:45.494738 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:53:45.495194 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T08:53:45.495915 #1299] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "steakhouses" SET "logo" = ? WHERE "steakhouses"."id" = 3  [["logo", "Word"]]
+D, [2014-06-19T08:53:45.496703 #1299] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T08:53:45.501524 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:54:00.598269 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T08:54:02.049348 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T08:54:10.086387 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T08:54:10.086839 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T08:54:10.087434 #1299] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mUPDATE "steakhouses" SET "url" = ? WHERE "steakhouses"."id" = 3[0m  [["url", "Word"]]
+D, [2014-06-19T08:54:10.091133 #1299] DEBUG -- :   [1m[35m (3.6ms)[0m  commit transaction
+D, [2014-06-19T08:54:10.097040 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:00:31.938490 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:00:46.703424 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:00:46.703950 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T09:00:46.704558 #1299] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mUPDATE "steakhouses" SET "address" = ?, "zipcode_id" = ? WHERE "steakhouses"."id" = 3[0m  [["address", "72 West 36 Street"], ["zipcode_id", 10018]]
+D, [2014-06-19T09:00:46.707702 #1299] DEBUG -- :   [1m[35m (3.0ms)[0m  commit transaction
+D, [2014-06-19T09:00:46.714881 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:03:41.050822 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:03:49.392822 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:03:49.393258 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T09:03:49.393850 #1299] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mUPDATE "steakhouses" SET "address" = ? WHERE "steakhouses"."id" = 3[0m  [["address", "72 West 36 Street, New York"]]
+D, [2014-06-19T09:03:49.395373 #1299] DEBUG -- :   [1m[35m (1.4ms)[0m  commit transaction
+D, [2014-06-19T09:03:49.402381 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:05:08.003321 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:05:58.635752 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:06:04.099896 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:06:10.299144 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:06:19.603800 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:12:00.459821 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:12:25.329767 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.3ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T09:12:33.630442 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:13:18.394976 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-19T09:14:02.069333 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:14:09.369416 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:14:09.370163 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T09:14:09.371387 #1299] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "steakhouses" SET "logo" = ? WHERE "steakhouses"."id" = 3  [["logo", "http://www.keens.com/images/KeensLogo-UpperLeft.png"]]
+D, [2014-06-19T09:14:09.373195 #1299] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T09:14:09.379881 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:14:19.176076 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:14:23.218299 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.4ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:15:11.259377 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:15:11.260048 #1299] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-19T09:15:11.260390 #1299] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T09:15:11.266189 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:15:13.679507 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.4ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:15:14.280572 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T09:15:19.290302 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:15:23.961853 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T09:15:40.112043 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:15:52.534152 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:15:52.534578 #1299] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2014-06-19T09:15:52.535156 #1299] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "steakhouses" SET "description" = ? WHERE "steakhouses"."id" = 3  [["description", "Sat in the Pipe room"]]
+D, [2014-06-19T09:15:52.539299 #1299] DEBUG -- :   [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+D, [2014-06-19T09:15:52.545981 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:16:50.521190 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:17:04.704654 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:17:55.993269 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:18:03.721880 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:18:22.968973 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:18:37.530251 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:19:15.255647 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:19:46.690261 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:20:11.446860 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:20:28.575039 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:20:37.950997 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:21:08.600967 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:21:14.079122 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.1ms)[0m  [1mSELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-19T09:22:29.445521 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.1ms)[0m  SELECT  "steakhouses".* FROM "steakhouses"  WHERE "steakhouses"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-19T09:30:32.771504 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.3ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m
+D, [2014-06-19T09:31:41.564843 #1299] DEBUG -- :   [1m[35mSteakhouse Load (0.2ms)[0m  SELECT "steakhouses".* FROM "steakhouses"
+D, [2014-06-19T09:32:43.576830 #1299] DEBUG -- :   [1m[36mSteakhouse Load (0.2ms)[0m  [1mSELECT "steakhouses".* FROM "steakhouses"[0m

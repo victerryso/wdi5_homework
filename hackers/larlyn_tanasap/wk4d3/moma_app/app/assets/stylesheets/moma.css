@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #bf0000;
+  padding: 1em;
+  margin: auto;
+  border-radius: 1em;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+label {
+  min-width: 8em;
+  display: inline-block;
+}
+
+.thumb {
+  max-width: 20em;
+}
+
+.medium {
+  max-width: 40em;
+}
+
+.work {
+  display: inline-block;
+}
+
+.work img {
+  max-height: 20em;
+}

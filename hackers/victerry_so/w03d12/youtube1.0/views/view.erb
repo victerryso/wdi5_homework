@@ -1,0 +1,7 @@
+<h2><%= @video['title'] %></h2>
+<a href="<%= @video['url'] %>"><%= @video['url'] %></a>
+<p><%= @video['description'] %></p>
+<a href="/<%= @video['id'] %>/edit">Edit</a>
+<a href="/<%= @video['id'] %>/delete">Delete</a>
+
+<iframe width="640" height="480" src="//www.youtube.com/embed/<%= @video['url'].split("=").last %>" frameborder="0" allowfullscreen></iframe>

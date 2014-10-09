@@ -1,0 +1,10 @@
+
+
+<p><%= link_to('Edit', ocean_edit_path(@ocean.id)) %></p>
+<h2><%= @ocean.name %></h2>
+<p><%= image_tag( @ocean.image, :class => 'thumb' ) if @ocean.image %></p>
+<p>Zone: <%=  @ocean.zone %></p>
+<p>Depth: <%= @ocean.depth %></p>
+<p>Climate: <%= @ocean.climate %></p>
+
+

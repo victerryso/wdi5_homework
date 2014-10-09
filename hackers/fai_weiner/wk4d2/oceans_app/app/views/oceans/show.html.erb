@@ -1,0 +1,7 @@
+<h1><%= @ocean.name %> Ocean</h1>
+<p><%= image_tag( @ocean.image, :class => "thumbnail" ) if @ocean.image %></p>
+<p>Size: <%= number_to_human(@ocean.size) %> sq.mi.</p>
+<p>Continents: <%= @ocean.continents %></p>
+<p>Year Discovered: <%= @ocean.year_discovered %></p>
+<p>Nickname: <%= @ocean.nickname %></p>
+<p>Percentage of Earth's Surface: <%= @ocean.percentage %>%</p>

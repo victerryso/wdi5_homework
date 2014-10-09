@@ -1,0 +1,31 @@
+body {
+  line-height: 10px;
+}
+
+#container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.box {
+  width: 4em;
+  height: 4em;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+#canvas {
+  border: 2px solid black;
+}
+
+#selected {
+  border-radius: 100%
+}

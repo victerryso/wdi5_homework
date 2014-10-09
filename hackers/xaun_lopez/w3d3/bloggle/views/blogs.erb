@@ -1,0 +1,20 @@
+<% @blogs.shuffle.reverse.each do |blog| %>
+
+  <div id="blocks">
+    <h3>
+      <em><a href="/bloggle/<%= blog.id %>">
+        <%= blog.title %>
+      </a></em>
+    </h3>
+
+    <div class="post">
+      <%= blog.description %>
+    </div>
+  </div>
+<% end %>
+
+
+
+
+
+

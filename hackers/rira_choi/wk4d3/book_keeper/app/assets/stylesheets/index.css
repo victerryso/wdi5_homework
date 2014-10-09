@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel:900);
+body{
+  background: url('http://i.imgur.com/f3tbUJ6.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  color: white;
+}
+
+nav {
+  text-align: center;
+  font-family: serif;
+  padding: 10px;
+  margin: 0 30px 30px 30px;
+  background: rgba(127, 117, 94, 0.3);
+  border-radius: 1em;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav li, a{
+  color: #AC9D8F;
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  display: inline;
+}
+
+nav .blank{
+  margin-right: 450px;
+}
+
+h1{
+  font-family: 'Cinzel', serif;
+  margin-bottom: 5px;
+  font-size: 40px;
+  margin-left: 10px;
+  color: rgba(180, 117, 50, 0.8); text-shadow:1px 1px 8px black;
+}
+
+h4{
+  text-align: right;
+  margin-right: 100px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 100px;
+
+}
+
+h2{
+  text-align: right;
+  margin-right: 20%;
+}
+
+#new_left, #new_right{
+  display: inline-block;
+  max-width: 800px;
+  vertical-align: top;
+}
+
+#new_left{
+  margin-left: 7%;
+  margin-bottom: 50px;
+}
+
+#logo_left, .logo{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo{
+  max-width: 600px;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+.logo a:hover{
+  opacity: 0.7;
+}
+
+#logo_left{
+  max-width: 4300px;
+  height: 550px;
+  border:20px solid rgba(127, 117, 94, 0.3);
+  margin-left: 5%;
+  margin-bottom: 100px;
+}
+
+
+form{
+  margin-left: 250px;
+}
+
+label{
+  padding: 5px;
+  margin-right: 5px ;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+input, textarea {
+  padding: 3px 0 3px 0;
+  font-size: 13px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(127, 117, 94, 0.3);
+  width: 300px;
+}
+
+#container{
+  margin-bottom: 60px;
+}

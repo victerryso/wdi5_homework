@@ -1,0 +1,15 @@
+<% if params[:name]%>
+<h1> <%= params[:name] %> Plants</h1>
+<% else %>
+  <h1>All Plants</h1>
+<% end %>
+
+<% @plants.each do |plant| %>
+  <div class="butterfly">
+    <h3><a href="/plants/<%= plant.id %>"><%= plant.name %></a></h3>
+    <img src="<%= plant.image %>">
+    <% plant.butterflies.each do |butterfly| %>
+      <br><%= butterfly.name %>
+    <% end %>
+  </div>
+<% end %>

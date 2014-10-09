@@ -1,0 +1,20 @@
+<div class="inner-container">
+  <div class="header">
+    <h1>Movie Poster</h1>
+    <h4>Search for your favorite movie posters using OMDB's extensive movie database.</h4>
+  </div>
+  <h2>Search Results</h2>
+  <% if @titles_list != nil %>
+    <p>Multiple titles matching search term. Please select title.</p>
+    <% @titles_list["Search"].uniq.each do |movie| %>
+      <% if movie['Type'] == "movie" && movie['Rated'] != "N/A"%>
+        <div class="movie-list">
+          <p>
+            <a href="/movies/display?id=<%= movie['imdbID']%>"><%=movie['Title']%></a>
+            (<%= movie['Year'] %>)
+          </p>
+        </div>
+      <% end %>   
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,6 @@
+<% @results.each do |video| %>
+  <div class= "video">
+    <h3><a href="/videos/new?title=<%= video['title'].gsub(' ','_') %>&url=<%= video['url'] %>"><%= video["title"] %></a></h3>
+    <iframe width="560" height="315" src="<%= 'https://www.youtube.com/embed/' + video["url"]%>" frameborder="0" allowfullscreen></iframe>
+  </div>
+<% end %>

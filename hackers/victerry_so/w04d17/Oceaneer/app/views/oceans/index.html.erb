@@ -1,0 +1,11 @@
+<% @oceans.each do |ocean| %>
+  <div class='box'>
+    <h3><%= ocean.name %></h3>
+    <p>Location: <%= ocean.location %><br>
+    Area: <%= number_with_delimiter(ocean.area) %>km²<br>
+    Depth: <%= number_with_delimiter(ocean.depth) %>m<br><br>
+    <%= image_tag(ocean.image, :class => 'thumb') if ocean.image %></p>
+    <%= link_to('Edit', edit_path(ocean.id)) %>
+    <%= link_to('Delete', delete_path(ocean.id)) %>
+  </div>
+<% end %>

@@ -2,15 +2,6 @@ stations = {
   "astor place" => {
     :line => "6 line", 
     :position => -1},
-  "union square" => {
-    :line => "6 line", 
-    :position => 0}, 
-  "23rd" => {
-    :line => "6 line", 
-    :position => 1}, 
-  "28th" => {
-    :line => "6 line", 
-    :position => 2}, 
   "33rd" => {
     :line => "6 line", 
     :position => 3}, 
@@ -23,36 +14,40 @@ stations = {
   "3rd" => {
     :line => "l line", 
     :position => -1}, 
-  "union square" => {
-    :line => "l line", 
-    :position => 0}, 
   "6th" => {
     :line => "l line", 
     :position => 1}, 
-  "8th" => {
+  "8th" => [{
     :line => "l line", 
     :position => 2}, 
-  "8th" => {
+    {
     :line => "n line", 
-    :position => -1},  
-  "union square" => {
-    :line => "n line", 
-    :position => 0}, 
-  "23rd" => {
-    :line => "n line", 
-    :position => 1}, 
-  "28th" => {
-    :line => "n line", 
-    :position => 2}, 
+    :position => -1}],  
   "34th" => {
     :line => "n line", 
     :position => 3}, 
   "times square" => {
     :line => "n line", 
-    :position => 4} 
+    :position => 4}, 
+  "28th" => [{:line => "6 line", :position => 2}, {:line => "n line", :position => 2}], 
+  "union square" => [{
+    :line => "l line", 
+    :position => 0}, 
+    {
+    :line => "6 line", 
+    :position => 0}, 
+    {
+    :line => "n line", 
+    :position => 0}], 
+  "23rd" => [{
+    :line => "6 line", 
+    :position => 1}, 
+    {
+    :line => "n line", 
+    :position => 1}], 
 }
 
-dup_stations = [ "union square", "23rd", "28th", "union square", "8th", "8th", "union square", "23rd", "28th" ] # Come up with a method to find duplicates and automatically add to this array.
+# if it's an array, look up each one, and if it's hash, just continue
 
 public
 def titleize(x) 
@@ -60,7 +55,16 @@ def titleize(x)
 end
 
 def dup_station_check(x)
-  dup_stations.include? x
+  unless stations(x).class? Array
+    print "Enter starting line [6], [l] or [n]: "
+    start_line_input = gets.chomp.downcase
+    start_line_input << " line"
+    puts "You've selected the #{start_line_input}."
+    # add loop
+  else
+    start_line_input = stations[x][:line]
+    puts "Your line is #{x}"
+  end
 end
 
 ## WELCOME MESSAGE
@@ -76,19 +80,15 @@ puts ""
 print "Enter starting station: "
 start_station = gets.chomp.downcase
 
+if stations[start_station].is_a? Array
+  puts "Looks ooks like the station sits on more than one lines, but will assume that the user will want to take the shortest route"
+else
+end
+
 # def duplicate_checker
 # end
 
-if dup_stations.include? start_station # insert duplicate_checker function here to decrease code
-  # Looks like the station sits on more than one lines, but will assume that the user will want to take the shortest route
-  # Build a loop that will print all position values associated with the station
-  puts stations[start_station][:position]
-  puts stations[start_station][:position]
-  # come up with a method that will compare the value 
-  # find the minimum of the two positions (finding the shortest route) and then subtract that
-else
-  stations[start_station][:line]
-end
+dup_station_check(start_station)
 
 start_line = stations[start_station][:line] 
 start_position = stations[start_station][:position]
@@ -97,12 +97,12 @@ start_position = stations[start_station][:position]
 print "Enter destination station: "
 stop_station = gets.chomp.downcase
 
-if dup_stations.include? stop_station # insert duplicate_checker function here to decrease code
-  puts stations[stop_station][:position]
-  puts stations[stop_station][:position]
-else
-  stations[stop_station][:line]
-end
+# if ********.include? stop_station # insert duplicate_checker function here to decrease code
+#   puts stations[stop_station][:position]
+#   puts stations[stop_station][:position]
+# else
+#   stations[stop_station][:line]
+# end
 
 stop_line = stations[stop_station][:line] 
 stop_position = stations[stop_station][:position]
@@ -110,9 +110,9 @@ stop_position = stations[stop_station][:position]
 ## COMPARE START AND STOP
 if start_line != stop_line
   puts "There are #{stop_position.abs + start_position.abs} stop(s) between #{start_station} and #{stop_station}."
-  if dup_stations.include? start_station # insert duplicate_checker function, replace "*_station" here to decrease code
-    puts "Take the #{start_station.titleize} from the #{start_line} for the shortest route."
-  end
+  # if ********.include? start_station # insert duplicate_checker function, replace "*_station" here to decrease code
+  #   puts "Take the #{start_station.titleize} from the #{start_line} for the shortest route."
+  # end
 else
   puts "There are #{(stop_position - start_position).abs} stop(s) between #{start_station.titleize} and #{stop_station.titleize}."
 end

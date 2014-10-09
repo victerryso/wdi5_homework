@@ -1,0 +1,5 @@
+<div id='list'>
+  <% @mountains.each do |m| %>
+    <p><%= link_to(m.name, mountain_path(m.id)) %> (<em><%= m.country %></em>)</p>
+  <% end %>
+</div>

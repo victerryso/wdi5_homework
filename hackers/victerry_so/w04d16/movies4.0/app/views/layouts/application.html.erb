@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies 4.0</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id='container'>
+    <nav>
+      <ul>
+        <il><a href="/">Home</a></il>
+        <il><a href="/about">About</a></il>
+        <il><a href="/faq">FAQ</a></il>
+        <il><a href="/stock">Stock</a></il>
+        <il><a href="/movie">Movie</a></il>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </div>
+</body>
+</html>

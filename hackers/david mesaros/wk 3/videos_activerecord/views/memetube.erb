@@ -1,0 +1,19 @@
+<section class="grid">
+  <h2>Videos</h2>
+  <ul class="grid-item">
+    <% @videos.each do |video| %>
+    <% url_split = video.url.split(/&|=/)%>
+    <% url = url_split[1] %>
+    <li>
+      <ul>
+        <li>
+          <a href="/memetube/<%=video.id %>">
+            <%=video.title %>
+          </a>
+        </li>
+      </ul>
+      <iframe width="300" height="169" src="//www.youtube.com/embed/<%= url%>" frameborder="0" allowfullscreen></iframe>
+    <% end %>
+    </li>
+  </ul>
+</section>

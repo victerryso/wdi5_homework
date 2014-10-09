@@ -1,0 +1,16 @@
+<h2><%= @author.name %></h2>
+<%= image_tag(@author.image, :class => 'medthumb') %>
+<ul>
+  <li>Date of Birth: <%= @author.dob %></li>
+  <li>Period: <%= @author.period %></li>
+  <li>Nationality: <%= @author.nationality %></li>
+</ul>
+
+<h3>Works</h3>
+<ul>
+  <% @author.books.each do |book| %>
+    <li>
+    <%= link_to(book.title, book) %>
+    </li>
+  <% end %>
+</ul>

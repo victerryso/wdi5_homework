@@ -1,0 +1,189 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+/* ========================================== */
+/* ============= Clear fix hack ============= */
+/* ========================================== */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+/* ========================================== */
+/* ========== Body and background =========== */
+/* ========================================== */
+
+body {
+  font-color: #0a0a0a;
+  font-size: 12px;
+  background-color: #d6d6d6;
+  background-image: url('../images/background.jpg');
+  background-size: 320px;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+header {
+  margin-top: -20px;
+}
+
+.main-content, aside {
+  position: relative;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+.main-content {
+  max-width: 640px;
+  margin-right: 17px;
+  padding: 18px;
+}
+
+aside {
+  max-width: 280px;
+  padding: 25px;
+}
+
+@media screen and (max-width: 930px) {
+  .main-content, aside {
+  max-width: 80%;
+  background-color: yellow;
+  display: block;
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+/* ========================================== */
+/* ================= Images ================= */
+/* ========================================== */
+
+#logo {
+  width: 190px;
+  display: block;
+  margin: 15px auto;
+}
+
+/* ========================================== */
+/* ========= General Text Formatting ======== */
+/* ========================================== */
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  color: #e35424;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cc6633;
+}
+
+h1, h2, h4 {
+  margin: 0;
+}
+
+h1 {
+  visibility: hidden;
+}
+
+h2 {
+  margin: 18px 0;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+p {
+  margin: 15px 0;
+  padding: 0;
+  line-height: 21px; 
+}
+
+ul {
+  font-weight: bold;
+  line-height: 21px;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 11px;
+  display: block;
+  list-style: inherit;
+  padding-left: 0;
+}
+
+/* ========================================== */
+/* ======= Section-specific formatting ====== */
+/* ========================================== */
+
+/* ######## Main-Content formatting ######### */
+
+section img {
+  width: 100%;
+} /*put width as percentage so that main-content can shrink without image overflowing */
+
+/* ########### Footer formatting ############ */
+
+footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+
+}
+
+footer img {
+  width: 34px;
+}
+
+.section-metadata {
+  padding: 8px;
+  border-top: dashed #0a0a0a 1px;
+  border-bottom: solid #0a0a0a 1px;
+  margin-top: 0;
+  text-align: left;
+}
+
+/* ########### Aside formatting ########### */
+
+.aside-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.aside-ads {
+  display: block;
+  margin: 0 auto;
+}
+
+a .aside-ads {
+  margin-bottom: 20px;
+}

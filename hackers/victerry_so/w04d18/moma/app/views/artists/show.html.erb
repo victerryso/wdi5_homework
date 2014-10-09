@@ -1,0 +1,10 @@
+<h2><%= @artist.name %></h2>
+<p>Nationality: <%= @artist.nationality %><br>
+Date of Birth: <%= @artist.dob.strftime('%B %d %Y') %><br>
+Period: <%= @artist.period %></p>
+<%= image_tag(@artist.image, :class => 'medium') %>
+
+<% @artist.works.each do |work| %>
+  <%= image_tag(work.image, :class => 'thumb') %>
+  <%= link_to(work.title, work) %>
+<% end %>

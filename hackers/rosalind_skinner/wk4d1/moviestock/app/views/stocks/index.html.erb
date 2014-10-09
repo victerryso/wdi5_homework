@@ -1,0 +1,18 @@
+<section class="stock">
+<form action= "/stocks" method = "get">
+  <input name = "symbol" placeholder = "Stock Name">
+
+  <button>Find Stock Price!</button>
+</form>
+
+<% if @symbol%>
+<p>
+  <%= @symbol %>
+</p>
+
+<p>
+The last trade for <%= @symbol %> was <b>$<%= @price %></b>.
+</p>
+
+<% end %>
+</section>

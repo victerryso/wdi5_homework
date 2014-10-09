@@ -1,0 +1,11 @@
+D, [2014-06-20T21:48:56.797904 #88150] DEBUG -- :   [1m[36mNinja Load (3.1ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m
+D, [2014-06-20T21:49:15.407749 #88150] DEBUG -- :   [1m[35mNinja Load (0.2ms)[0m  SELECT "ninjas".* FROM "ninjas"
+D, [2014-06-20T21:49:17.684056 #88150] DEBUG -- :   [1m[36mNinja Load (0.3ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m
+D, [2014-06-20T21:49:47.792953 #88150] DEBUG -- :   [1m[35mNinja Load (0.3ms)[0m  SELECT "ninjas".* FROM "ninjas"
+D, [2014-06-20T21:49:50.218945 #88150] DEBUG -- :   [1m[36mNinja Load (0.3ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m
+D, [2014-06-20T21:50:18.639637 #88150] DEBUG -- :   [1m[35mNinja Load (0.2ms)[0m  SELECT "ninjas".* FROM "ninjas"
+D, [2014-06-20T21:50:22.749831 #88150] DEBUG -- :   [1m[36mNinja Load (0.2ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m
+D, [2014-06-20T21:50:29.751586 #88150] DEBUG -- :   [1m[35mNinja Load (0.3ms)[0m  SELECT "ninjas".* FROM "ninjas"
+D, [2014-06-20T21:51:34.619201 #88150] DEBUG -- :   [1m[36mNinja Load (0.2ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m
+D, [2014-06-20T22:00:03.917211 #88150] DEBUG -- :   [1m[35mNinja Load (0.3ms)[0m  SELECT "ninjas".* FROM "ninjas"
+D, [2014-06-20T22:00:07.091430 #88150] DEBUG -- :   [1m[36mNinja Load (0.2ms)[0m  [1mSELECT "ninjas".* FROM "ninjas"[0m

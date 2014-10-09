@@ -1,0 +1,15 @@
+<h1><%= @author.name %></h1>
+<ul>
+  <li><%= image_tag(@author.image, :class => 'medium') %></li>
+  <li><%= @author.nationality %></li>
+  <li><%= @author.dob %></li>
+  <li><%= link_to('Edit', edit_author_path(@author)) %></li>
+  <li><%= link_to('Delete', @author, :data => {:confirm => 'Are you sure you want to delete this work?', :method => :delete }) %></li>
+</ul>
+
+<% @author.books.each do |book| %>
+  <div class="book">
+    <p><%= link_to(book.title, book) %></p>
+    <%= image_tag(book.image, :class => 'medium') %>
+  </div>
+<% end %>

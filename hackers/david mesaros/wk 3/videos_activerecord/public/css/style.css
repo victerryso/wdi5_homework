@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  color: #57575C;
+}
+
+.container {
+  margin:0 auto;
+  width:80%;
+  box-sizing:border-box;
+  position:relative;
+
+}
+
+header{
+  background:#FFF;
+  border-bottom:1px solid #ccc;
+}
+
+header h1 {
+  font-family: inherit;
+  font-weight:300;
+  font-size: 40px;
+  color:#57575C;
+  display: inline-block;
+}
+h2, h3, h4 {
+  font-family: inherit;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+strong {
+  font-weight:400;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color:#4FB99F;
+}
+
+
+/*Search Input*/
+form {
+  margin:0 auto;
+  text-align:center;
+}
+
+button {
+  background-color: #4FB99F;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 18px;
+  color: #FFF;
+  display: block;
+  margin: 0 40px;
+  width: 150px;
+  box-shadow: 0 4px #068587;
+}
+
+
+button:hover{
+  background:#46A38C;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 40px;
+}
+
+select {
+  background-color: #FFF;
+  border:1px solid #ccc;
+}
+.grid {
+  padding-top:20px;
+  background-color: #F7F7F7;
+  box-shadow: 2px 5px 15px rgba(0,0,0,.2);
+}
+.grid h2 {
+  padding-left: 15px;
+}
+.grid-item ul li, ul li {
+  list-style: none;
+  display:inline-block;
+  padding:20px;
+}
+
+.grid-item li ul li {
+  padding:20px 0;
+}
+
+ul {
+  padding:0;
+}
+
+nav {
+  display: inline-block;
+  text-align: right;
+  width: 80%;
+}
+
+input {
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 300;
+  margin: 0;
+  vertical-align: baseline;
+  display: block;
+  width:300px;
+}
+
+textarea {
+  display:block;
+  width:300px;
+}
+
+.task {
+  background-color: #4FB99F;
+  padding: 10px;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 18px;
+  color: #FFF;
+  display: inline-block;
+  margin: 20px 40px 20px 0;
+  width: 150px;
+  box-shadow: 0 4px #068587;
+  text-align: center;
+}
+.task:hover{
+  background:#46A38C;
+}
+.task a:hover {
+  color:#FFF;
+}

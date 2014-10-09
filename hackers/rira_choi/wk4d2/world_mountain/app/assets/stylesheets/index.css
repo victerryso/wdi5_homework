@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+
+body{
+  background: url('http://i.imgur.com/FgsrpKD.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+body h2{
+  color: white;
+}
+
+h4{
+  text-align: center;
+  position: relative;
+  font-family: fantasy;
+  color: #66FFC2;
+}
+
+h4 span{
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: white; text-shadow:1px 1px 8px grey;"
+  position: absolute;
+  font-family: 'Comfortaa', cursive;
+}
+nav {
+  text-align: center;
+  font-family: serif;
+  position: center;
+  padding: 10px;
+  margin: 30px;
+  background: rgba(127, 117, 94, 0.3);
+
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav li, a{
+  color: #92AFAA;
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  display: inline;
+}
+
+div #logo{
+  margin-left: 30%
+}
+
+#container{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.m_img{
+  width: 400px;
+  height: 300px;
+  margin-left: 30%
+}
+
+h2{
+  font-family: serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+div #info {
+  max-width: 500px;
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+div span{
+  font-size: 15px;
+  color:  #C1E4DB;
+}
+
+div #des{
+  margin-left: 30%;
+  max-width: 500px;
+  color:  #C1E4DB;
+}
+
+div #list{
+  margin-left: 30%;
+  color: white;
+}
+
+div #list a{
+  color: #66FFC2;
+}
+
+form{
+
+  color: white;
+  margin-left: 25%;
+  display: block;
+
+}
+
+div .first{
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+div .second{
+  margin-top: 20px;
+  display: inline-block;
+   margin-right: 20px;
+}
+
+div .third p{
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+div .last textarea{
+  margin: 20px;
+  width: 530px;
+  background-color: #C2FFD6;
+}
+
+div #option p{
+  margin-left: 30%;
+  padding: 1px;
+  background: white;
+  width: 70px;
+  display: inline-block;
+}
+
+form{
+  display: block;
+}
+
+input {
+  padding: 3px 0 3px 0;
+  font-size: 13px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+  background-color: #C2FFD6;
+}
+
+button{
+  background: red;
+  color: white;
+  margin-top: 30px;
+  margin-left: 200px;
+}

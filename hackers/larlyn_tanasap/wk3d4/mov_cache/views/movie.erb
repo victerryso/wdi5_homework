@@ -1,0 +1,16 @@
+<p>
+<% if (@movie != nil) %>
+<div id="box">
+<h1><a href="/">Movie posters</a></h1>
+    <p>
+      <h2><%= @movie.title %> (<%= @movie.year %>)</h2>
+
+      <img src="<%= @movie.poster %>">
+    </p>
+    <h3>Starring:</h3>
+    <p>
+      <%= @movie.actors %>
+    </p>
+  </div>
+<% end %>
+</p>

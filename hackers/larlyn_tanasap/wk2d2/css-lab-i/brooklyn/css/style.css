@@ -1,0 +1,63 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext);
+
+body {
+  font: 12px 17px;
+  font-family: Times, serif;
+  color: #aaa;
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Lobster', cursive;
+}
+
+#updates p, #updates a, footer {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #5ea0cf;
+}
+
+a:link {
+  color: #20222a;
+}
+
+#mainimg img {
+  margin-top: 1px;
+}
+
+#featured ul {
+  margin: 0;
+  padding: 0;
+}
+
+#featured ul li {
+  display: inline;
+  list-style: none;
+}
+
+#featured ul li img {
+    display: inline;
+    padding: 1px;
+    border: 5px solid #c5c5c5;
+    margin: 0;
+}

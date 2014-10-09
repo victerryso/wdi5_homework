@@ -61,7 +61,7 @@ users = {
 }
 
 # How would you access Jonathan's Twitter handle (i.e. the string "tronathan")?
-users["Jonathan"][:twitter]
+puts users["Jonathan"][:twitter]
 
 # How would you add the number 7 to Erik's favorite numbers?
 users["Erik"][:favorite_numbers] << 7

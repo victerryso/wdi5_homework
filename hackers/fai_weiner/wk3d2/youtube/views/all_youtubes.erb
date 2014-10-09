@@ -1,0 +1,15 @@
+<% if params[:genre] %>
+  <h2> <%= params[:genre] %>
+<% else %>
+  <h2>All Videos</h2>
+<% end %>
+
+
+<% @all_youtubes.each do |youtube| %>
+  <div class="video-box">
+    <a href="/youtube/<%= youtube.id %>"><%= youtube.title %></a>
+    <%= youtube.url %>
+  </div>
+<% end %>
+
+

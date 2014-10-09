@@ -1,0 +1,11 @@
+%h1 Hello!
+
+%div
+  = text_field_tag 'number', nil,  :autofocus => true
+  = button_tag 'Add Number', :id => 'add_number'
+  = button_tag 'Square', :id => 'square'
+  = button_tag 'Function', :id => 'fn'
+  = button_tag 'Start', :id => 'start_timer'
+  = button_tag 'Stop', :id => 'stop_timer'
+
+%div#boxes

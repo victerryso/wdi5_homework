@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MountainsApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<% unless @mountain.nil? %>
+<body style="background-image:url(<%= @mountain.image %>);">
+<% else %>
+<body>
+<% end %>
+<section class="content">
+<div class="container">
+<nav>
+  <h2 id="new"><%= link_to('Mountains', mountains_path) %> |
+  <%= link_to('Mountain Up', mountains_new_path) %></h2>
+</nav>
+<article>
+<%= yield %>
+</article>
+</section>
+</div>
+</body>
+</html>

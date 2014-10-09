@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+
+body {
+  background: url("http://i.imgur.com/d3nDNC3.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+body h2{
+  color: white;
+}
+
+h4{
+  text-align: center;
+  position: relative;
+  font-family: fantasy;
+  color: #66FFC2;
+}
+
+h4 span{
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: white; text-shadow:1px 1px 8px grey;"
+  position: absolute;
+  font-family: 'Comfortaa', cursive;
+}
+nav {
+  text-align: center;
+  font-family: serif;
+  position: center;
+  padding: 10px;
+  margin: 30px;
+  background: rgba(127, 117, 94, 0.3);
+
+}
+
+nav a {
+  color: #92AFAA;
+  margin: 5px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+div #map{
+  margin-left: 150px;
+  margin-bottom: 70px;
+}
+
+#container{
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 960px;
+  margin-bottom: 50px;
+}
+
+form{
+
+  color: white;
+  margin-left: 25%;
+  display: block;
+
+}
+
+button{
+  background: red;
+  color: white;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+div .icon{
+  vertical-align: bottom;
+  margin-left: 50px;
+}
+
+div .frist, .second{
+  display: inline-block;
+  margin-bottom: 20px;
+
+}
+
+div .second{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+div .third{
+  width:530px;
+  margin-bottom: 20px;
+}
+
+div .last textarea{
+  margin: 20px;
+  width: 530px;
+  background-color: #C2FFD6;
+}
+
+input .url{
+  margin-right: 30px;
+}
+
+h3 a {
+  color: #66FFC2;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  margin: 20px;
+}
+
+h3 a:hover{
+  color: white;
+}
+
+h3 a:visited{
+  color: #92AFAA;
+}
+
+label{
+  padding: 5px;
+  margin-right: 5px ;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.asking, .laughing, .listening, .studying, .watching{
+  display: block;
+  margin:0 20px 20px 0;
+}
+
+.asking a, .laughing a, .listening a, .studying a, .watching a{
+  text-decoration: none;
+  margin-right: 0;
+  font-size: 20px;
+  color:white;
+}
+
+.group_list{
+  display: inline-block;
+  margin: 30px;
+}
+
+.category_all{
+  margin-left: 20%;
+
+}
+
+.category_all iframe{
+  margin-left: 18%;
+  margin-bottom: 20px;
+}
+
+.category_all a{
+  font-size: 18px;
+}
+
+.display_all {
+  margin-left: 25%;
+  margin-right: 25%
+}
+
+.show_description {
+  display: none;
+}
+
+.description:checked + .show_description{
+  display: block;
+}
+
+.single_video{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.single_video a{
+  margin: 10px;
+}
+
+#info{
+  margin-bottom: 30px;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #66FFC2;
+}
+
+a:hover{
+  color: white;
+}
+
+.display_all a:visited{
+  color: #92AFAA;
+}
+
+input {
+  padding: 3px 0 3px 0;
+  font-size: 13px;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Nunito', sans-serif;
+  background-color: #C2FFD6;
+}

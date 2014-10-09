@@ -1,0 +1,32 @@
+
+
+<p>&nbsp;
+<% if (@title != nil and @movie.include? "Title") %>
+<div id="box">
+<h1>Movie posters</h1>
+    <p>
+      <h2><%= @movie['Title'] %> (<%= @movie['Year'] %>)</h2>
+
+      <img src="<%= @poster %>">
+    </p>
+    <h3>Starring:</h3>
+    <p>
+      <%= @movie['Actors'] %>
+    </p>
+  </div>
+<% elsif (@title != nil) %>
+  <h1>Movie posters</h1>
+  <h2>Find a movie, get the info.</h2>
+  <p>We didn't find a move by that name! Please try again.</p>
+<% else %>
+<h1>Movie posters</h1>
+  <h2>Find a movie, get the info.</h2>
+<% end %>
+</p>
+
+<form action="/" method="get">
+<label for="prompt">What movie are you looking for? </label>
+<input name="title" placeholder="Movie title here">
+<button>Find the info!</button>
+</form>
+
